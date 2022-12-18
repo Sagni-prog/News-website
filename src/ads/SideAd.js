@@ -3,16 +3,11 @@ import ad1 from '../assets/images/news-800x500-1.jpg'
 
 const SideAd = () => {
   return (
-    <div className='mb-l'>
-        <div className='flex align-center border gap-1 mb-1'>
-          <div className='dash'></div>
-             <h5 className=' font-16 font-montserrat h-5 flex align-center color-dark'>
-                Advertisment
-            </h5>
-        </div>
+    <div className='mb-l  ads'>
         
         <div className='w-100 h-100'>
-            <img className='img-profile' src = { ad1 } alt = 'hello'/>
+        <h4 className = 'font-light-gray font-montserrat'>Advertisment</h4>
+            {/* <img className='img-profile' src = { ad1 } alt = 'hello'/> */}
         </div>
     </div>
   )
