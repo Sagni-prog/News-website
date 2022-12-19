@@ -12,7 +12,7 @@ import { MdPerson } from 'react-icons/md'
 
 const NewsByCatagory = () => {
   return (
-    <div className='container mb-xl gap-4 flex'>
+    <div className='container mb-l gap-4 flex'>
 
      <div className='w-100 flex flex-col gap-2 '>
         <div className='mb-l'>

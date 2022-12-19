@@ -6,6 +6,7 @@ import Hero from './hero/Hero';
 import Margin from './Margin';
 import Featured from './Feautured/Featured';
 import NewsByCatagory from './news-by-catagory/NewsByCatagory';
+import FuturePlanet from './Future-planet/FuturePlanet';
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Hero />
           <Featured />
           <NewsByCatagory />
+          <FuturePlanet />
           <Margin />
       </BrowserRouter>
     </div>

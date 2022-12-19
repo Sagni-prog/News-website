@@ -247,6 +247,38 @@ html{
     margin-bottom: 12.8rem;
 }
 
+.mt-1{
+    margin-top: 1rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.mt-3{
+    margin-top: 3rem;
+}
+.mt-4{
+    margin-top: 4rem;
+}
+
+.mt-lt{
+    margin-top: 1.6rem;
+}
+.mt-sm{
+    margin-top: 2.4rem;
+}
+.mt-md{
+    margin-top: 3.2rem;
+}
+.mt-l{
+    margin-top: 6.4rem;
+}
+.mt-xl{
+    margin-top: 9.2rem;
+}
+.mt-xxl{
+    margin-top: 12.8rem;
+}
+
 .mt-7{
     margin-top: 7rem;
 }
@@ -504,6 +536,7 @@ html{
     position: relative;
 }
 
+
 .overlay{
     position: absolute;
     color: #fff;
@@ -732,7 +765,7 @@ html{
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
    
-  /* color: #fff; */
+
   transition: background-size 400ms;
    
   
@@ -743,6 +776,48 @@ html{
 
     background-size: 0 0.1em, 100% 0.1em;
      
+}
+
+.future-background{
+    /* position: relative; */
+    height: 75%;
+   
+}
+
+.future-background img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.background-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        /* background-image: linear-gradient(to bottom,#000,#fff); */
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.3) 60%);
+    
+}
+
+.future-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.border-future{
+    padding: 0.5rem 1rem;
+    border: #119122 solid 2px;
+}
+
+.border-visit{
+    border-radius: 3rem;
+    padding: 0.5rem 2rem;
+   border: rgba(255, 255, 255, 0.829) solid 2px;
 }
 
 
