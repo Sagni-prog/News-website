@@ -22,9 +22,11 @@ const Hero = () => {
                                Dec 5,2022
                           </a>
                      </div>
-                        <h1 className='font-montserrat font-32 text-uppercase line-height letter-spacing inline'>
+                     <div className='text-underline-white'>
+                        <a  className='link color-white font-montserrat font-32 font-weight text-uppercase line-height letter-spacing inline' href=''>
                            Lorem ipsum dolor sit amet elit. Proin vitae porta diam...
-                        </h1>
+                        </a>
+                        </div>
                    </div>
                 </div>
               </div>
@@ -44,9 +46,11 @@ const Hero = () => {
                                Dec 5,2022
                           </a>
                      </div>
-                        <h1 className='font-montserrat font-16 text-uppercase'>
-                           Lorem ipsum dolor sit amet elit  sit amet elit...
-                        </h1>
+                     <div className=' text-underline-white'>
+                        <a className='link font-montserrat font-16 text-uppercase'>
+                             Lorem ipsum dolor sit amet elit  sit amet elit...
+                        </a>
+                    </div>
                    </div>
                        
                     </div>
@@ -64,9 +68,11 @@ const Hero = () => {
                                    Dec 5,2022
                               </a>
                          </div>
-                              <h1 className='font-montserrat font-16 text-uppercase'>
+                         <div className='text-underline-white'>
+                              <a className='link color-white font-montserrat font-16 text-uppercase' href=''>
                                    Lorem ipsum dolor sit amet elit...
-                              </h1>
+                              </a>
+                         </div> 
                          </div>
                      
                     </div>
@@ -81,9 +87,12 @@ const Hero = () => {
                   <a className='index-10 flex align-center link p-1 bg-yellow font-montserrat font-16 color-dark-2 px-1' href='#' >
                                Breaking News
                   </a>
+                 <div className='ad-link'> 
                    <a className='link index-10 color-white font-montserrat font-16 font-weight-600 text-uppercase line-height letter-spacing' href=''>
-                   Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales
+              Lorem ipsum dolor sit amet elit. Proin interdum lacus eget ante tincidunt, sed faucibus nisl sodales
                   </a>
+               </div>   
+
           </div>
      </div>
 

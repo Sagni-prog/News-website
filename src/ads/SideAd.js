@@ -6,8 +6,9 @@ const SideAd = () => {
     <div className='mb-l  ads'>
         
         <div className='w-100 h-100'>
-        <h4 className = 'font-light-gray font-montserrat'>Advertisment</h4>
-            {/* <img className='img-profile' src = { ad1 } alt = 'hello'/> */}
+          <div className='flex justify-end align-center p-1 ad-link'>
+               <a className = 'ad-link link color-dark font-14 font-montserrat' href=''>Advertisment</a>
+          </div>
         </div>
     </div>
   )

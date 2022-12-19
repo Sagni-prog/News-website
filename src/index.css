@@ -701,3 +701,50 @@ html{
     padding-left: 1.6rem;
     color: #1e2024;
 } */
+
+.text-underline-white a{
+  
+      background: 
+    linear-gradient(to right, #fff, #fff),
+    linear-gradient(to right, #fff, rgb(255, 255, 255));
+  background-size: 0 0, 0 0;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+   
+  /* color: #fff; */
+  transition: background-size 400ms;
+   
+  
+}
+
+
+ .text-underline-white a:hover{
+
+    background-size: 0 0.1em, 100% 0.1em;
+     
+}
+.ad-link a{
+  
+      background: 
+    linear-gradient(to right, #4d6b99, #d833d8),
+    linear-gradient(to right, #36cabe, #ca506e);
+  background-size: 0 0, 0 0;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+   
+  /* color: #fff; */
+  transition: background-size 400ms;
+   
+  
+}
+
+
+ .ad-link a:hover{
+
+    background-size: 0 0.1em, 100% 0.1em;
+     
+}
+
+
+ 
+  
