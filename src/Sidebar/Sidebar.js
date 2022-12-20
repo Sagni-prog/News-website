@@ -6,6 +6,8 @@ import { MdSchedule } from 'react-icons/md'
 import SideAd from '../ads/SideAd'
 import Subscribe from '../subscribe/Subscribe'
 import Tags from '../Tags/Tags'
+import { MdCalendarViewMonth } from 'react-icons/md'
+import { MdPerson } from 'react-icons/md'
 
 const Sidebar = () => {
   return (
@@ -34,16 +36,26 @@ const Sidebar = () => {
                   </div>
 
                <div className='flex flex-col justfy-center gap-2 '>   
-                       <h1 className='font-montserrat color-dark font-14 text-uppercase'>
+                   <div className='side-bar'>
+                        <Link className='link font-montserrat font-weight-700 color-dark font-14 text-uppercase'>
                               Lorem ipsum dolor sit amet elit...
-                         </h1>
-                 <div className='flex align-center gap-1'>
-                   
-                      <MdSchedule className='color-light-gray font-14' />
-                     <Link className='link color-light-gray font-montserrat font-12' href='' >
-                              Dec 5,2022
-                    </Link>
-                 </div>
+                         </Link>
+                   </div>     
+
+                  <div className='flex align-center gap-2 mb-1 '>
+                     <div className='flex align-center gap-1'>
+                       <MdPerson className='color-light-gray  font-weight font-14' />   
+                          <Link className='link color-light-gray font-weight font-montserrat font-12' to='' >
+                                Mike Van
+                          </Link>
+                      </div>
+                   <div className='flex align-center gap-1'>
+                        <MdSchedule className='color-light-gray font-weight font-14' />
+                            <Link className='link color-light-gray font-weight font-montserrat font-12' to='' >
+                                    Dec 5,2022
+                            </Link>
+                     </div>
+                  </div>
             
                </div>
               </div>
@@ -54,15 +66,27 @@ const Sidebar = () => {
                   </div>
 
                <div className='flex flex-col justfy-center gap-2 '>   
-                       <h1 className='font-montserrat color-dark font-14 text-uppercase'>
+                   <div className='side-bar'>
+                        <Link className='link font-montserrat font-weight-700 color-dark font-14 text-uppercase'>
                               Lorem ipsum dolor sit amet elit...
-                         </h1>
-                 <div className='flex align-center gap-1'>
-                      <MdSchedule className='color-light-gray font-14' />
-                     <Link className='link color-light-gray font-montserrat font-12' href='' >
-                              Dec 5,2022
-                    </Link>
-                 </div>
+                         </Link>
+                   </div>  
+
+                    <div className='flex align-center gap-2 mb-1 '>
+                        <div className='flex align-center gap-1'>
+                           <MdPerson className='color-light-gray font-14' />   
+                                <Link className='link color-light-gray font-weight font-montserrat font-12' to='' >
+                                    Mike Van
+                                </Link>
+                        </div>
+                     <div className='flex align-center gap-1'>
+                        <MdSchedule className='color-light-gray font-14' />
+                            <Link className='link color-light-gray font-weight font-montserrat font-12' to='' >
+                                    Dec 5,2022
+                          </Link>
+                     </div>
+                  </div>
+                
                </div>
               </div>
 
@@ -73,20 +97,28 @@ const Sidebar = () => {
                   </div>
 
                <div className='flex flex-col justfy-center gap-2 '>   
-                       <h1 className='font-montserrat color-dark font-14 text-uppercase'>
-                              Lorem ipsum dolor sit amet elit...
-                         {/* <a className='link p-8 bg-yellow sidebar-imgfont-montserrat font-14 color-dark-2' href='#' >
-                              Business
-                      </a> */}  </h1>
-                 <div className='flex align-center gap-1'>
-                    
-                      <MdSchedule className='color-light-gray font-14' />
-                     <Link className='link color-light-gray font-montserrat font-12' href='' >
-                              Dec 5,2022
-                    </Link>
-                 </div>
+                  <div className='side-bar'>
+                       <Link className='link font-montserrat font-weight-700 color-dark font-14 text-uppercase'>
+                            Lorem ipsum dolor sit amet elit...
+                       </Link>
+                   </div>  
+               
+                    <div className='flex align-center gap-2 mb-1 '>
+                      <div className='flex align-center gap-1'>
+                         <MdPerson className='color-light-gray  font-weight font-14' />   
+                            <Link className='link color-light-gray font-weight font-montserrat font-12' to='' >
+                                Mike Van
+                            </Link>
+                        </div>
+                   <div className='flex align-center gap-1'>
+                        <MdSchedule className='color-light-gray font-weight font-14' />
+                            <Link className='link color-light-gray font-weight font-montserrat font-12' to='' >
+                                    Dec 5,2022
+                            </Link>
+                     </div>
+                  </div>
                </div>
-              </div>
+            </div>
 
               <div className='flex gap-1 sidebar-card '>
                   <div className='sidebar-img'>
@@ -94,16 +126,27 @@ const Sidebar = () => {
                   </div>
 
                <div className='flex flex-col justfy-center gap-2 '>   
-                       <h1 className='font-montserrat color-dark font-14 text-uppercase'>
-                              Lorem ipsum dolor sit amet elit...
-                         </h1>
-                 <div className='flex align-center gap-1'>
-                    
-                      <MdSchedule className='color-light-gray font-14' />
-                     <Link className='link color-light-gray font-montserrat font-12' href='' >
-                              Dec 5,2022
+                  <div className='side-bar'>
+                    <Link className='link font-montserrat font-weight-700 color-dark font-14 text-uppercase'>
+                        Lorem ipsum dolor sit amet elit...
                     </Link>
-                 </div>
+                 </div>  
+                
+                <div className='flex align-center gap-2 mb-1 '>
+                  <div className='flex align-center gap-1'>
+                    <MdPerson className='color-light-gray font-weight font-14' />   
+                       <Link className='link color-light-gray font-weight font-montserrat font-12' to='' >
+                          Mike Van
+                      </Link>
+                  </div>
+                   <div className='flex align-center gap-1'>
+                        <MdSchedule className='color-light-gray font-weight font-14' />
+                            <Link className='link color-light-gray font-weight font-montserrat font-12' to='' >
+                                    Dec 5,2022
+                            </Link>
+                     </div>
+                  </div>
+
                </div>
               </div>
 

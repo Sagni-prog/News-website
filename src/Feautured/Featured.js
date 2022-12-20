@@ -29,7 +29,8 @@ const Featured = () => {
                     </div>
                     
                </div>
-     
+        
+       </div>
 
         <div className='container'>
              <div className='grid grid-col-4 gap-3'>
@@ -48,9 +49,11 @@ const Featured = () => {
                                    Dec 5,2022
                               </Link>
                          </div>
-                              <h1 className='font-montserrat font-16 text-uppercase'>
+                         <div className='text-underline-white'>
+                              <Link className='link color-white font-montserrat font-16 font-weight-700 text-uppercase'>
                                    Lorem ipsum dolor sit amet elit...
-                              </h1>
+                              </Link>
+                           </div>   
                          </div>
                     </div>
                  </div>
@@ -69,9 +72,11 @@ const Featured = () => {
                                    Dec 5,2022
                               </Link>
                          </div>
-                              <h1 className='font-montserrat font-16 text-uppercase'>
+                         <div className='text-underline-white'>
+                              <Link className='link color-white font-montserrat font-16 font-weight-700 text-uppercase'>
                                    Lorem ipsum dolor sit amet elit...
-                              </h1>
+                              </Link>
+                           </div> 
                          </div>
                     </div>
                  </div>
@@ -90,9 +95,11 @@ const Featured = () => {
                                    Dec 5,2022
                               </Link>
                          </div>
-                              <h1 className='font-montserrat font-16 text-uppercase'>
+                         <div className='text-underline-white'>
+                              <Link className='link color-white font-montserrat font-16 font-weight-700 text-uppercase'>
                                    Lorem ipsum dolor sit amet elit...
-                              </h1>
+                              </Link>
+                           </div> 
                          </div>
                     </div>
                  </div>
@@ -111,9 +118,11 @@ const Featured = () => {
                                    Dec 5,2022
                               </Link>
                          </div>
-                              <h1 className='font-montserrat font-16 text-uppercase'>
+                           <div className='text-underline-white'>
+                               <Link className='link color-white font-montserrat font-16 font-weight-700 text-uppercase'>
                                    Lorem ipsum dolor sit amet elit...
-                              </h1>
+                               </Link>
+                            </div> 
                          </div>
                     </div>
                  </div>

@@ -1,8 +1,127 @@
 import React from 'react'
+import finalcup from '../assets/images/final_cup.jpg'
+import brazil from '../assets/images/brazil.jpg'
+import africa from '../assets/images/africa.jpg'
+import mars from '../assets/images/mars.jpg'
+import nature from '../assets/images/nature.jpg'
+import festival from '../assets/images/festival.jpg'
+import { Link } from 'react-router-dom'
 
 const Photogallery = () => {
   return (
-    <div>Photogallery</div>
+    <div className='shadow  w-100 py-2'>
+      <div className='container flex align-center gap-1'>
+          <div className='dash-gallery'></div>
+              <h1 className=' font-18 font-montserrat h-5 flex align-center color-dark font-weight-700'>
+                  World in picture
+              </h1>
+          </div>
+
+        <div className='container grid grid-col-6 grid-row-2 grid-gap-2'>
+             <div className='col-span-3-1 bg-blue'>
+              <div className='gallery-top-img-container'>
+                  <img src = {finalcup} alt = ''/>
+                    <div className='dark-overlay'></div>
+                       <div className='gallery-overlay flex align-end'>
+                           <div className='flex flex-col  p-2'>
+                              <h4 className='font-montserrat color-white font-18'>
+                                  Argentina win 2022 World Cup final-in pictur Argentina win 2022 world cup final-in pictureses
+                              </h4>
+                          <div className='flex gap-1 mt-1'>
+                             <div className='dash-subcatagory'></div>
+                                <div className='text-underline-white'>
+                                   <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
+                                       Football
+                                   </Link>
+                                </div>
+                           </div>
+                      </div>
+                  </div>
+               </div>
+             </div>
+
+             <div className='col-span-3-2 bg-yellow'>
+                <div className='gallery-top-img-container'>
+                    <img src = {brazil} alt = ''/>
+                    <div className='dark-overlay'></div>
+                    <div className='gallery-overlay flex align-end'>
+                     <div className='flex flex-col  p-2'>
+                          <h4 className='font-montserrat color-white font-18'>
+                            Great image from every mens World Cup final
+                          </h4>
+                      <div className='flex gap-1 mt-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='text-underline-white'>
+                                 <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
+                                     Football
+                                 </Link>
+                              </div>
+                          </div>
+                     </div>
+                  </div>
+                </div>
+             </div>
+
+             <div className='col-span-2-1 flex flex-col bg-white card-gallery'>
+               <div className='gallery-bottom-img-container'>
+                    <img src = {mars} alt = ''/>
+                </div> 
+
+                <div className='flex flex-col  align-center'>
+                     <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
+                        Teenegers sunset har shot wins top RSCA prize
+                     </h3>
+                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='side-bar'>
+                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                     Science
+                                 </Link>
+                              </div>
+                          </div>
+                </div>
+             </div>
+
+             <div className='col-span-2-2 bg-white card-gallery'>
+                <div className='gallery-bottom-img-container'>
+                    <img src = {africa} alt = ''/>
+                </div>
+                <div className='flex flex-col  align-center'>
+                     <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
+                        Africas top shot: Puppies, pageants and paddles
+                     </h3>
+                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='side-bar'>
+                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                     Africa
+                                 </Link>
+                              </div>
+                          </div>
+                    </div>
+             </div>
+             <div className='col-span-2-3 bg-white card-gallery'>
+                <div className='gallery-bottom-img-container'>
+                    <img src = {festival} alt = ''/>
+                </div>
+                <div className='flex flex-col  align-center'>
+                     <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
+                       Row over festivity divides Afro-Colombian town
+                     </h3>
+                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='side-bar'>
+                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                    News
+                                 </Link>
+                              </div>
+                          </div>
+                </div>
+             </div>
+            
+
+        </div>
+    </div>
   )
 }
 

@@ -8,7 +8,7 @@ import trees from '../assets/images/trees.jpg'
  
 const FuturePlanet = () => {
    return(
-    <div className="future-background position-relative mb-l">
+    <div className="future-background position-relative bg-white mb-l">
         <img src = {background} alt = 'img'/>
         <div className="background-overlay"></div>
         <div className="future-overlay">

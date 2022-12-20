@@ -27,9 +27,12 @@ const NewsByCatagory = () => {
                                 BUSINESS
                             </h1>
                             </div>
-                            <div className='flex align-center'>
-                            <a className='link font-montserrat color-dark font-14 p-1' href=''>View All</a>
-                            </div>
+                          
+                            <div className='px-1'>
+                                <div className='flex align-center read-more'>
+                                  <a className='link font-montserrat color-dark font-14' href=''>View All</a>
+                              </div>
+                          </div>
                        </div>
                     </div>
             </div>
@@ -244,8 +247,11 @@ const NewsByCatagory = () => {
                          BUSINESS
                     </h1>
                     </div>
-                    <div className='flex align-center'>
-                       <a className='link font-montserrat color-dark font-14 p-1' href=''>View All</a>
+
+                    <div className='px-1'>
+                        <div className='flex align-center read-more'>
+                            <a className='link font-montserrat color-dark font-14' href=''>View All</a>
+                       </div>
                     </div>
                </div>
             </div>
