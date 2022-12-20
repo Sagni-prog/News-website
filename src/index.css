@@ -780,7 +780,7 @@ html{
 
 .future-background{
     /* position: relative; */
-    height: 75%;
+    height: 77%;
    
 }
 
@@ -819,6 +819,28 @@ html{
     padding: 0.5rem 2rem;
    border: rgba(255, 255, 255, 0.829) solid 2px;
 }
+
+
+
+.card-container{
+    width: 33.33%;
+    height: 30rem;
+    background-color: #fff;
+}
+
+.future-img-container{
+    width: 100%;
+    height: 22.2rem;
+    
+}
+
+
+.future-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
 
  
