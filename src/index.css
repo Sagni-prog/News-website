@@ -11,12 +11,13 @@
     box-sizing: border-box;
 }
 body{
-    /* background-color: #EDEFF4; */
-    background-color: #fff;
+    background-color: #EDEFF4;
+    /* background-color: #fff; */
 }
 .ads{
     height: 40rem;
-    background-color: #EDEFF4;
+    /* background-color: #EDEFF4; */
+    background-color: #fff;
 }
 html{
     font-size: 10px;
@@ -31,6 +32,7 @@ html{
   }
   .bg-white{
     background-color: #fff;
+    /* background-color: #EDEFF4; */
   }
  
   .color-dark-gray{
@@ -46,6 +48,7 @@ html{
 
 .bg-yellow{
     background-color: #ffcc00;
+    /* background-color: #34a4eb; */
 }
 .bg-blue{
     background-color: blue;
@@ -646,6 +649,10 @@ html{
     border: #9A9DA2 solid 1px;
     border-left: none;
 }
+.border-featured{
+    border: #9A9DA2 solid 1px;
+   
+}
 
 .border-rd-50{
     border-radius: 50%;
@@ -679,6 +686,12 @@ html{
     width: 10rem;
 }
 
+.dash-catagory{
+    margin-left: 1rem;
+    width: 0.3rem;
+    height: 3rem;
+    background-color: #ffcc00;
+}
 .dash{
     width: 0.8rem;
     height: 5rem;
@@ -841,7 +854,3 @@ html{
     object-fit: cover;
 }
 
-
-
- 
-  

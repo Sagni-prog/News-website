@@ -7,6 +7,7 @@ import Margin from './Margin';
 import Featured from './Feautured/Featured';
 import NewsByCatagory from './news-by-catagory/NewsByCatagory';
 import FuturePlanet from './Future-planet/FuturePlanet';
+import Photogallery from './PhotoGallery/Photogallery';
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Featured />
           <NewsByCatagory />
           <FuturePlanet />
+          <Photogallery />
           <Margin />
       </BrowserRouter>
     </div>

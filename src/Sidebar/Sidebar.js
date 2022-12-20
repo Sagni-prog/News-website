@@ -26,9 +26,9 @@ const Sidebar = () => {
             </div>
         </div>
 
-   <div className='flex flex-col gap-2 bg-white mb-l'>
+   <div className='flex flex-col gap-2  mb-l'>
 
-        <div className='flex gap-1 sidebar-card bg-white'>
+        <div className='flex gap-1 sidebar-card'>
                   <div className=''>
                       <img className='sidebar-img' src = { im3 } alt = 'im' />
                   </div>
@@ -48,7 +48,7 @@ const Sidebar = () => {
                </div>
               </div>
 
-              <div className='flex gap-1 sidebar-card bg-white'>
+              <div className='flex gap-1 sidebar-card '>
                   <div className='sidebar-img'>
                       <img className='sidebar-img' src = { im3 } alt = 'im' />
                   </div>
@@ -67,7 +67,7 @@ const Sidebar = () => {
               </div>
 
 
-              <div className='flex gap-1 sidebar-card bg-white'>
+              <div className='flex gap-1 sidebar-card '>
                   <div className='sidebar-img'>
                       <img className='sidebar-img' src = { im3 } alt = 'im' />
                   </div>
@@ -88,7 +88,7 @@ const Sidebar = () => {
                </div>
               </div>
 
-              <div className='flex gap-1 sidebar-card bg-white'>
+              <div className='flex gap-1 sidebar-card '>
                   <div className='sidebar-img'>
                       <img className='sidebar-img' src = { im3 } alt = 'im' />
                   </div>

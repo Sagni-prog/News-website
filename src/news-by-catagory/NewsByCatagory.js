@@ -12,16 +12,17 @@ import { MdPerson } from 'react-icons/md'
 
 const NewsByCatagory = () => {
   return (
+    
     <div className='container mb-l gap-4 flex'>
 
      <div className='w-100 flex flex-col gap-2 '>
-        <div className='mb-l'>
+        <div className='mb-md'>
             <div className='flex flex-col gap-2'>
 
                 <div className='bg-white'>
-                    <div className = 'flex align-center justify-between border mb-1 '>
+                    <div className = 'flex align-center justify-between mb-1 '>
                         <div className='flex align-center gap-1'>
-                            <div className='dash'></div>
+                            <div className='dash-catagory'></div>
                             <h1 className=' font-18 font-montserrat h-5 flex align-center color-dark font-weight-700'>
                                 BUSINESS
                             </h1>
@@ -36,8 +37,8 @@ const NewsByCatagory = () => {
             <div className='flex gap-1 bg-white '>
                 <div className='w-half'>
                     <img className='img-fluid mb-1' src= {im3} alt = 'hello'/>
-                    <div className=''>
-                    <div className=' '>
+                   
+                    <div className='p-1'>
                         <div className='flex align-center gap-2 mb-2 '>
                             <div className='bg-yellow border-r-9 p-1'>
                                 <a className=' link p-1 px-1  font-montserrat font-14 color-dark-2' href='#' >
@@ -72,7 +73,7 @@ const NewsByCatagory = () => {
                                 </a>
                                 </div>
                             </div>
-                        </div>
+                       
                         
                     </div>
                 </div>
@@ -236,9 +237,9 @@ const NewsByCatagory = () => {
  
     
           <div className='bg-white'>
-              <div className = 'flex align-center justify-between border mb-1'>
+              <div className = 'flex align-center justify-between  mb-1'>
                 <div className='flex align-center gap-1'>
-                    <div className='dash'></div>
+                    <div className='dash-catagory'></div>
                     <h1 className=' font-18 font-montserrat h-5 flex align-center color-dark font-weight-700'>
                          BUSINESS
                     </h1>
@@ -253,8 +254,8 @@ const NewsByCatagory = () => {
         <div className='flex gap-1 bg-white'>
           <div className='w-half'>
               <img className='img-fluid mb-1' src= {im3} alt = 'hello'/>
-              <div className=''>
-               <div className=' '>
+              
+               <div className='p-1'>
                    <div className='flex align-center gap-2 mb-2 '>
                     <div className='bg-yellow border-r-9 p-1'>
                           <a className='link p-1  font-montserrat font-14 color-dark-2' href='#' >
@@ -289,7 +290,7 @@ const NewsByCatagory = () => {
                                 </a>
                                 </div>
                             </div>
-                 </div>
+                 
                  
               </div>
           </div>
@@ -447,13 +448,15 @@ const NewsByCatagory = () => {
     
         </div>
     </div>
+
   </div>
         
-            <div className='w-col-2 h-100'>
+            <div className='w-col-2 h-100 mr-3'>
                <Sidebar />
             </div>
     
     </div>
+   
   )
 }
 

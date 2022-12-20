@@ -8,24 +8,28 @@ import {IoIosArrowForward} from 'react-icons/io'
 const Featured = () => {
 
   return (
-    <div className='mb-md'>
+    <div className='mb-md bg-white pb-3'>
        <div className='mb-lt'>
-          <div className='container featured bg-white'>
-              <div className = 'px-3 py-1 flex align-center justify-between '>
-                    <h1 className='font-32 font-m h-5 flex align-center color-dark font-weight-700'>
+
+       <div className = 'container flex align-center justify-between  mb-1'>
+                <div className='flex align-center gap-1'>
+                    <div className='dash-catagory'></div>
+                    <h1 className=' font-18 font-montserrat h-5 flex align-center color-dark font-weight-700'>
                         Featured News
                     </h1>
+                    </div>
+
                     <div className='flex align-center gap-1'>
-                      <div className='p-1 border'>
+                      <div className='p-1 border-featured'>
                         <IoIosArrowBack />
                       </div>
-                      <div className='p-1 border'>
+                      <div className='p-1 border-featured'>
                         <IoIosArrowForward />
                       </div>
                     </div>
+                    
                </div>
-            </div>
-       </div>
+     
 
         <div className='container'>
              <div className='grid grid-col-4 gap-3'>
