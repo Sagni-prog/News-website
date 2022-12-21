@@ -1066,3 +1066,14 @@ transition: background-size 400ms;
 .shadow{
     background-color: #ccd3e6c4;
 }
+
+.thumbnail{
+    width: 100%;
+   height: auto;
+    
+}
+.thumbnail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
