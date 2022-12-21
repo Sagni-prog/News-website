@@ -1,5 +1,5 @@
 import React from 'react'
-import forest from '../assets/images/forest.jpg'
+import forest from '../assets/images/africa.jpg'
 
 const Videos = () => {
   return (
@@ -15,7 +15,8 @@ const Videos = () => {
               <img src={forest} alt=''/>
           </div> 
 
-          <div className='p-1'>
+          <div className=''>
+               
           </div>
 
       </div>
