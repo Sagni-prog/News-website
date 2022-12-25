@@ -9,6 +9,7 @@ import { MdComment } from 'react-icons/md'
 import { MdSchedule } from 'react-icons/md'
 import { MdCalendarViewMonth } from 'react-icons/md'
 import { MdPerson } from 'react-icons/md'
+import { Link } from 'react-router-dom'
 
 const NewsByCatagory = () => {
   return (
@@ -43,11 +44,21 @@ const NewsByCatagory = () => {
                    
                     <div className='p-1'>
                         <div className='flex align-center gap-2 mb-2 '>
-                            <div className='bg-yellow border-r-9 p-1'>
+
+
+                      <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='read-more'>
+                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                    News
+                                 </Link>
+                              </div>
+                          </div>
+                            {/* <div className='bg-yellow border-r-9 p-1'>
                                 <a className=' link p-1 px-1  font-montserrat font-14 color-dark-2' href='#' >
                                     Business
                                 </a>
-                                </div>
+                                </div> */}
                             </div>
                             <div className='mb-2'>
                             <h4 className='font-montserrat color-dark font-18 text-uppercase font-weight-700'>
@@ -76,6 +87,7 @@ const NewsByCatagory = () => {
                                 </a>
                                 </div>
                             </div>
+
                        
                         
                     </div>
@@ -92,12 +104,15 @@ const NewsByCatagory = () => {
 
                             <div className='flex flex-col justfy-center gap-1'>  
 
-                            <div className='flex align-center gap-1'>
-                                <a className='border-r-9  link p-1 bg-yellow font-montserrat font-12 color-dark-2' href='#' >
-                                    Business
-                                </a>
-                                
-                            </div>
+                          
+                      <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='read-more'>
+                                 <Link className='link font-16 font-montserrat flex align-center color-yellow2'>
+                                    News
+                                 </Link>
+                              </div>
+                          </div>
 
                                     <h1 className='font-montserrat color-dark font-14 text-uppercase'>
                                         Lorem ipsum dolor sit amet elit...
@@ -121,20 +136,22 @@ const NewsByCatagory = () => {
                             </div>
                         </div>
 
-                        <div className='flex gap-1 card'>
-                        
+                    <div className='flex gap-1 card'>
                         <div className='img-container'>
                             <img className='img-profile' src = { im3 } alt = 'im' />
                         </div>
 
                     
-
                         <div className='flex flex-col justfy-center gap-1'>  
-                            <div className='flex align-center gap-1'>
-                                <a className='border-r-9  link p-1 bg-yellow font-montserrat font-12 color-dark-2' href='#' >
-                                    Business
-                                </a>
-                            </div>
+                           
+                      <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='side-bar'>
+                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                    News
+                                 </Link>
+                              </div>
+                          </div>
 
                             <h1 className='font-montserrat color-dark font-14 text-uppercase'>
                                     Lorem ipsum dolor sit amet elit...
@@ -147,7 +164,7 @@ const NewsByCatagory = () => {
                                     Mike Van
                                 </a>
                         </div>
-                <div className='flex align-center gap-1'>
+                   <div className='flex align-center gap-1'>
                         <MdCalendarViewMonth className='color-light-gray font-14' />
                             <a className='link color-light-gray font-montserrat font-12' href='' >
                                     Dec 5,2022
@@ -164,11 +181,21 @@ const NewsByCatagory = () => {
                         </div>
 
                 <div className='flex flex-col justfy-center gap-1'>  
-                            <div className='flex align-center gap-1'>
+                            {/* <div className='flex align-center gap-1'>
                                 <a className='border-r-9  link p-1 bg-yellow font-montserrat font-12 color-dark-2' href='#' >
                                     Business
                                 </a>
-                            </div>
+                            </div> */}
+
+
+                      <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='side-bar'>
+                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                    News
+                                 </Link>
+                              </div>
+                          </div>
 
                             <h1 className='font-montserrat color-dark font-14 text-uppercase'>
                                     Lorem ipsum dolor sit amet elit...
@@ -199,11 +226,20 @@ const NewsByCatagory = () => {
 
                     
                 <div className='flex flex-col justfy-center gap-1'>  
-                    <div className='flex align-center gap-1'>
+                    {/* <div className='flex align-center gap-1'>
                         <a className='border-r-9  link p-1 bg-yellow font-montserrat font-12 color-dark-2' href='#' >
                         Business
                         </a>
-                    </div>
+                    </div> */}
+
+                       <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                          <div className='dash-subcatagory'></div>
+                             <div className='side-bar'>
+                                 <Link className='link font-16 font-montserrat flex align-center color-yellow2'>
+                                    News
+                                 </Link>
+                              </div>
+                          </div>
                     <h1 className='font-montserrat color-dark font-14 text-uppercase'>
                             Lorem ipsum dolor sit amet elit...
                     </h1>

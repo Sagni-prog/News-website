@@ -97,6 +97,7 @@ const Photogallery = () => {
                                      Africa
                                  </Link>
                               </div>
+                     
                           </div>
                     </div>
              </div>
