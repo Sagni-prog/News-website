@@ -6,7 +6,7 @@ const Adds = () => {
   return (
     <div className='container h-8 grid grid-col-3-1-2 '>
         <div className='h-100 flex align-center'>
-             <h1 className='font-52 font-montserrat'>
+             <h1 className='font-32 font-montserrat'>
                 <span className='color-yellow'>
                     News
                 </span>
@@ -16,9 +16,9 @@ const Adds = () => {
              </h1>
         </div>
         <div className= 'h-100'></div>
-        <div className='h-100'>
+        <div className='h-100 bg-white'>
             <Link to = ''>
-               <img src = {logo} alt = 'alt' />
+               {/* <img src = {logo} alt = 'alt' /> */}
             </Link>
         </div>
     </div>

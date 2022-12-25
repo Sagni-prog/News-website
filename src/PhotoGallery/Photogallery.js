@@ -6,6 +6,7 @@ import mars from '../assets/images/mars.jpg'
 import nature from '../assets/images/nature.jpg'
 import festival from '../assets/images/festival.jpg'
 import { Link } from 'react-router-dom'
+import { IoIosCamera } from 'react-icons/io'
 
 const Photogallery = () => {
   return (
@@ -22,6 +23,9 @@ const Photogallery = () => {
               <div className='gallery-top-img-container'>
                   <img src = {finalcup} alt = ''/>
                     <div className='dark-overlay'></div>
+                    <div className='flex justfy-center align-center camera-icon'>
+                        <IoIosCamera className='color-white font-32'/>
+                    </div>
                        <div className='gallery-overlay flex align-end'>
                            <div className='flex flex-col  p-2'>
                               <h4 className='font-montserrat color-white font-18'>
@@ -44,6 +48,9 @@ const Photogallery = () => {
                 <div className='gallery-top-img-container'>
                     <img src = {brazil} alt = ''/>
                     <div className='dark-overlay'></div>
+                    <div className='flex justfy-center align-center camera-icon'>
+                        <IoIosCamera className='color-white font-32'/>
+                    </div>
                     <div className='gallery-overlay flex align-end'>
                      <div className='flex flex-col  p-2'>
                           <h4 className='font-montserrat color-white font-18'>
@@ -63,8 +70,11 @@ const Photogallery = () => {
              </div>
 
              <div className='col-span-2-1 flex flex-col bg-white card-gallery'>
-               <div className='gallery-bottom-img-container'>
+               <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {mars} alt = ''/>
+                    <div className='flex justfy-center align-center camera-icon'>
+                        <IoIosCamera className='color-white font-32'/>
+                    </div>
                 </div> 
 
                 <div className='flex flex-col  align-center'>
@@ -83,8 +93,11 @@ const Photogallery = () => {
              </div>
 
              <div className='col-span-2-2 bg-white card-gallery'>
-                <div className='gallery-bottom-img-container'>
+                <div className='gallery-bottom-img-container position-relative'>
                     <img src = {africa} alt = ''/>
+                    <div className='flex justfy-center align-center camera-icon'>
+                        <IoIosCamera className='color-white font-32'/>
+                    </div>
                 </div>
                 <div className='flex flex-col  align-center'>
                      <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
@@ -102,8 +115,11 @@ const Photogallery = () => {
                     </div>
              </div>
              <div className='col-span-2-3 bg-white card-gallery'>
-                <div className='gallery-bottom-img-container'>
+                <div className='gallery-bottom-img-container position-relative'>
                     <img src = {festival} alt = ''/>
+                    <div className='flex justfy-center align-center camera-icon'>
+                        <IoIosCamera className='color-white font-32'/>
+                    </div>
                 </div>
                 <div className='flex flex-col  align-center'>
                      <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>

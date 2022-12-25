@@ -12,15 +12,39 @@ const Nav = () => {
 
               
                <div className='nav-link'> 
-                   <Link className='link font-18 font-montserrat color-white pb-8' to = ''>Single</Link>
+                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Single</Link>
+              </div>
+
+               <div className='nav-link'> 
+                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>News</Link>
+              </div>
+
+               <div className='nav-link'> 
+                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Politics</Link>
+              </div>
+
+               <div className='nav-link'> 
+                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Business</Link>
+              </div>
+
+               <div className='nav-link'> 
+                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Technology</Link>
+              </div>
+
+               <div className='nav-link'> 
+                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Sport</Link>
               </div>
 
                 <div className='nav-link'>
-                     <Link  Link className='link font-18 font-montserrat color-white pb-8' to = ''>Catagory</Link>
+                     <Link  Link className='link font-16 font-montserrat color-white pb-8' to = ''>Catagory</Link>
                 </div>
 
                 <div className='nav-link'>
-                    <Link className='link font-18 font-montserrat color-white pb-8' to = ''>Contact</Link>
+                     <Link  Link className='link font-16 font-montserrat color-white pb-8' to = ''>Gallery</Link>
+                </div>
+
+                <div className='nav-link'>
+                    <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Contact</Link>
                 </div>
             </div>
             <div className='h-100 flex align-center'>

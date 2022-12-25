@@ -2,10 +2,12 @@ import React from 'react'
 import forest from '../assets/images/africa.jpg'
 import rally from '../assets/images/rally.jpg'
 import { Link } from 'react-router-dom'
+import { IoIosCamera } from 'react-icons/io'
+import { MdPlayArrow } from 'react-icons/md'
 
 const Videos = () => {
   return (
-    <div className='bg-white'>
+    <div className='bg-white mb-l'>
        <div className='container flex align-center gap-1 mb-2'>
            <div className='dash-gallery'></div>
               <h1 className=' font-18 font-montserrat h-5 flex align-center color-dark font-weight-700'>
@@ -13,8 +15,11 @@ const Videos = () => {
               </h1>
           </div>
       <div className='container bg-gray flex flex-col'>
-          <div className='thumbnail'>
+          <div className='thumbnail position-relative'>
               <img src={forest} alt=''/>
+              <div className='flex justfy-center align-center play-icon'>
+                        <MdPlayArrow className='color-white font-52'/>
+                    </div>
           </div> 
 
           <div className=''>

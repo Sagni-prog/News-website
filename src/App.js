@@ -9,6 +9,7 @@ import NewsByCatagory from './news-by-catagory/NewsByCatagory';
 import FuturePlanet from './Future-planet/FuturePlanet';
 import Photogallery from './PhotoGallery/Photogallery';
 import Videos from './Videos/Videos';
+import Footer from './Footer/Footer'
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
           <FuturePlanet />
           <Photogallery />
           <Videos />
-          <Margin />
+          <Footer />
       </BrowserRouter>
     </div>
   );

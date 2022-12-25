@@ -54,6 +54,13 @@ html{
 .bg-blue{
     background-color: blue;
 }
+
+.bg-light-dark{
+    background-color: #31404B;
+}
+.border-dark{
+    border: #31404B solid 1px;
+}
 .color-yellow{
     color: #ffcc00;
 }
@@ -165,6 +172,9 @@ html{
 }
 .justify-end{
     justify-content: flex-end;
+}
+.justfy-self-center{
+    justify-self: center;
 }
 .align-center{
     align-items: center;
@@ -778,7 +788,7 @@ html{
     width: 0.2rem;
     height: 1.5rem;
     /* background-color: #ffcc00 ; */
-    background-color: rgb(20, 202, 96);
+    background-color: rgb(22, 216, 64);
 }
 .dash{
     width: 0.8rem;
@@ -1111,4 +1121,25 @@ transition: background-size 400ms;
 
 .justify-self-end{
     justify-self: flex-end;
+}
+
+.camera-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 6rem;
+    height: 4.5rem;
+}
+.play-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 8rem;
+    height: 5.5rem;
+}
+
+.footer-item{
+    width: 24%;
 }

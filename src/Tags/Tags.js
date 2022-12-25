@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Tags = () => {
   return (
@@ -12,31 +13,31 @@ const Tags = () => {
 
         <div className='flex justfy-center flex-wrap gap-1'>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
               <div className='flex align-center border-yellow mb-1'>
-                <a className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</a>
+                <Link className='link font-14 color-dark font-montserrat p-1' href = '#'>Business</Link>
              </div>
         </div>
     </div>
