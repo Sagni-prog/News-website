@@ -1143,3 +1143,30 @@ transition: background-size 400ms;
 .footer-item{
     width: 24%;
 }
+.footer-item3{
+    width: 26%;
+}
+
+.follow{
+
+}
+
+.social-medias{
+
+}
+
+.box{
+    width: 5rem;
+    height: 5rem;
+}
+
+.footer-gallery{
+    width: 9rem;
+    height: 9rem;
+}
+
+.footer-gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
