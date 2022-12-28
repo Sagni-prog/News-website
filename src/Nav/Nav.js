@@ -1,58 +1,90 @@
-import React from 'react'
+import { React,useState } from 'react'
 import { Link } from 'react-router-dom'
+import { IoIosArrowDown } from 'react-icons/io'
+import { IoIosArrowUp } from 'react-icons/io'
+
+
+
 
 const Nav = () => {
+
+    const [dropdown,setDropdown] = useState(false);
+
   return (
-    <div className='bg-gray w-100 h-7 flex mt-2'>
-        <div className='container h-100 flex justify-between align-center'>
-            <div className='h-100 flex align-center justify-between gap-2'>
-              <div className='home'>
-                <Link className=' h-100 color-white link font-18 font-montserrat pb-8' to = ''>Home</Link>
-                </div>
+    <div>
+          <div className='bg-gray w-100 h-7 flex mt-2'>
+     
+     <div className='container h-100 flex justify-between align-center'>
 
-              
-               <div className='nav-link'> 
-                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Single</Link>
-              </div>
+         <ul className='h-100 flex align-center justify-between gap-2'>
+           <li className='home'>
+             <Link className=' h-100 color-white link font-18 font-montserrat pb-8' to = ''>Home</Link>
+             </li>
 
-               <div className='nav-link'> 
-                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>News</Link>
-              </div>
+           
+            <li className='nav-link'> 
+                <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Single</Link>
+           </li>
+         
+            <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)} className='nav-link position-relative' > 
+                <Link className='link font-16 font-montserrat color-white pb-8 h-100' to = ''>News</Link>
+                <IoIosArrowDown className='pt-1 font-18 color-white' />
 
-               <div className='nav-link'> 
-                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Politics</Link>
-              </div>
+                {   dropdown &&
+           <ul className='dropdown'>
+             <li className='nav-link'> 
+                 <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
+             </li>
+             <li className='nav-link'> 
+                 <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
+             </li>
+             <li className='nav-link'> 
+                 <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
+             </li>
+             <li className='nav-link'> 
+                 <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
+             </li>
+           </ul>
+ }
+           </li>
 
-               <div className='nav-link'> 
-                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Business</Link>
-              </div>
+            <li className='nav-link'> 
+                <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Politics</Link>
+           </li>
 
-               <div className='nav-link'> 
-                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Technology</Link>
-              </div>
+            <li className='nav-link'> 
+                <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Business</Link>
+           </li>
 
-               <div className='nav-link'> 
-                   <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Sport</Link>
-              </div>
+            <li className='nav-link'> 
+                <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Technology</Link>
+           </li>
 
-                <div className='nav-link'>
-                     <Link  Link className='link font-16 font-montserrat color-white pb-8' to = ''>Catagory</Link>
-                </div>
+            <li className='nav-link'> 
+                <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Sport</Link>
+           </li>
 
-                <div className='nav-link'>
-                     <Link  Link className='link font-16 font-montserrat color-white pb-8' to = ''>Gallery</Link>
-                </div>
+             <li className='nav-link'>
+                  <Link  Link className='link font-16 font-montserrat color-white pb-8' to = ''>Catagory</Link>
+             </li>
 
-                <div className='nav-link'>
-                    <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Contact</Link>
-                </div>
-            </div>
-            <div className='h-100 flex align-center'>
-                <input className='input h-4 w-100 pl-8 pr-4' placeholder='Keyword' />
-                <div className='bg-yellow h-4 w-4'></div>
-            </div>
-        </div>
+             <li className='nav-link'>
+                  <Link  Link className='link font-16 font-montserrat color-white pb-8' to = ''>Gallery</Link>
+             </li>
+
+             <li className='nav-link'>
+                 <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Contact</Link>
+             </li>
+         </ul>
+
+         <div className='h-100 flex align-center'>
+             <input className='input h-4 w-100 pl-8 pr-4' placeholder='Keyword' />
+             <div className='bg-yellow h-4 w-4'></div>
+         </div>
+     </div>
+ </div>
     </div>
+    
   )
 }
 

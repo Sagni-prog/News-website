@@ -142,7 +142,7 @@ const NewsByCatagory = () => {
                            
                       <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
                           <div className='dash-subcatagory'></div>
-                             <div className='read-morw'>
+                             <div className='read-more'>
                                  <Link className='link font-16 font-montserrat flex align-center color-yellow2'>
                                     News
                                  </Link>
@@ -339,13 +339,13 @@ const NewsByCatagory = () => {
                     <div className='flex flex-col justfy-center gap-1'>  
 
                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='read-more'>
-                                 <Link className='link font-16 font-montserrat flex align-center color-yellow2'>
-                                    News
-                                 </Link>
-                              </div>
-                          </div>
+                      <div className='dash-subcatagory'></div>
+                         <div className='read-more'>
+                            <Link className='link font-18 font-montserrat flex align-center color-yellow2'>
+                                News
+                            </Link>
+                      </div>
+                 </div>
 
                       <h1 className='font-montserrat color-dark font-14 text-uppercase'>
                           Lorem ipsum dolor sit amet elit...

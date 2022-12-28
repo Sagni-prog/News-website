@@ -17,9 +17,25 @@ const Videos = () => {
       <div className='container bg-gray flex flex-col'>
           <div className='thumbnail position-relative'>
               <img src={forest} alt=''/>
-              <div className='flex justfy-center align-center play-icon'>
-                        <MdPlayArrow className='color-white font-52'/>
-                    </div>
+              <div className='dark-overlay'></div>
+              <div className='gallery-overlay flex align-end'>
+                <div className='flex flex-col p-2 w-80'>
+                   <h4 className='font-montserrat color-white font-24'>
+                         Argentina win 2022 World Cup final-in pictur Argentina win 2022 world cup final-in pictureses
+                     </h4>
+                          <div className='flex gap-1 mt-1'>
+                             <div className='dash-subcatagory'></div>
+                                <div className='text-underline-white'>
+                                   <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
+                                       Football
+                                   </Link>
+                                </div>
+                           </div>
+                      </div>
+                  </div>
+                  <div className='flex justfy-center align-center play-icon'>
+                     <MdPlayArrow className='color-white font-52'/>
+                  </div>
           </div> 
 
           <div className=''>
