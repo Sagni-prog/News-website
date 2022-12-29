@@ -20,12 +20,12 @@ function App() {
           <Top />
           <Adds />
           <Nav />
-          {/* <SinglePost /> */}
-          <Hero />
+          <SinglePost />
+          {/* <Hero />
           <Featured />
           <NewsByCatagory />
           <Videos />
-          <Photogallery />
+          <Photogallery /> */}
           <Footer />
       </BrowserRouter>
     </div>

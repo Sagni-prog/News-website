@@ -11,8 +11,8 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #EDEFF4;
-    /* background-color: #fff;  */
+    /* background-color: #EDEFF4; */
+    background-color: #fff; 
 }
 .ads{
     height: 40rem;
@@ -186,6 +186,9 @@ html{
     align-items: flex-end;
 }
 
+.gap-lt{
+    gap: 0.5rem;
+}
 
 .gap-1{
     gap: 1rem;

@@ -15,19 +15,21 @@ const SinglePost = () => {
                               Taiwan extends mandatory military service to one year
                           </h1>
                       </div>
-                      <div className='flex gap-4'>
-                        <div className='flex gap-1'>
+                      <div className='flex gap-3'>
+                        <div className='flex align-center gap-lt'>
                            <MdSchedule className='font-montserrat font-14 color-dark' />
                            <p className='font-14 color-dark'>10 hours ago</p>
                         </div>
-                        <div className='flex gap-1'>
+
+                        <div className='flex align-center gap-lt'>
                            <IoEyeOutline className='font-montserrat font-14 color-dark' />
-                           <p className='font-14 color-dark'>1000</p>
+                           <p className='font-14 color-dark'>10000</p>
                         </div>
+
                       </div>
                   </div>
 
-                  <div className='detail-img mt-3 mb-2'>
+                  <div className='detail-img mt-1 mb-2'>
                       <img src = { img1 } alt = '' />
                   </div>
                   <div className='author'>
