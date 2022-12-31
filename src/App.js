@@ -1,15 +1,15 @@
-import Top from './Top/Top';
+import Top from './components/Top/Top';
 import './App.css';
-import Adds from './ads/Adds';
-import Nav from './Nav/Nav';
-import Hero from './hero/Hero';
-import Featured from './Feautured/Featured';
-import NewsByCatagory from './news-by-catagory/NewsByCatagory';
-import FuturePlanet from './Future-planet/FuturePlanet';
-import Photogallery from './PhotoGallery/Photogallery';
-import Videos from './Videos/Videos';
-import Footer from './Footer/Footer'
-import SinglePost from './SinglePost/SinglePost';
+import Adds from './components/ads/Adds';
+import Nav from './components/Nav/Nav';
+import Hero from './components/hero/Hero';
+import Featured from './components/Feautured/Featured';
+import NewsByCatagory from './components/news-by-catagory/NewsByCatagory';
+import FuturePlanet from './components/Future-planet/FuturePlanet';
+import Photogallery from './components/PhotoGallery/Photogallery';
+import Videos from './components/Videos/Videos';
+import Footer from './components/Footer/Footer'
+import SinglePost from './components/SinglePost/SinglePost';
 import { BrowserRouter } from 'react-router-dom'
 
 function App() {

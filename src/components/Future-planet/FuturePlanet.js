@@ -1,10 +1,10 @@
 import React from "react";
-import background from '../assets/images/future-planet.jpg'
+import background from '../../assets/images/future-planet.jpg'
 import { FaLongArrowAltRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import player from '../assets/images/player.jpg'
-import home from '../assets/images/home.jpg'
-import trees from '../assets/images/trees.jpg'
+import player from '../../assets/images/player.jpg'
+import home from '../../assets/images/home.jpg'
+import trees from '../../assets/images/trees.jpg'
  
 const FuturePlanet = () => {
    return(
