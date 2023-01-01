@@ -3,15 +3,19 @@ import Sidebar from '../Sidebar/Sidebar'
 import { MdSchedule } from 'react-icons/md'
 import { IoEyeOutline } from 'react-icons/io5'
 import { FaThumbsUp } from 'react-icons/fa'
-import { FaRegThumbsUp } from 'react-icons/fa'
+// import { FaRegThumbsUp } from 'react-icons/fa'
 import { MdComment } from 'react-icons/md'
 import img1 from '../../assets/images/news-800x500-1.jpg'
-import Tags from '../Tags/Tags'
 import NewsTag from '../news-tag/NewsTag'
+import Footer from '../Footer/Footer'
+import { Link } from 'react-router-dom'
+import { IoIosCamera } from 'react-icons/io'
+import RelatedPost from '../related-posts/RelatedPost'
 
 const SinglePost = () => {
   return (
-    <div className='container bg-white'>
+   <div className = 'bg-white mb-l'> 
+    <div className='container bg-white '>
         <div className='gap-4 flex mt-3'>
              <div className='w-100 flex flex-col gap-2 mb-l'>
                   <div className='flex flex-col gap-2'>
@@ -137,9 +141,12 @@ const SinglePost = () => {
              </div>
                 <div className='w-col-2 h-100 mr-3 mt-3'>
                     <Sidebar />
-                    <Sidebar />
+                    {/* <Sidebar /> */}
                 </div>
           </div>
+    </div>
+    <RelatedPost />
+    <Footer />
     </div>
   )
 }

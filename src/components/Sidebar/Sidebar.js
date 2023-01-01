@@ -30,9 +30,9 @@ const Sidebar = () => {
 
    <div className='flex flex-col gap-2  mb-l'>
 
-        <div className='flex gap-1 sidebar-card'>
-                  <div className=''>
-                      <img className='sidebar-img' src = { im3 } alt = 'im' />
+        <div className='flex gap-1 sidebar-card bg-light-gray2'>
+                  <div className='sidebar-img'>
+                      <img src = { im3 } alt = 'im' />
                   </div>
 
                <div className='flex flex-col justfy-center gap-2 '>   
@@ -60,9 +60,9 @@ const Sidebar = () => {
                </div>
               </div>
 
-              <div className='flex gap-1 sidebar-card '>
+              <div className='flex gap-1 sidebar-card bg-light-gray2'>
                   <div className='sidebar-img'>
-                      <img className='sidebar-img' src = { im3 } alt = 'im' />
+                      <img className='' src = { im3 } alt = 'im' />
                   </div>
 
                <div className='flex flex-col justfy-center gap-2 '>   
@@ -91,9 +91,9 @@ const Sidebar = () => {
               </div>
 
 
-              <div className='flex gap-1 sidebar-card '>
+              <div className='flex gap-1 sidebar-card bg-light-gray2'>
                   <div className='sidebar-img'>
-                      <img className='sidebar-img' src = { im3 } alt = 'im' />
+                      <img src = { im3 } alt = 'im' />
                   </div>
 
                <div className='flex flex-col justfy-center gap-2 '>   
@@ -120,9 +120,9 @@ const Sidebar = () => {
                </div>
             </div>
 
-              <div className='flex gap-1 sidebar-card '>
+              <div className='flex gap-1 sidebar-card bg-light-gray2'>
                   <div className='sidebar-img'>
-                      <img className='sidebar-img' src = { im3 } alt = 'im' />
+                      <img src = { im3 } alt = 'im' />
                   </div>
 
                <div className='flex flex-col justfy-center gap-2 '>   

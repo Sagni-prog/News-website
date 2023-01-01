@@ -11,12 +11,12 @@
     box-sizing: border-box;
 }
 body{
-    /* background-color: #EDEFF4; */
-    background-color: #fff; 
+    background-color: #EDEFF4;
+    /* background-color: #fff;  */
 }
 .ads{
     height: 40rem;
-    background-color: #EDEFF4;
+    background-color: #e0e2e7c7;
     /* background-color: #fff; */
 }
 html{
@@ -33,6 +33,13 @@ html{
   .bg-white{
     background-color: #fff;
     /* background-color: #EDEFF4; */
+  }
+
+  .bg-light-gray{
+    background-color:#EDEFF4;
+  }
+  .bg-light-gray2{
+    background-color:#f1f2f5;
   }
  
   .color-dark-gray{
@@ -759,7 +766,7 @@ html{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    border-radius: 1px;
 }
 
 .card{
@@ -770,13 +777,19 @@ html{
 }
 
 .img-container{
-    height: 10.6rem;
-    width: 10.6rem;
+    height: 9.6rem;
+    width: 9.6rem;
 }
 
 .sidebar-img{
     height: 10rem;
     width: 10rem;
+}
+.sidebar-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1px;
 }
 
 .dash-catagory{

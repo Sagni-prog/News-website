@@ -2,15 +2,9 @@ import Top from './components/Top/Top';
 import './App.css';
 import Adds from './components/ads/Adds';
 import Nav from './components/Nav/Nav';
-import Hero from './components/hero/Hero';
-import Featured from './components/Feautured/Featured';
-import NewsByCatagory from './components/news-by-catagory/NewsByCatagory';
-import FuturePlanet from './components/Future-planet/FuturePlanet';
-import Photogallery from './components/PhotoGallery/Photogallery';
-import Videos from './components/Videos/Videos';
-import Footer from './components/Footer/Footer'
+import Home from './components/home/Home';
 import SinglePost from './components/SinglePost/SinglePost';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   return ( 
@@ -20,13 +14,13 @@ function App() {
           <Top />
           <Adds />
           <Nav />
-          <SinglePost />
-          {/* <Hero />
-          <Featured />
-          <NewsByCatagory />
-          <Videos />
-          <Photogallery /> */}
-          <Footer />
+          <Routes>
+             <Route element = {  <Home/> } path = '/' />
+          </Routes>
+        
+          <Routes>
+             <Route element = {  <SinglePost /> } path = 'post' />
+         </Routes>
       </BrowserRouter>
     </div>
   );

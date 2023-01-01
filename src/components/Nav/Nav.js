@@ -18,12 +18,12 @@ const Nav = () => {
 
          <ul className='h-100 flex align-center justify-between gap-2'>
            <li className='home'>
-             <Link className=' h-100 color-white link font-18 font-montserrat pb-8' to = ''>Home</Link>
+             <Link className=' h-100 color-white link font-18 font-montserrat pb-8' to = '/'>Home</Link>
              </li>
 
            
             <li className='nav-link'> 
-                <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Single</Link>
+                <Link className='link font-16 font-montserrat color-white pb-8' to = '/post'>Single</Link>
            </li>
          
             <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)} className='nav-link position-relative' > 

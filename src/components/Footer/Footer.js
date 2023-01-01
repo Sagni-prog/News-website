@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
               <div className='flex flex-col gap-1 pl-2 mb-l'>
                 <div className='read-more'>
-                  <Link className='link font-montserrat font-18 color-white'>
+                  <Link className='link font-montserrat font-18 color-white' to = '/'>
                       Home
                   </Link>
                 </div>
