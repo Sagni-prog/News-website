@@ -7,6 +7,7 @@ import { FaRegThumbsUp } from 'react-icons/fa'
 import { MdComment } from 'react-icons/md'
 import img1 from '../../assets/images/news-800x500-1.jpg'
 import Tags from '../Tags/Tags'
+import NewsTag from '../news-tag/NewsTag'
 
 const SinglePost = () => {
   return (
@@ -121,6 +122,16 @@ const SinglePost = () => {
                       </div>
                   </div>
 
+                 
+                 <div className='w-60 h-100 mr-3 mt-3'>
+                     <div className='flex align-center gap-1 mb-1'>
+                         <div className='dash-catagory'></div>
+                            <h1 className=' font-18 font-montserrat h-5 flex align-center color-dark font-weight-700 '>
+                                Tags
+                            </h1>         
+                     </div>
+                     <NewsTag />
+                </div>
    
                  
              </div>

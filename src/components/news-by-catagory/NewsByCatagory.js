@@ -83,10 +83,7 @@ const NewsByCatagory = () => {
                                 </a>
                                 </div>
                             </div>
-
-                       
-                        
-                    </div>
+                     </div>
                 </div>
 
                 <div className='w-half h-100'>
@@ -241,19 +238,14 @@ const NewsByCatagory = () => {
                             <a className='link color-light-gray font-montserrat font-12' href='' >
                                     Dec 5,2022
                             </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-                    </div>
-
-                        
-
-                    </div> 
-                </div>
-            
-            
-                </div>
-        </div>     
+             </div>
+         </div>            
+      </div>
+   </div>
+</div>     
 
      <div className='mb-l '>
         <div className='flex flex-col gap-2'>
