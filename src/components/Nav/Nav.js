@@ -27,7 +27,7 @@ const Nav = () => {
            </li>
          
             <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)} className='nav-link position-relative' > 
-                <Link className='link font-16 font-montserrat color-white pb-8 h-100' to = ''>News</Link>
+                <Link className='link font-16 font-montserrat color-white pb-8 h-100' to = '/this'>News</Link>
                 <IoIosArrowDown className='pt-1 font-18 color-white' />
 
                 {   dropdown &&

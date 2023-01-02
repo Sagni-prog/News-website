@@ -450,12 +450,12 @@ const NewsByCatagory = () => {
             </h1>
 
              <div className='flex align-center gap-2 mb-1 '>
-                  <div className='flex align-center gap-1'>
+                <div className='flex align-center gap-1'>
                   <MdPerson className='color-light-gray font-14' />   
-                        <a className='link color-light-gray font-montserrat font-14' href='' >
-                            Mike Van
-                        </a>
-                </div>
+                 <a className='link color-light-gray font-montserrat font-14' href='' >
+                     Mike Van
+                 </a>
+            </div>
            <div className='flex align-center gap-1'>
                <MdCalendarViewMonth className='color-light-gray font-14' />
                    <a className='link color-light-gray font-montserrat font-12' href='' >
@@ -467,7 +467,6 @@ const NewsByCatagory = () => {
     </div>
 </div> 
           </div>
-    
         </div>
     </div>
   </div>

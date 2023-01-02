@@ -1238,3 +1238,27 @@ ul{
 .author{
     margin-bottom: 0.4rem;
 }
+
+.left{
+    position: absolute;
+    top: 30%;
+    left: -20px;
+    width: 6rem;
+    height: 7rem;
+    background-color: #31404B;
+    cursor: pointer;
+}
+.right{
+    position: absolute;
+    top: 30%;
+    right: -20px;
+    width: 6rem;
+    height: 7rem;
+    background-color: #31404B;
+    cursor: pointer;
+}
+
+.card-related{
+    /* width: 39.2rem; */
+    height: 33.4rem;
+}
