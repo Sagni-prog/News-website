@@ -11,8 +11,13 @@ import { MdPerson } from 'react-icons/md'
 
 const Sidebar = () => {
   return (
-    <div className=''>
-      <SideAd />
+    <div className='resp'>
+     <div className='left-resp '>
+        <div className='ads1'>
+      <SideAd  />
+      </div>
+
+      <div className='content w-100'>
         <div className='w-100 h-100 mb-lt'>
             <div className='flex align-center gap-1 border mb-1'>
                     <div className='dash'></div>
@@ -28,7 +33,7 @@ const Sidebar = () => {
             </div>
         </div>
 
-   <div className='flex flex-col gap-2  mb-l'>
+        <div className='flex flex-col gap-2  mb-l'>
 
         <div className='flex gap-1 sidebar-card bg-light-gray2'>
                   <div className='sidebar-img'>
@@ -151,8 +156,13 @@ const Sidebar = () => {
               </div>
 
               </div>
-          <Subscribe />
+        </div>
+        </div>
+
+<div className='right-resp'>
+          <Subscribe className = "sub" />
           <Tags />
+          </div>
       </div>
   )
 }

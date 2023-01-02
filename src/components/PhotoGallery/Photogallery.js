@@ -18,8 +18,9 @@ const Photogallery = () => {
               </h1>
           </div>
 
-        <div className='container grid grid-col-6 grid-row-2 grid-gap-2'>
-             <div className='col-span-3-1 bg-blue'>
+        <div className='container flex flex-col gap-2 top-gallery for-responsive'>
+            <div className='for-responsive flex gap-2 w-100'>
+             <div className='col-span-3-1 w-100'>
               <div className='gallery-top-img-container'>
                   <img src = {finalcup} alt = ''/>
                     <div className='dark-overlay'></div>
@@ -44,7 +45,7 @@ const Photogallery = () => {
                </div>
              </div>
 
-             <div className='col-span-3-2 bg-yellow'>
+             <div className='col-span-3-2 w-100'>
                 <div className='gallery-top-img-container'>
                     <img src = {brazil} alt = ''/>
                     <div className='dark-overlay'></div>
@@ -68,8 +69,10 @@ const Photogallery = () => {
                   </div>
                 </div>
              </div>
-
-             <div className='col-span-2-1 flex flex-col bg-white card-gallery'>
+             </div>
+      
+       <div className='flex gap-2'>
+             <div className='flex flex-col bg-white card-gallery'>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {mars} alt = ''/>
                     <div className='flex justfy-center align-center camera-icon'>
@@ -92,7 +95,7 @@ const Photogallery = () => {
                 </div>
              </div>
 
-             <div className='col-span-2-2 bg-white card-gallery'>
+             <div className='bg-white card-gallery'>
                 <div className='gallery-bottom-img-container position-relative'>
                     <img src = {africa} alt = ''/>
                     <div className='flex justfy-center align-center camera-icon'>
@@ -114,7 +117,8 @@ const Photogallery = () => {
                           </div>
                     </div>
              </div>
-             <div className='col-span-2-3 bg-white card-gallery'>
+
+             <div className='bg-white card-gallery none'>
                 <div className='gallery-bottom-img-container position-relative'>
                     <img src = {festival} alt = ''/>
                     <div className='flex justfy-center align-center camera-icon'>
@@ -135,6 +139,7 @@ const Photogallery = () => {
                           </div>
                 </div>
              </div>
+       </div>    
             
 
         </div>

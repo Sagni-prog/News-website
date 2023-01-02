@@ -25,51 +25,11 @@ const RelatedPost = () => {
    const [current2,setCurrent2] = useState(1);
    const [current3,setCurrent3] = useState(2);
    const [left,setLeft] = useState(false)
+   const [right,setRight] = useState(false)
    const end = RelatedData.length - 1;
 
    const slideLeft = () => {
-      // if(current===0){
-         
-      //       setCurrent(end)
-         
-      //    if(current-1 > 0){
-
-      //       setCurrent2(current -1)
-      //    }
-       
-      //    else{
-      //       setCurrent2(end)
-      //    }
-      //    if(current-2 > 0){
-      //       setCurrent3(current-2)
-      //    }
-      //    else{
-      //       current3(end)
-      //    }
-        
-      // }
-      // else{
-
-      //    setCurrent(current - 1)
-
-      //    if(current - 1 < 0){
-
-      //       setCurrent2(end)
-      //    }
-      //    else{
-      //       setCurrent2(current - 1)
-      //    }
-         
-      //    if(current2 - 1 < 0){
-
-      //       setCurrent3(end)
-      //    }
-      //    else{
-      //       setCurrent3(current2-1)
-      //    }
-        
-      // }
-
+      
        setLeft(true)
 
           if(current === 0){
@@ -77,31 +37,31 @@ const RelatedPost = () => {
                   if(current -1 > 0){ setCurrent2(current - 1) }else{ setCurrent2(end-1) }
 
                   if(current - 2 > 0){ setCurrent3(current - 2)  }else{ setCurrent3(end-2) }
+
+                  // if(current2 === 0) { setCurrent2(end) } else{ setCurrent2(curr)}
           } 
           else{
             setCurrent(current - 1)
                   if(current -1 > 0){ setCurrent2(current - 2) }else{ setCurrent2(end)}
 
                   if(current - 2 > 0 ){ setCurrent3(current - 3) } else { setCurrent3(end) }
-                
-          }
-   }
+            }
+     }
 
    const slideRight = () => {
+       setRight(true)
         if(current === end){
             setCurrent(0)
-                if(current2 === 0){ setCurrent2(end) } else{ setCurrent2(current2 + 1) }
+                if(current2 === 0){ setCurrent2(end) } else if(current2 === 1){ setCurrent2(current2 + 1)} else{ setCurrent2(current2 + 1) }
                 if(current3 === 0){ setCurrent3(end) } else{ setCurrent3(current3 + 1) }
         }
         else{
            setCurrent(current + 1)
                if(current2 === end) {setCurrent2(0) } else{ setCurrent2(current2 + 1)}
-               if(current3 === end) {setCurrent3(0) } else{ setCurrent3(current3 + 1)}
-              
+               if(current3 === end) {setCurrent3(0) } else{ setCurrent3(current3 + 1)} 
         }
     }
    
-
 
   return (
     <div className='bg-light-gray py-4 mb-l'>
@@ -135,14 +95,11 @@ const RelatedPost = () => {
                                  </Link>
                               </div>
                           </div>
-                   </div>
-                <div className='left flex justfy-center align-center'>
+                     </div>
+                 <div className='left flex justfy-center align-center'>
                     <FaAngleLeft onClick={ slideLeft } className='color-yellow font-32' />
                 </div>
              </div>
-         
-       
-             
               )
             )
         }
@@ -168,8 +125,8 @@ const RelatedPost = () => {
                                  </Link>
                               </div>
                           </div>
+                     </div>
                 </div>
-             </div>
               )
             )
         }
@@ -194,7 +151,7 @@ const RelatedPost = () => {
                                  </Link>
                               </div>
                           </div>
-                </div>
+                      </div>
                   <div className='right flex justfy-center align-center'>
                      <FaAngleRight onClick={slideRight} className='color-yellow font-32' />
                   </div>
@@ -202,45 +159,7 @@ const RelatedPost = () => {
               )
             )
         }
-            {/* <div className='flex flex-col bg-white card-gallery'>
-               <div className='gallery-bottom-img-container  position-relative'>
-                    <img src = {mars} alt = ''/>
-                </div> 
-
-                <div className='flex flex-col  align-center'>
-                     <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
-                        Teenegers sunset har shot wins top RSCA prize
-                     </h3>
-                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='side-bar'>
-                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
-                                     Science
-                                 </Link>
-                              </div>
-                          </div>
-                </div>
-             </div>
-            <div className='flex flex-col bg-white card-gallery'>
-               <div className='gallery-bottom-img-container  position-relative'>
-                    <img src = {mars} alt = ''/>
-                </div> 
-
-                <div className='flex flex-col  align-center'>
-                     <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
-                        Teenegers sunset har shot wins top RSCA prize
-                     </h3>
-                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='side-bar'>
-                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
-                                     Science
-                                 </Link>
-                              </div>
-                          </div>
-                </div>
-             </div> */}
-          </div>
+            </div>
        </div>
     </div>
   )

@@ -14,7 +14,7 @@ import { Link } from 'react-router-dom'
 const NewsByCatagory = () => {
   return (
     
-    <div className='container mb-l gap-4 flex'>
+    <div className='container mb-l gap-4 flex flex-container'>
 
      <div className='w-100 flex flex-col gap-2 '>
         <div className='mb-md'>

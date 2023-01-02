@@ -213,6 +213,9 @@ html{
 .grid{
     display: grid;
 }
+.grid-gallery{
+    display: grid;
+}
 .grid-col-1{
     grid-template-columns: 1fr;
 }
@@ -237,6 +240,9 @@ html{
     grid-template-columns: repeat(5,1fr);
 }
 .grid-col-6{
+    grid-template-columns: repeat(6,1fr);
+}
+.grid-gallery-col-6{
     grid-template-columns: repeat(6,1fr);
 }
 
@@ -1061,7 +1067,7 @@ transition: background-size 400ms;
 
 .gallery-top-img-container{
     position: relative;
-    width: 60rem;
+    /* width: 63.9rem; */
     height: 35rem;
     box-shadow: inset 0 0 80px rgb(0 0 0 / 50%);
 }
@@ -1089,7 +1095,8 @@ transition: background-size 400ms;
 }
 
 .card-gallery{
-    width: 39.2rem;
+    /* width: 43.8rem; */
+    /* width: 31.5%; */
     height: 33.4rem;
 }
 
@@ -1279,4 +1286,75 @@ ul{
         transform: translateX(50px);
     }
     
+}
+
+@media  screen and (max-width: 1133px) {
+
+    html{
+        font-size: 9px;
+    }
+     .flex-container{
+        flex-direction: column;
+        gap: 2rem;
+     }   
+
+     .w-col-2{
+        width: 100%;
+     }
+     .content{
+        display: flex;
+        flex-direction: column;
+     }
+     .resp{
+        display: flex;
+        flex-direction: column;
+     }
+     .left-resp{
+        display: flex;
+        width: 100%;
+        gap: 3rem;
+        /* flex-grow: 1; */
+     }
+     .right-resp{
+        display: flex;
+        width: 100%;
+        gap: 3rem;
+     }
+     .sub{
+        width: 100%;
+     }
+     .ads1{
+        width: 100%;
+          height: 50rem;
+     }
+     
+     
+}
+@media  screen and (max-width: 995px) {
+
+    .none{
+        display: none;
+    }
+
+    .card-gallery{
+        width: 100%;
+        /* width: 31.5%; */
+        height: 33.4rem;
+    }
+    
+    /* .gallery-bottom-img-container{
+        width: 100%;
+        height: 22.5rem;
+        box-shadow: inset 0 0 80px rgb(0 0 0 / 50%);
+       
+    
+    } */
+       
+}
+@media  screen and (max-width: 891px) {
+
+    html{
+        font-size: 8px;
+    }
+       
 }
