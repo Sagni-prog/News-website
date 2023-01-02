@@ -167,8 +167,7 @@ const NewsByCatagory = () => {
             </div>
                 </div>
 
-                    <div className='flex gap-1 card'>
-                        
+                    <div className='flex gap-1 card'>  
                         <div className='img-container'>
                             <img className='img-profile' src = { im3 } alt = 'im' />
                         </div>
@@ -203,17 +202,15 @@ const NewsByCatagory = () => {
                     </div>
                 </div>
             </div>
-                    </div>
+         </div>
 
                     <div className='flex gap-1 card'>
-                        
                         <div className='img-container'>
                             <img className='img-profile' src = { im3 } alt = 'im' />
                         </div>
 
                     
                 <div className='flex flex-col justfy-center gap-1'>  
-                  
                        <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
                           <div className='dash-subcatagory'></div>
                              <div className='read-more'>
@@ -312,10 +309,8 @@ const NewsByCatagory = () => {
                                 </a>
                                 </div>
                             </div>
-                 
-                 
-              </div>
-          </div>
+                       </div>
+                   </div>
 
           <div className='w-half h-100'>
                <div className='flex flex-col gap-3'>
@@ -367,8 +362,6 @@ const NewsByCatagory = () => {
                       <img className='img-profile' src = { im3 } alt = 'im' />
                   </div>
 
-              
-
                 <div className='flex flex-col justfy-center gap-1'>  
                      <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
                           <div className='dash-subcatagory'></div>
@@ -378,7 +371,6 @@ const NewsByCatagory = () => {
                                  </Link>
                               </div>
                           </div>
-
                     <h1 className='font-montserrat color-dark font-14 text-uppercase'>
                             Lorem ipsum dolor sit amet elit...
                     </h1>
@@ -391,7 +383,7 @@ const NewsByCatagory = () => {
                         </a>
                 </div>
            <div className='flex align-center gap-1'>
-           <MdCalendarViewMonth className='color-light-gray font-14' />
+              <MdCalendarViewMonth className='color-light-gray font-14' />
                     <a className='link color-light-gray font-montserrat font-12' href='' >
                             Dec 5,2022
                     </a>
@@ -465,10 +457,10 @@ const NewsByCatagory = () => {
                         </a>
                 </div>
            <div className='flex align-center gap-1'>
-           <MdCalendarViewMonth className='color-light-gray font-14' />
-                    <a className='link color-light-gray font-montserrat font-12' href='' >
-                            Dec 5,2022
-                    </a>
+               <MdCalendarViewMonth className='color-light-gray font-14' />
+                   <a className='link color-light-gray font-montserrat font-12' href='' >
+                      Dec 5,2022
+                   </a>
                </div>
             </div>
         </div>
@@ -478,10 +470,8 @@ const NewsByCatagory = () => {
     
         </div>
     </div>
-
   </div>
-        
-            <div className='w-col-2 h-100 mr-3'>
+           <div className='w-col-2 h-100 mr-3'>
                <Sidebar />
             </div>
     
