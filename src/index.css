@@ -1281,6 +1281,13 @@ ul{
 
 }
 
+.search-icon{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
 @keyframes slide {
     0%{
         transform: translateX(0);
@@ -1333,6 +1340,15 @@ ul{
      
      
 }
+
+@media screen and (max-width: 1057px) {
+    .seaech{
+        display: none;
+    }
+    .search-icon{
+        display: block;
+    }
+}
 @media  screen and (max-width: 995px) {
 
     .grid-col-2-1-2{
@@ -1372,4 +1388,22 @@ ul{
         font-size: 8px;
     }
        
+}
+
+@media screen and (max-width: 719px) {
+    .hero-flex-col{
+        flex-direction: column;
+    }
+
+    ul li{
+        display: none;
+    }
+    .search-icon{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
 }

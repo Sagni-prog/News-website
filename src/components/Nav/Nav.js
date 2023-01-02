@@ -2,6 +2,8 @@ import { React,useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import { IoIosArrowUp } from 'react-icons/io'
+import { IoIosSearch } from 'react-icons/io'
+import { MdOutlineMenu } from 'react-icons/md'
 
 
 
@@ -77,9 +79,19 @@ const Nav = () => {
              </li>
          </ul>
 
-         <div className='h-100 flex align-center'>
+         <div className='seaech h-100 flex align-center'>
              <input className='input h-4 w-100 pl-8 pr-4' placeholder='Keyword' />
              <div className='bg-yellow h-4 w-4'></div>
+         </div>
+
+         {/* <MdOutlineMenu className='color-yellow'/> */}
+
+         <div className='search-icon flex align-center'>
+             <IoIosSearch className='font-24 font-weight-700 color-yellow' />
+         </div>
+
+         <div className='menu flex align-center'>
+            <MdOutlineMenu className='font-24 font-weight-700 color-yellow' />
          </div>
      </div>
  </div>
