@@ -1262,3 +1262,21 @@ ul{
     /* width: 39.2rem; */
     height: 33.4rem;
 }
+
+.slide{
+    transition: all 0.5s;
+    animation: slide;
+    /* animation-duration: 0.3s; */
+    /* animation-delay: 0.7s; */
+
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(50px);
+    }
+    
+}

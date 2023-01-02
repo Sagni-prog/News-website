@@ -24,6 +24,7 @@ const RelatedPost = () => {
    const [current,setCurrent] = useState(0);
    const [current2,setCurrent2] = useState(1);
    const [current3,setCurrent3] = useState(2);
+   const [left,setLeft] = useState(false)
    const end = RelatedData.length - 1;
 
    const slideLeft = () => {
@@ -69,27 +70,36 @@ const RelatedPost = () => {
         
       // }
 
+       setLeft(true)
+
           if(current === 0){
               setCurrent(end)
-                 if(current -1 > 0){
-                      setCurrent2(current - 1)
-                 }else{
-                      setCurrent2(end-1)
-                 }
+                  if(current -1 > 0){ setCurrent2(current - 1) }else{ setCurrent2(end-1) }
 
-                 if(current - 2 > 0){
-                      setCurrent3(current - 2)
-                 }else{
-                      setCurrent3(end-2)
-                 }
+                  if(current - 2 > 0){ setCurrent3(current - 2)  }else{ setCurrent3(end-2) }
           } 
           else{
             setCurrent(current - 1)
-                if(current -1 > 0){ setCurrent2(current - 2) }else{ setCurrent2(end)}
-                if(current - 2 > 0 ){ setCurrent3(current - 3) } else { setCurrent3(end) }
+                  if(current -1 > 0){ setCurrent2(current - 2) }else{ setCurrent2(end)}
+
+                  if(current - 2 > 0 ){ setCurrent3(current - 3) } else { setCurrent3(end) }
                 
           }
    }
+
+   const slideRight = () => {
+        if(current === end){
+            setCurrent(0)
+                if(current2 === 0){ setCurrent2(end) } else{ setCurrent2(current2 + 1) }
+                if(current3 === 0){ setCurrent3(end) } else{ setCurrent3(current3 + 1) }
+        }
+        else{
+           setCurrent(current + 1)
+               if(current2 === end) {setCurrent2(0) } else{ setCurrent2(current2 + 1)}
+               if(current3 === end) {setCurrent3(0) } else{ setCurrent3(current3 + 1)}
+              
+        }
+    }
    
 
 
@@ -108,7 +118,7 @@ const RelatedPost = () => {
 
          index===current &&
          
-            <div key={index} className='flex flex-col bg-white card-related position-relative'>
+            <div key={index} className={`flex flex-col bg-white card-related position-relative ${left ? 'slide' : ''}`}>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -141,7 +151,7 @@ const RelatedPost = () => {
             RelatedData.map((data,index) => (
 
          index===current2 &&
-            <div key={index} className='flex flex-col bg-white card-related'>
+            <div key={index} className='flex flex-col bg-white card-related slide'>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -167,7 +177,7 @@ const RelatedPost = () => {
             RelatedData.map((data,index) => (
 
          index===current3 &&
-            <div key={index} className='flex flex-col bg-white card-related position-relative'>
+            <div key={index} className='flex flex-col bg-white card-related position-relative slide'>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -186,7 +196,7 @@ const RelatedPost = () => {
                           </div>
                 </div>
                   <div className='right flex justfy-center align-center'>
-                     <FaAngleRight className='color-yellow font-32' />
+                     <FaAngleRight onClick={slideRight} className='color-yellow font-32' />
                   </div>
              </div>
               )

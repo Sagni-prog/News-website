@@ -5,6 +5,7 @@ import Nav from './components/Nav/Nav';
 import Home from './components/home/Home';
 import SinglePost from './components/SinglePost/SinglePost';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Slide from './Slide';
 
 function App() {
   return ( 
