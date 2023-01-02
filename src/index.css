@@ -164,6 +164,9 @@ html{
 .flex-col{
     flex-direction: column;
 }
+.hero-flex-col{
+    flex-direction: column;
+}
 
 .flex-wrap{
     flex-wrap: wrap;
@@ -1332,6 +1335,23 @@ ul{
 }
 @media  screen and (max-width: 995px) {
 
+    .grid-col-2-1-2{
+        grid-template-columns: 1fr;
+    
+    }
+    .hero-flex-col{
+        flex-direction: row;
+    }
+
+    .hero-title{
+        /* padding-bottom: 2rem; */
+        /* font-size: 1.5rem; */
+    }
+    .hero-title2{
+    
+        font-size: 2.4rem;
+    }
+
     .none{
         display: none;
     }
@@ -1342,14 +1362,9 @@ ul{
         height: 33.4rem;
     }
     
-    /* .gallery-bottom-img-container{
-        width: 100%;
-        height: 22.5rem;
-        box-shadow: inset 0 0 80px rgb(0 0 0 / 50%);
-       
-    
-    } */
-       
+   .grid-col-3{
+    grid-template-columns: repeat(2,1fr);
+   }
 }
 @media  screen and (max-width: 891px) {
 

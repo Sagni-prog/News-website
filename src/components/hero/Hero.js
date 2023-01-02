@@ -23,15 +23,16 @@ const Hero = () => {
                           </a>
                      </div>
                      <div className='text-underline-white'>
-                        <a  className='link color-white font-montserrat font-32 font-weight text-uppercase line-height letter-spacing inline' href=''>
+                        <a  className='hero-title link color-white font-montserrat font-32 font-weight text-uppercase line-height letter-spacing inline' href=''>
                            Lorem ipsum dolor sit amet elit. Proin vitae porta diam...
                         </a>
                         </div>
                    </div>
                 </div>
               </div>
+
               <div className='h-100'>
-                <div className='flex flex-col h-100'>
+                <div className='flex hero-flex-col h-100'>
 
                     <div className='h-100 custum position-relative'>
                        <img className='h-100 w-100 img' src = {im1} alt = "" />
@@ -47,7 +48,7 @@ const Hero = () => {
                           </a>
                      </div>
                      <div className=' text-underline-white'>
-                        <a className='link font-weight-700 color-white font-weight-700 font-montserrat font-16 text-uppercase'>
+                        <a className='hero-title2 link font-weight-700 color-white font-weight-700 font-montserrat font-16 text-uppercase'>
                              Lorem ipsum dolor sit amet elit  sit amet elit...
                         </a>
                     </div>
@@ -69,7 +70,7 @@ const Hero = () => {
                               </a>
                          </div>
                          <div className='text-underline-white'>
-                              <a className='link color-white font-weight-700 font-montserrat font-16 text-uppercase' href=''>
+                              <a className='hero-title2 link color-white font-weight-700 font-montserrat font-16 text-uppercase' href=''>
                                    Lorem ipsum dolor sit amet elit sit amet elit...
                               </a>
                          </div> 
@@ -78,8 +79,7 @@ const Hero = () => {
                     </div>
 
                 </div>
-        </div>
-       
+          </div>
         </div>
                       
           <div className='bg-black pt-md pb-2'>
