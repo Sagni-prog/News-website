@@ -17,6 +17,8 @@ const RelatedPost = () => {
    //   RelatedData.map((data) => console.log(data.path))
    console.log(end)
       console.log(current)
+      console.log(current2)
+      console.log(current3)
    },[])
 
    const [current,setCurrent] = useState(0);
@@ -25,43 +27,72 @@ const RelatedPost = () => {
    const end = RelatedData.length - 1;
 
    const slideLeft = () => {
-      if(current===0){
-         setCurrent(end)
-         if(current-1 > 0){
-
-            setCurrent2(current -1)
-            setCurrent3(current -2)
-         }
-       
-         else{
-            setCurrent2(end - 1)
-            setCurrent3(end - 2)
-         }
-        
-      }
-      else{
-
-         setCurrent(current - 1)
-
-         if(current - 2 < 0){
-
-            setCurrent2(end)
-         }
-         else{
-            setCurrent2(current - 2)
-         }
+      // if(current===0){
          
-         if(current - 3 < 0){
+      //       setCurrent(end)
+         
+      //    if(current-1 > 0){
 
-            setCurrent3(end)
-         }
-         else{
-            setCurrent3(current-3)
-         }
+      //       setCurrent2(current -1)
+      //    }
+       
+      //    else{
+      //       setCurrent2(end)
+      //    }
+      //    if(current-2 > 0){
+      //       setCurrent3(current-2)
+      //    }
+      //    else{
+      //       current3(end)
+      //    }
         
-      }
+      // }
+      // else{
+
+      //    setCurrent(current - 1)
+
+      //    if(current - 1 < 0){
+
+      //       setCurrent2(end)
+      //    }
+      //    else{
+      //       setCurrent2(current - 1)
+      //    }
+         
+      //    if(current2 - 1 < 0){
+
+      //       setCurrent3(end)
+      //    }
+      //    else{
+      //       setCurrent3(current2-1)
+      //    }
+        
+      // }
+
+          if(current === 0){
+              setCurrent(end)
+                 if(current -1 > 0){
+                      setCurrent2(current - 1)
+                 }else{
+                      setCurrent2(end-1)
+                 }
+
+                 if(current - 2 > 0){
+                      setCurrent3(current - 2)
+                 }else{
+                      setCurrent3(end-2)
+                 }
+          } 
+          else{
+            setCurrent(current - 1)
+                if(current -1 > 0){ setCurrent2(current - 2) }else{ setCurrent2(end)}
+                if(current - 2 > 0 ){ setCurrent3(current - 3) } else { setCurrent3(end) }
+                
+          }
    }
    
+
+
   return (
     <div className='bg-light-gray py-4 mb-l'>
        <div className='container'>
