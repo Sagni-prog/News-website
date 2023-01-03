@@ -1288,6 +1288,10 @@ ul{
     display: none;
 }
 
+.recent-resp {
+    display: none;
+}
+
 @keyframes slide {
     0%{
         transform: translateX(0);
@@ -1440,5 +1444,8 @@ ul{
     }
     .overlay-hero{
         padding: 1rem;
+    }
+    .recent-resp {
+        display: block;
     }
 }

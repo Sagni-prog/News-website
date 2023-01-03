@@ -100,8 +100,8 @@ const Hero = () => {
           </div>
      </div>
 
-   <div className='flex flex-col gap-2 bg-white pt-2'>
-       <div className='recent-resp flex flex-col bg-white border-bottom p-2'>
+   <div className='recent-resp  flex flex-col gap-2 bg-white pt-2'>
+       <div className='flex flex-col bg-white border-bottom p-2'>
         <h4 className= 'color-dark font-weight-700 font-montserrat font-14 text-uppercase'>
              Lorem ipsum dolor sit amet elit  sit amet elit...
         </h4>
@@ -115,7 +115,8 @@ const Hero = () => {
                </div>
              </div>
           </div>
-       <div className='recent-resp flex flex-col bg-white border-bottom p-2'>
+
+       <div className='flex flex-col bg-white border-bottom p-2'>
         <h4 className= 'color-dark font-weight-700 font-montserrat font-14 text-uppercase'>
              Lorem ipsum dolor sit amet elit  sit amet elit...
         </h4>
