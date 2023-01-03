@@ -19,7 +19,7 @@ const Photogallery = () => {
           </div>
 
         <div className='container flex flex-col gap-2 top-gallery for-responsive'>
-            <div className='for-responsive flex gap-2 w-100'>
+            <div className='photos for-responsive flex gap-2 w-100'>
              <div className='col-span-3-1 w-100'>
               <div className='gallery-top-img-container'>
                   <img src = {finalcup} alt = ''/>
@@ -32,17 +32,9 @@ const Photogallery = () => {
                               <h4 className='font-montserrat color-white font-18'>
                                   Argentina win 2022 World Cup final-in pictur Argentina win 2022 world cup final-in pictureses
                               </h4>
-                          <div className='flex gap-1 mt-1'>
-                             <div className='dash-subcatagory'></div>
-                                <div className='text-underline-white'>
-                                   <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
-                                       Football
-                                   </Link>
-                                </div>
-                           </div>
-                      </div>
-                  </div>
-               </div>
+                         </div>
+                     </div>
+                 </div>
              </div>
 
              <div className='col-span-3-2 w-100'>
@@ -57,21 +49,13 @@ const Photogallery = () => {
                           <h4 className='font-montserrat color-white font-18'>
                             Great image from every mens World Cup final
                           </h4>
-                      <div className='flex gap-1 mt-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='text-underline-white'>
-                                 <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
-                                     Football
-                                 </Link>
-                              </div>
-                          </div>
                      </div>
                   </div>
                 </div>
              </div>
              </div>
       
-       <div className='flex gap-2'>
+        <div className='photos flex gap-2'>
              <div className='flex flex-col bg-white card-gallery'>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {mars} alt = ''/>
@@ -84,14 +68,6 @@ const Photogallery = () => {
                      <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
                         Teenegers sunset har shot wins top RSCA prize
                      </h3>
-                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='side-bar'>
-                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
-                                     Science
-                                 </Link>
-                              </div>
-                          </div>
                 </div>
              </div>
 
@@ -106,16 +82,7 @@ const Photogallery = () => {
                      <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
                         Africas top shot: Puppies, pageants and paddles
                      </h3>
-                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='side-bar'>
-                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
-                                     Africa
-                                 </Link>
-                              </div>
-                     
-                          </div>
-                    </div>
+                 </div>
              </div>
 
              <div className='bg-white card-gallery none'>
@@ -129,14 +96,14 @@ const Photogallery = () => {
                      <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
                        Row over festivity divides Afro-Colombian town
                      </h3>
-                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                     {/* <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
                           <div className='dash-subcatagory'></div>
                              <div className='side-bar'>
                                  <Link className='link font-16 font-montserrat flex align-center color-dark'>
                                     News
                                  </Link>
                               </div>
-                          </div>
+                          </div> */}
                 </div>
              </div>
        </div>    

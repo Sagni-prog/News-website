@@ -119,7 +119,7 @@ const Featured = () => {
                  
              </div>
         <div className='gap-1 featured-card'>
-             <div className='featured-card-item flex flex-col bg-white card-gallery'>
+             <div className='featured-card-item shadow2 flex flex-col bg-white card-gallery'>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {festival} alt = ''/>
                 </div> 
@@ -138,7 +138,7 @@ const Featured = () => {
                           </div>
                 </div>
              </div>
-             <div className='featured-card-item flex flex-col bg-white card-gallery'>
+             <div className='featured-card-item shadow2 flex flex-col bg-white card-gallery'>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {festival} alt = ''/>
                 </div> 

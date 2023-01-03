@@ -36,10 +36,10 @@ const NewsByCatagory = () => {
                           </div>
                        </div>
                     </div>
-            </div>
+                </div>
 
-            <div className='flex gap-1 bg-white '>
-                <div className='w-half'>
+            <div className='news-resp flex gap-1 bg-white '>
+                <div className='w-half '>
                     <img className='img-fluid mb-1' src= {im3} alt = 'hello'/>
                    
                     <div className='p-1'>
@@ -240,9 +240,9 @@ const NewsByCatagory = () => {
                 </div>
              </div>
          </div>            
-      </div>
-   </div>
-</div>     
+           </div>
+       </div>
+    </div>     
 
      <div className='mb-l '>
         <div className='flex flex-col gap-2'>
@@ -265,8 +265,8 @@ const NewsByCatagory = () => {
             </div>
         </div>
 
-        <div className='flex gap-1 bg-white'>
-          <div className='w-half'>
+        <div className='news-resp flex gap-1 bg-white'>
+          <div className='w-half bg-white'>
               <img className='img-fluid mb-1' src= {im3} alt = 'hello'/>
               
                <div className='p-1'>
@@ -312,7 +312,7 @@ const NewsByCatagory = () => {
                        </div>
                    </div>
 
-          <div className='w-half h-100'>
+          <div className='w-half h-100 bg-white'>
                <div className='flex flex-col gap-3'>
 
                    <div className='flex gap-1 card '>

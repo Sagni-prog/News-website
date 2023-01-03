@@ -45,7 +45,7 @@ const Videos = () => {
             </div>
                <div className = 'flex align-center pl-3 pb-2 pr-1 pt-2'>
                 
-                <div className='w-40'>
+                <div className='related-videos w-40'>
                     <div className='flex gap-2 w-100'>
                       
                         <div className='thumb-container'>
@@ -72,7 +72,7 @@ const Videos = () => {
                     </div>
                 </div>
 
-                <div className='w-40'>
+                <div className='related-videos w-40'>
                     <div className='flex gap-2 w-100'>
                       
                         <div className='thumb-container'>
@@ -99,7 +99,7 @@ const Videos = () => {
                     </div>
                 </div>
 
-                <div className='w-40'>
+                <div className='related-videos w-40'>
                     <div className='flex gap-2 w-100'>
                       
                         <div className='thumb-container'>
