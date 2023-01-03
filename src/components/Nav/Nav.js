@@ -84,7 +84,6 @@ const Nav = () => {
              <div className='bg-yellow h-4 w-4'></div>
          </div>
 
-         {/* <MdOutlineMenu className='color-yellow'/> */}
 
          <div className='search-icon flex align-center'>
              <IoIosSearch className='font-24 font-weight-700 color-yellow' />
