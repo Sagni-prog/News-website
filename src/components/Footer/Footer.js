@@ -61,7 +61,7 @@ const Footer = () => {
               </div>
             </div>
               
-            <div className='footer-item'>
+            <div className='footer-item2'>
               <div className='flex mb-sm '>
                    <h2 className='font-montserrat font-24 font-weight-700 color-white'>Popular News</h2>
               </div>
@@ -69,14 +69,14 @@ const Footer = () => {
               <div className='flex flex-col gap-2'>
               <div className='flex flex-col gap-1 '>
                   <div className  = "h-100 w-100 flex flex-col justify-end " >
-                     <div className='flex align-center gap-2 mb-1'>
+                      {/* <div className='flex align-center gap-2 mb-1'>
                         <Link className='link  bg-yellow font-montserrat font-14 color-dark-2' href='#' >
                               Business
                         </Link>
                         <Link className='link color-white font-montserrat font-12' href='' >
                               Dec 5,2022
                         </Link>
-                    </div>
+                    </div>  */}
                 <div className='text-underline-white'>
                   <Link className='link color-light-gray font-montserrat font-16'>
                         Lorem ipsum dolor sit amet elit sit amet elit...
@@ -87,14 +87,14 @@ const Footer = () => {
 
           <div className='flex flex-col gap-1 '>
                   <div className  = "h-100 w-100 flex flex-col justify-end " >
-                     <div className='flex align-center gap-2 mb-1'>
+                     {/* <div className='flex align-center gap-2 mb-1'>
                         <Link className='link  bg-yellow font-montserrat font-14 color-dark-2' href='#' >
                               Business
                         </Link>
                         <Link className='link color-white font-montserrat font-12' href='' >
                               Dec 5,2022
                         </Link>
-                    </div>
+                    </div> */}
                 <div className='text-underline-white'>
                   <Link className='link color-light-gray font-montserrat font-16'>
                         Lorem ipsum dolor sit amet elit sit amet elit...
@@ -105,14 +105,14 @@ const Footer = () => {
 
           <div className='flex flex-col gap-1 '>
                   <div className  = "h-100 w-100 flex flex-col justify-end " >
-                     <div className='flex align-center gap-2 mb-1'>
+                     {/* <div className='flex align-center gap-2 mb-1'>
                         <Link className='link  bg-yellow font-montserrat font-14 color-dark-2' href='#' >
                               Business
                         </Link>
                         <Link className='link color-white font-montserrat font-12' href='' >
                               Dec 5,2022
                         </Link>
-                    </div>
+                    </div> */}
                 <div className='text-underline-white'>
                   <Link className='link color-light-gray font-montserrat font-16'>
                         Lorem ipsum dolor sit amet elit sit amet elit...
@@ -123,14 +123,14 @@ const Footer = () => {
 
           <div className='flex flex-col gap-1 '>
               <div className  = "h-100 w-100 flex flex-col justify-end " >
-                   <div className='flex align-center gap-2 mb-1'>
+                   {/* <div className='flex align-center gap-2 mb-1'>
                         <Link className='link  bg-yellow font-montserrat font-14 color-dark-2' href='#' >
                               Business
                         </Link>
                         <Link className='link color-white font-montserrat font-12' href='' >
                               Dec 5,2022
                         </Link>
-                    </div>
+                    </div> */}
                 <div className='text-underline-white'>
                   <Link className='link color-light-gray font-montserrat font-16'>
                         Lorem ipsum dolor sit amet elit sit amet elit...
@@ -188,7 +188,7 @@ const Footer = () => {
               </div>
           </div>
        </div>
-          <div className='footer-item'>
+          <div className='footer-photos footer-item'>
               <div className='flex mb-sm'>
                    <h2 className='font-montserrat font-24 font-weight-700 color-white'>Photos</h2>
               </div>

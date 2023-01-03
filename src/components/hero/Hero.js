@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
   return (
-    <div className='mb-l position-relative'>
-        <div className='grid grid-col-2-1-2'>
+    <div className='mb-l position-relative bg-white'>
+        <div className='resp-container grid grid-col-2-1-2'>
               <div className=''>
                 <div className='position-relative'>
                    
@@ -100,13 +100,13 @@ const Hero = () => {
           </div>
      </div>
 
-   <div className='recent-resp  flex flex-col gap-2 bg-white pt-2'>
-       <div className='flex flex-col bg-white border-bottom p-2'>
-        <h4 className= 'color-dark font-weight-700 font-montserrat font-14 text-uppercase'>
+   <div className='recent-resp resp-container  flex flex-col gap-2 bg-white'>
+       <div className='flex flex-col bg-white border-bottom pb-1'>
+        <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
              Lorem ipsum dolor sit amet elit  sit amet elit...
         </h4>
 
-        <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+        <div className='flex justify-start gap-1 mt-1 w-100'>
             <div className='dash-subcatagory'></div>
                  <div className='side-bar'>
                     <Link className='link font-16 font-montserrat flex align-center color-dark'>
@@ -116,12 +116,12 @@ const Hero = () => {
              </div>
           </div>
 
-       <div className='flex flex-col bg-white border-bottom p-2'>
-        <h4 className= 'color-dark font-weight-700 font-montserrat font-14 text-uppercase'>
+       <div className='flex flex-col bg-white py-1'>
+        <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
              Lorem ipsum dolor sit amet elit  sit amet elit...
         </h4>
 
-        <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+        <div className='flex justify-start gap-1 mt-1 w-100'>
             <div className='dash-subcatagory'></div>
                  <div className='side-bar'>
                     <Link className='link font-16 font-montserrat flex align-center color-dark'>

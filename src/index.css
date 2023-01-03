@@ -1174,6 +1174,9 @@ transition: background-size 400ms;
 .footer-item{
     width: 24%;
 }
+.footer-item2{
+    width: 24%;
+}
 .footer-item3{
     width: 26%;
 }
@@ -1292,6 +1295,9 @@ ul{
     display: none;
 }
 
+.featured-card{
+    display: none;
+}
 @keyframes slide {
     0%{
         transform: translateX(0);
@@ -1433,6 +1439,26 @@ ul{
         font-size: 8px;
     }
 
+    .footer-photos{
+        display: none;
+
+    }
+    .footer-item{
+        width: 26%;
+    }
+    .footer-item2{
+        width: 34%;
+    }
+    .footer-item3{
+        width: 38%;
+    }
+    .social-medias{
+        /* flex-direction: column; */
+    }
+    .box{
+      background: #1e2024;
+    }
+
 }
 
 @media screen and (max-width: 567px) {
@@ -1440,12 +1466,40 @@ ul{
         display: none;
     }
     .img-hero{
-        padding: 1rem;
+        /* padding: 1rem; */
     }
     .overlay-hero{
-        padding: 1rem;
+        /* padding: 1rem; */
     }
     .recent-resp {
         display: block;
     }
+    .resp-container{
+        width: 90%;
+        margin: auto;
+        padding-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .grid-col-4{
+        grid-template-columns: 1fr;
+    }
+
+    .featured-resp{
+        display: none;
+    }
+    .featured-card{
+        display: flex;
+    }
+
+    .featured-bg{
+        background-color: #EDEFF4;
+    } 
 }
+
+@media screen and (max-width: 448px) {
+    .featured-card-item:last-child{
+          display: none;
+    }
+   
+}
+
