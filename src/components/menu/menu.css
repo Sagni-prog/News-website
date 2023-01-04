@@ -10,3 +10,6 @@
 .opacity{
     opacity: 0.4;
 }
+.border-top{
+    border-top: rgba(226, 225, 225, 0.836) solid 1px;
+}
