@@ -1,4 +1,4 @@
-import {React,useState} from 'react'
+import {React,useEffect,useState} from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import { MdSchedule } from 'react-icons/md'
 import { IoEyeOutline } from 'react-icons/io5'
@@ -10,12 +10,27 @@ import NewsTag from '../news-tag/NewsTag'
 import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
 import { IoIosCamera } from 'react-icons/io'
+import { HiOutlineDotsHorizontal } from 'react-icons/hi'
 import RelatedPost from '../related-posts/RelatedPost'
 import './singlepost.css'
 
 const SinglePost = () => {
+    
+    const [shorten,setShorten] = useState(true);
+    const [menu,setMenu] = useState(false);
 
-const [shorten,setShorten] = useState(true);
+    const handleClick = () => {
+        setShorten(!shorten)
+    }
+
+
+    useEffect(() => {
+   if(!shorten){
+    console.log("false")
+   }else{
+    console.log("true")
+   }
+    },[])
   return (
    <div className = 'bg-white mb-l'> 
     <div className='container bg-white '>
@@ -46,7 +61,7 @@ const [shorten,setShorten] = useState(true);
                   </div>
 
 
-                  <div className='author'>
+                  <div className=''>
                       <h4 className='font-montserrat font-weight-700 color-dark font-18'>By Mike Van</h4> 
                   </div>
 
@@ -74,7 +89,7 @@ const [shorten,setShorten] = useState(true);
                      <div className='flex gap-4 mb-md'>
                         <div className='flex align-center gap-1'>
                             <FaThumbsUp className='font-24 color-light-gray' />
-                            <p className='font-montserrat font-16 color-light-gray'>199</p>
+                            <p className='font-montserrat font-16 color-light-gray'>10</p>
                         </div>
                         <div className='flex align-center gap-1'>
                             <MdComment className='font-24 color-light-gray' />
@@ -85,22 +100,67 @@ const [shorten,setShorten] = useState(true);
                   
 
                   <div className='flex flex-col gap-3'>
-                         <div className='flex align-top gap-1'>
+                     <div className='flex align-top gap-1'>
                            <div className = "user-image">
                                <img src = {img1} alt = '' />
                           </div>
-                          <div className={`${shorten ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
-                              <h5 className='author font-montserrat font-18 color-dark '>
+
+                          <div onMouseEnter={ () => setMenu(true) } onMouseLeave = { () => setMenu(false) } className={`${ shorten ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                            <div className='flex justify-between'>
+                              <h5 className='author  author font-montserrat font-18 color-dark '>
                                   Mike Van
                               </h5>
+                             {
+                                 menu &&
+                                 <HiOutlineDotsHorizontal onClick={handleClick} className='font-32 cursor-pointer' />
+                             } 
+                              </div>
                               
 
                               <p className='font-montserrat font-16 color-light-gray line-height-1-5'>
-                              It was believed to have been a major discussion point when Mr Xi met US President Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade
+                              It was believed to have been a major discussion point when Mr Xi met US President Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade
                               </p>
                           </div>
                       </div>
-                         <div className='flex align-top gap-1'>
+                      <div className='flex align-top gap-1'>
+                           <div className = "user-image">
+                               <img src = {img1} alt = '' />
+                          </div>
+
+                          <div className={`${ shorten ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                            <div className='flex justify-between'>
+                              <h5 className='author  author font-montserrat font-18 color-dark '>
+                                  Mike Van
+                              </h5>
+                              <HiOutlineDotsHorizontal onClick={handleClick} className='font-32 cursor-pointer' />
+                              </div>
+                              
+
+                              <p className='font-montserrat font-16 color-light-gray line-height-1-5'>
+                              It was believed to have been a major discussion point when Mr Xi met US President Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade
+                              </p>
+                          </div>
+                      </div>
+                      <div className='flex align-top gap-1'>
+                           <div className = "user-image">
+                               <img src = {img1} alt = '' />
+                          </div>
+
+                          <div className={`${ shorten ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                            <div className='flex justify-between'>
+                              <h5 className='author  author font-montserrat font-18 color-dark '>
+                                  Mike Van
+                              </h5>
+                              <HiOutlineDotsHorizontal onClick={handleClick} className='font-32 cursor-pointer' />
+                              </div>
+                              
+
+                              <p className='font-montserrat font-16 color-light-gray line-height-1-5'>
+                              It was believed to have been a major discussion point when Mr Xi met US President Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade
+                              </p>
+                          </div>
+                      </div>
+                         {/* <div className='flex align-top gap-1'>
                            <div className = "user-image">
                                <img src = {img1} alt = '' />
                           </div>
@@ -114,8 +174,8 @@ const [shorten,setShorten] = useState(true);
                               It was believed to have been a major discussion point when Mr Xi met US President Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade
                               </p>
                           </div>
-                      </div>
-                         <div className='flex align-top gap-1'>
+                      </div> */}
+                         {/* <div className='flex align-top gap-1'>
                            <div className = "user-image">
                                <img src = {img1} alt = '' />
                           </div>
@@ -129,7 +189,7 @@ const [shorten,setShorten] = useState(true);
                               It was believed to have been a major discussion point when Mr Xi met US President Joe Biden at the G20 summit in November. Following the meeting, Mr Biden said he did not believe China would invade
                               </p>
                           </div>
-                      </div>
+                      </div> */}
                   </div>
 
                  

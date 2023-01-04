@@ -66,13 +66,13 @@ const RelatedPost = () => {
                   Related posts
               </h1>
           </div>
-          <div className='grid grid-col-3 gap-2'>
+      <div className='flex gap-2'>
          {
             RelatedData.map((data,index) => (
 
          index===current &&
          
-            <div key={index} className={`flex flex-col bg-white card-related position-relative ${left ? 'slide' : ''}`}>
+            <div key={index} className={`related-card flex flex-col bg-white card-related position-relative ${left ? 'slide' : ''}`}>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -102,7 +102,7 @@ const RelatedPost = () => {
             RelatedData.map((data,index) => (
 
          index===current2 &&
-            <div key={index} className='flex flex-col bg-white card-related slide'>
+            <div key={index} className='related-card flex flex-col bg-white card-related slide'>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -128,7 +128,7 @@ const RelatedPost = () => {
             RelatedData.map((data,index) => (
 
          index===current3 &&
-            <div key={index} className='flex flex-col bg-white card-related position-relative slide'>
+            <div key={index} className='related-card flex flex-col bg-white card-related position-relative slide'>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 

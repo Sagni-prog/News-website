@@ -182,7 +182,11 @@
     .resp-related-videos{
         display: block;
     }
-
+    .related-card:nth-child(2){
+        display: none;
+    }
+    
+   
 }
 
 @media screen and (max-width: 567px) {
