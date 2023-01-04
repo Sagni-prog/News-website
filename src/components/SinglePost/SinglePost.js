@@ -135,7 +135,12 @@ const SinglePost = () => {
                                   Mike Van
                               </h5>
                     
-                              <HiOutlineDotsHorizontal onClick={() => handleClick(2)} className='font-32 cursor-pointer' />
+                              {/* <HiOutlineDotsHorizontal onClick={() => handleClick(2)} className='font-32 cursor-pointer' /> */}
+
+                              { 
+                              menu &&
+                                 <HiOutlineDotsHorizontal onClick={() => handleClick(2)} className='font-32 cursor-pointer' />
+                            } 
                               </div>
                        
 
@@ -154,7 +159,12 @@ const SinglePost = () => {
                               <h5 className='author  author font-montserrat font-18 color-dark '>
                                   Mike Van
                               </h5>
-                              <HiOutlineDotsHorizontal onClick={() => handleClick(3)} className='font-32 cursor-pointer' />
+                              {/* <HiOutlineDotsHorizontal onClick={() => handleClick(3)} className='font-32 cursor-pointer' /> */}
+
+                              { 
+                              menu &&
+                                 <HiOutlineDotsHorizontal onClick={() => handleClick(3)} className='font-32 cursor-pointer' />
+                            } 
                               </div>
                               
 
