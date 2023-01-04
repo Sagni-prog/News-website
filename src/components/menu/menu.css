@@ -1,9 +1,12 @@
 .hide{
     height: 0;
-    transition: all 3s;
+    transition: all .5s;
 }
 
 .show{
-    height: auto;
-    transition: all 3s;
+    height: 40rem;
+    transition: all .5s;
+}
+.opacity{
+    opacity: 0.4;
 }
