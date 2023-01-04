@@ -20,6 +20,7 @@ const SinglePost = () => {
     const [menu,setMenu] = useState(false);
     const [current,setCurrent] = useState()
 
+
     const handleClick = (index) => {
         setCurrent(index)
         setShorten(!shorten)
@@ -33,7 +34,6 @@ const SinglePost = () => {
         setCurrent(index)
         setMenu(false)
     }
-
 
     useEffect(() => {
    if(!shorten){
@@ -116,7 +116,7 @@ const SinglePost = () => {
                                <img src = {img1} alt = '' />
                           </div>
 
-                          <div onMouseEnter={ () => handleMouseEnter(1) } onMouseLeave = { () => handleMouseLeave(1) } className={`${ shorten && (current === 1) ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                          <div onMouseEnter={ () => handleMouseEnter(1) } onMouseLeave = { () => handleMouseLeave(1) } className={`${ shorten  ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
                             <div className='flex justify-between'>
                               <h5 className='author  author font-montserrat font-18 color-dark '>
                                   Mike Van
@@ -138,13 +138,11 @@ const SinglePost = () => {
                                <img src = {img1} alt = '' />
                           </div>
 
-                          <div onMouseEnter={ () => handleMouseEnter(2) } onMouseLeave = { () => handleMouseLeave(2) } className={`${ shorten && (current === 2)  ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                          <div onMouseEnter={ () => handleMouseEnter(2) } onMouseLeave = { () => handleMouseLeave(2) } className={`${ shorten   ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
                             <div className='flex justify-between'>
                               <h5 className='author  author font-montserrat font-18 color-dark '>
                                   Mike Van
                               </h5>
-                    
-                              {/* <HiOutlineDotsHorizontal onClick={() => handleClick(2)} className='font-32 cursor-pointer' /> */}
 
                               { 
                               menu && (current === 2) &&
@@ -163,13 +161,12 @@ const SinglePost = () => {
                                <img src = {img1} alt = '' />
                           </div>
 
-                          <div onMouseEnter={ () => handleMouseEnter(3) } onMouseLeave = { () => handleMouseLeave(3) } className={`${ shorten && (current === 3)  ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                          <div onMouseEnter={ () => handleMouseEnter(3) } onMouseLeave = { () => handleMouseLeave(3) } className={`${ shorten  ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
                             <div className='flex justify-between'>
                               <h5 className='author  author font-montserrat font-18 color-dark '>
                                   Mike Van
                               </h5>
-                              {/* <HiOutlineDotsHorizontal onClick={() => handleClick(3)} className='font-32 cursor-pointer' /> */}
-
+                             
                               { 
                               menu && (current === 3) &&
                                  <HiOutlineDotsHorizontal onClick={() => handleClick(3)} className='font-32 cursor-pointer' />

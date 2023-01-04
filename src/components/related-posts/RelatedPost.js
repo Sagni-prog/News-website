@@ -58,7 +58,7 @@ const RelatedPost = () => {
    
 
   return (
-    <div className='bg-light-gray py-4 mb-l'>
+    <div className='bg-light-gray resp-white py-4 mb-l'>
        <div className='container'>
          <div className='flex align-center gap-1'>
             <div className='dash-gallery'></div>
@@ -94,9 +94,12 @@ const RelatedPost = () => {
                     <FaAngleLeft onClick={ slideLeft } className='color-yellow font-32' />
                 </div>
              </div>
+
+               
               )
             )
         }
+    
 
          {
             RelatedData.map((data,index) => (
@@ -154,7 +157,113 @@ const RelatedPost = () => {
             )
         }
             </div>
+
+    
        </div>
+
+       {/* for responsive */}
+       <div className='related-resp container'>
+                <div className=' gallery-top-img-container'>
+                  <img src = {finalcup} alt = ''/>
+                    <div className='dark-overlay'></div>
+                    
+                       <div className='gallery-overlay flex align-end'>
+                           <div className='flex flex-col  p-2'>
+                              <h4 className='font-montserrat color-white font-18'>
+                                  Argentina win 2022 World Cup final-in pictur Argentina win 2022 world cup final-in pictureses
+                              </h4>
+
+                              <div className='flex justify-start gap-1 mt-1 w-100'>
+                                 <div className='dash-subcatagory'></div>
+                                     <div className='side-bar'>
+                                          <Link className='link font-16 font-montserrat flex align-center color-white'>
+                                              News
+                                         </Link>
+                                    </div>
+                               </div>
+                           </div>
+                       </div>
+                    
+                 </div>
+            </div>
+
+
+            <div className='recent-resp container mt-2 flex flex-col gap-2 bg-white'>
+                <div className='flex flex-col bg-white border-bottom pb-1'>
+                    <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
+                        Lorem ipsum dolor sit amet elit  sit amet elit...
+                    </h4>
+
+                <div className='flex justify-start gap-1 mt-1 w-100'>
+                    <div className='dash-subcatagory'></div>
+                        <div className='side-bar'>
+                            <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                News
+                            </Link>
+                    </div>
+                    </div>
+                </div>
+
+        <div className='flex flex-col bg-white py-1 border-bottom'>
+            <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
+                Lorem ipsum dolor sit amet elit  sit amet elit...
+            </h4>
+
+        <div className='flex justify-start gap-1 mt-1 w-100'>
+            <div className='dash-subcatagory'></div>
+                 <div className='side-bar'>
+                    <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                         News
+                    </Link>
+               </div>
+             </div>
+          </div>
+        <div className='flex flex-col bg-white py-1 border-bottom'>
+            <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
+                Lorem ipsum dolor sit amet elit  sit amet elit...
+            </h4>
+
+        <div className='flex justify-start gap-1 mt-1 w-100'>
+            <div className='dash-subcatagory'></div>
+                 <div className='side-bar'>
+                    <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                         News
+                    </Link>
+               </div>
+             </div>
+          </div>
+
+        <div className='flex flex-col bg-white py-1 border-bottom'>
+            <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
+                Lorem ipsum dolor sit amet elit  sit amet elit...
+            </h4>
+
+        <div className='flex justify-start gap-1 mt-1 w-100'>
+            <div className='dash-subcatagory'></div>
+                 <div className='side-bar'>
+                    <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                         News
+                    </Link>
+               </div>
+             </div>
+          </div>
+
+        <div className='flex flex-col bg-white py-1'>
+            <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
+                Lorem ipsum dolor sit amet elit  sit amet elit...
+            </h4>
+
+        <div className='flex justify-start gap-1 mt-1 w-100'>
+            <div className='dash-subcatagory'></div>
+                 <div className='side-bar'>
+                    <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                         News
+                    </Link>
+               </div>
+             </div>
+          </div>
+       </div> 
+       {/* for responsive */}
     </div>
   )
 }

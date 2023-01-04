@@ -185,6 +185,12 @@
     .related-card:nth-child(2){
         display: none;
     }
+
+    .shorten-comment{
+        height: 10rem;
+        overflow: hidden;
+        transition: all 2s;
+    }
     
    
 }
@@ -283,8 +289,31 @@
         margin-bottom: 2rem;
     }
    html{
-    font-size: 6px;
+    font-size: 7px;
    }
+   .related-card:nth-child(3){
+    display: none;
+}
+.resp-icon{
+    display: block;
+}
+.left{
+   display: none;
+    
+}
+.right{
+  
+   display: none;
+}
+.related-card:nth-child(1){
+    display: none;
+}
+.related-resp{
+    display: block;
+}
+.resp-white{
+    background-color: #fff;
+}
 }
 
 @media screen and (max-width: 319px) {
