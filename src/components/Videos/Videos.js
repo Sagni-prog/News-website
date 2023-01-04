@@ -127,8 +127,71 @@ const Videos = () => {
                 </div>
                  
 
+              
+
                </div>
           </div>
+
+          {/* related photos for minimum screen views starts */}
+          <div className='resp-related-videos bg-white'>
+         
+            <div className=' mt-2 flex flex-col gap-2 bg-white'>
+               <div className = "flex align-center gap-1">
+               <div className='flex justfy-center align-center play-icon2'>
+                     <MdPlayArrow className='color-white font-16'/>
+                  </div>
+
+
+                <div className='flex flex-col bg-white border-bottom pb-1'>
+                    <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
+                        Lorem ipsum dolor sit amet elit  sit amet elit...
+                    </h4>
+
+                <div className='flex justify-start gap-1 mt-1 w-100'>
+                    <div className='dash-subcatagory'></div>
+                        <div className='side-bar'>
+                            <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                News
+                            </Link>
+                    </div>
+                    </div>
+                </div>
+             </div>
+
+        <div className='flex flex-col bg-white py-1 border-bottom'>
+            <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
+                Lorem ipsum dolor sit amet elit  sit amet elit...
+            </h4>
+
+        <div className='flex justify-start gap-1 mt-1 w-100'>
+            <div className='dash-subcatagory'></div>
+                 <div className='side-bar'>
+                    <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                         News
+                    </Link>
+               </div>
+             </div>
+          </div>
+        
+        <div className='flex flex-col bg-white py-1'>
+            <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
+                Lorem ipsum dolor sit amet elit  sit amet elit...
+            </h4>
+
+        <div className='flex justify-start gap-1 mt-1 w-100'>
+            <div className='dash-subcatagory'></div>
+                 <div className='side-bar'>
+                    <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                         News
+                    </Link>
+               </div>
+             </div>
+          </div>
+       </div> 
+       </div>
+
+
+            {/* related photos for minimum screen views ends*/}
 
       </div>
     </div>
