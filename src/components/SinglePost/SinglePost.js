@@ -25,6 +25,15 @@ const SinglePost = () => {
         setShorten(!shorten)
     }
 
+    const handleMouseEnter = (index) => {
+        setCurrent(index)
+        setMenu(true)
+    }
+    const handleMouseLeave = (index) => {
+        setCurrent(index)
+        setMenu(false)
+    }
+
 
     useEffect(() => {
    if(!shorten){
@@ -107,13 +116,13 @@ const SinglePost = () => {
                                <img src = {img1} alt = '' />
                           </div>
 
-                          <div onMouseEnter={ () => setMenu(true) } onMouseLeave = { () => setMenu(false) } className={`${ shorten && (current === 1) ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                          <div onMouseEnter={ () => handleMouseEnter(1) } onMouseLeave = { () => handleMouseLeave(1) } className={`${ shorten && (current === 1) ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
                             <div className='flex justify-between'>
                               <h5 className='author  author font-montserrat font-18 color-dark '>
                                   Mike Van
                               </h5>
                             { 
-                              menu &&
+                              menu && (current === 1) &&
                                  <HiOutlineDotsHorizontal onClick={() => handleClick(1)} className='font-32 cursor-pointer' />
                             } 
                               </div>
@@ -129,7 +138,7 @@ const SinglePost = () => {
                                <img src = {img1} alt = '' />
                           </div>
 
-                          <div onMouseEnter={ () => setMenu(true) } onMouseLeave = { () => setMenu(false) } className={`${ shorten && (current === 2)  ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                          <div onMouseEnter={ () => handleMouseEnter(2) } onMouseLeave = { () => handleMouseLeave(2) } className={`${ shorten && (current === 2)  ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
                             <div className='flex justify-between'>
                               <h5 className='author  author font-montserrat font-18 color-dark '>
                                   Mike Van
@@ -138,7 +147,7 @@ const SinglePost = () => {
                               {/* <HiOutlineDotsHorizontal onClick={() => handleClick(2)} className='font-32 cursor-pointer' /> */}
 
                               { 
-                              menu &&
+                              menu && (current === 2) &&
                                  <HiOutlineDotsHorizontal onClick={() => handleClick(2)} className='font-32 cursor-pointer' />
                             } 
                               </div>
@@ -154,7 +163,7 @@ const SinglePost = () => {
                                <img src = {img1} alt = '' />
                           </div>
 
-                          <div className={`${ shorten && (current === 3)  ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
+                          <div onMouseEnter={ () => handleMouseEnter(3) } onMouseLeave = { () => handleMouseLeave(3) } className={`${ shorten && (current === 3)  ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
                             <div className='flex justify-between'>
                               <h5 className='author  author font-montserrat font-18 color-dark '>
                                   Mike Van
@@ -162,7 +171,7 @@ const SinglePost = () => {
                               {/* <HiOutlineDotsHorizontal onClick={() => handleClick(3)} className='font-32 cursor-pointer' /> */}
 
                               { 
-                              menu &&
+                              menu && (current === 3) &&
                                  <HiOutlineDotsHorizontal onClick={() => handleClick(3)} className='font-32 cursor-pointer' />
                             } 
                               </div>
