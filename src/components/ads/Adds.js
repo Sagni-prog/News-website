@@ -8,10 +8,10 @@ const Adds = () => {
         <div className='logo h-100 flex align-center '>
              <h1 className='font-32 font-montserrat'>
                 <span className='color-yellow'>
-                    News
+                    Zena
                 </span>
                 <span className='color-dark'>
-                    Portal
+                    Log
                 </span>
              </h1>
         </div>
