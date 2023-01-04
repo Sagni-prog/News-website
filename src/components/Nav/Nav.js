@@ -1,4 +1,4 @@
-import { React,useState,useContext, useEffect } from 'react'
+import { React,useState,useContext, useEffect,useReducer } from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import { IoIosArrowUp } from 'react-icons/io'
@@ -14,10 +14,17 @@ const Nav = () => {
   const {state,dispatch} = useContext(NavContext)
 
   useEffect(() => {
-    console.log(state)
-  })
+    console.log(state.show)
+})
 
     const [dropdown,setDropdown] = useState(false);
+
+    const handleClick = (e) => {
+        e.preventDefault()
+
+        console.log("hello")
+        dispatch({type: 'toggle',state});
+    }
 
   return (
     <div>
@@ -115,7 +122,7 @@ const Nav = () => {
          </div>
 
          <div className='menu flex align-center'>
-            <MdOutlineMenu className='font-24 font-weight-700 color-yellow' />
+            <MdOutlineMenu onClick={handleClick} className='font-24 font-weight-700 color-yellow cursor-pointer' />
          </div>
      </div>
  </div>
