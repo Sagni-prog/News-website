@@ -1,0 +1,4 @@
+.hide{
+    height: 0;
+    transition: all 3s;
+}
