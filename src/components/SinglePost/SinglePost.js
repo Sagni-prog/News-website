@@ -1,4 +1,4 @@
-import React from 'react'
+import {React,useState} from 'react'
 import Sidebar from '../Sidebar/Sidebar'
 import { MdSchedule } from 'react-icons/md'
 import { IoEyeOutline } from 'react-icons/io5'
@@ -11,12 +11,15 @@ import Footer from '../Footer/Footer'
 import { Link } from 'react-router-dom'
 import { IoIosCamera } from 'react-icons/io'
 import RelatedPost from '../related-posts/RelatedPost'
+import './singlepost.css'
 
 const SinglePost = () => {
+
+const [shorten,setShorten] = useState(true);
   return (
    <div className = 'bg-white mb-l'> 
     <div className='container bg-white '>
-        <div className='gap-4 flex mt-3'>
+        <div className='single-post gap-4 flex mt-3'>
              <div className='w-100 flex flex-col gap-2 mb-l'>
                   <div className='flex flex-col gap-2'>
                       <div className='pt-3 w-90'>
@@ -41,6 +44,8 @@ const SinglePost = () => {
                   <div className='detail-img mt-1 mb-2'>
                       <img src = { img1 } alt = '' />
                   </div>
+
+
                   <div className='author'>
                       <h4 className='font-montserrat font-weight-700 color-dark font-18'>By Mike Van</h4> 
                   </div>
@@ -77,13 +82,14 @@ const SinglePost = () => {
                         </div>
                     </div>
                   </div>
+                  
 
                   <div className='flex flex-col gap-3'>
                          <div className='flex align-top gap-1'>
                            <div className = "user-image">
                                <img src = {img1} alt = '' />
                           </div>
-                          <div className='comment w-60'>
+                          <div className={`${shorten ? 'shorten-comment' : 'stretch-comment'} comment w-60`}>
                               <h5 className='author font-montserrat font-18 color-dark '>
                                   Mike Van
                               </h5>
@@ -136,12 +142,9 @@ const SinglePost = () => {
                      </div>
                      <NewsTag />
                 </div>
-   
-                 
              </div>
                 <div className='w-col-2 h-100 mr-3 mt-3'>
                     <Sidebar />
-                    {/* <Sidebar /> */}
                 </div>
           </div>
     </div>

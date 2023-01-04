@@ -13,13 +13,7 @@ import RelatedData from '../../constants/RelatedData'
 
 const RelatedPost = () => {
 
-   useEffect(() => {
-   //   RelatedData.map((data) => console.log(data.path))
-   console.log(end)
-      console.log(current)
-      console.log(current2)
-      console.log(current3)
-   },[])
+  
 
    const [current,setCurrent] = useState(0);
    const [current2,setCurrent2] = useState(1);
