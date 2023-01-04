@@ -138,7 +138,7 @@ const Videos = () => {
             <div className=' mt-2 flex flex-col gap-2 bg-white'>
                <div className = "flex align-center gap-1">
                <div className='flex justfy-center align-center play-icon2'>
-                     <MdPlayArrow className='color-white font-16'/>
+                     <MdPlayArrow className='color-white font-32'/>
                   </div>
 
 
@@ -157,7 +157,10 @@ const Videos = () => {
                     </div>
                 </div>
              </div>
-
+    <div className = "flex align-center gap-1">
+      <div className='flex justfy-center align-center play-icon2'>
+            <MdPlayArrow className='color-white font-32'/>
+        </div>
         <div className='flex flex-col bg-white py-1 border-bottom'>
             <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
                 Lorem ipsum dolor sit amet elit  sit amet elit...
@@ -172,7 +175,12 @@ const Videos = () => {
                </div>
              </div>
           </div>
-        
+          </div>
+
+   <div className = "flex align-center gap-1">
+      <div className='flex justfy-center align-center play-icon2'>
+            <MdPlayArrow className='color-white font-32'/>
+        </div>
         <div className='flex flex-col bg-white py-1'>
             <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
                 Lorem ipsum dolor sit amet elit  sit amet elit...
@@ -186,6 +194,7 @@ const Videos = () => {
                     </Link>
                </div>
              </div>
+          </div>
           </div>
        </div> 
        </div>
