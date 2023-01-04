@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <div>
-          <div className='bg-gray w-100 h-7 flex mt-2'>
+          <div className='bg-gray w-100 h-7 flex mt-4'>
      
      <div className='container h-100 flex justify-between align-center'>
 

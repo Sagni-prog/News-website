@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Adds = () => {
   return (
-    <div className='container h-8 grid grid-col-3-1-2 '>
-        <div className='h-100 flex align-center'>
+    <div className='container h-8 flex justify-between  mb-sm'>
+        <div className='h-100 flex align-center '>
              <h1 className='font-32 font-montserrat'>
                 <span className='color-yellow'>
                     News
@@ -15,11 +15,11 @@ const Adds = () => {
                 </span>
              </h1>
         </div>
-        <div className= 'h-100'></div>
-        <div className='h-100 bg-white'>
-            <Link to = ''>
-               {/* <img src = {logo} alt = 'alt' /> */}
-            </Link>
+   
+        <div className='logo'>
+            <a  href= 'https://www.youtube.com/watch?v=fQpFJY0sU4A'>
+               <img src = {logo} alt = 'alt' />
+            </a>
         </div>
     </div>
   )
