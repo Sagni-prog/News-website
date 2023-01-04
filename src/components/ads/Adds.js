@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 
 const Adds = () => {
   return (
-    <div className='container h-8 flex justify-between gap-2  mb-sm'>
-        <div className='h-100 flex align-center '>
+    <div className='resp-add container h-8 flex justify-between gap-2  mb-sm'>
+        <div className='logo h-100 flex align-center '>
              <h1 className='font-32 font-montserrat'>
                 <span className='color-yellow'>
                     News
@@ -16,7 +16,7 @@ const Adds = () => {
              </h1>
         </div>
    
-        <div className='logo'>
+        <div className='ad'>
             <a  href= 'https://www.youtube.com/watch?v=fQpFJY0sU4A'>
                <img src = {logo} alt = 'alt' />
             </a>

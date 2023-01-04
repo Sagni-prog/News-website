@@ -14,11 +14,27 @@ const Nav = () => {
 
   return (
     <div>
-          <div className='bg-gray w-100 h-7 flex mt-4'>
+        <div className='bg-gray w-100 h-7 flex mt-4'>
+
+          
      
      <div className='container h-100 flex justify-between align-center'>
+     
+    
 
          <ul className='h-100 flex align-center justify-between gap-2'>
+           <li className='logo-disp'>
+           <div className=' h-100 flex align-center '>
+             <h1 className='font-32 font-montserrat'>
+                <span className='color-yellow'>
+                    News
+                </span>
+                <span className='color-dark'>
+                    Portal
+                </span>
+             </h1>
+        </div>
+           </li>
            <li className='home'>
              <Link className=' h-100 color-white link font-18 font-montserrat pb-8' to = '/'>Home</Link>
              </li>
@@ -78,6 +94,8 @@ const Nav = () => {
                  <Link className='link font-16 font-montserrat color-white pb-8' to = ''>Contact</Link>
              </li>
          </ul>
+
+         
 
          <div className='seaech h-100 flex align-center'>
              <input className='input h-4 w-100 pl-8 pr-4' placeholder='Keyword' />
