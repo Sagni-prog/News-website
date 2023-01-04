@@ -1,14 +1,21 @@
-import { React,useState } from 'react'
+import { React,useState,useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowDown } from 'react-icons/io'
 import { IoIosArrowUp } from 'react-icons/io'
 import { IoIosSearch } from 'react-icons/io'
 import { MdOutlineMenu } from 'react-icons/md'
+import NavContext from '../../contexts/NavContext'
 
 
 
 
 const Nav = () => {
+
+  const {state,dispatch} = useContext(NavContext)
+
+  useEffect(() => {
+    console.log(state)
+  })
 
     const [dropdown,setDropdown] = useState(false);
 
