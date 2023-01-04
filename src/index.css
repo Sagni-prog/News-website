@@ -1394,6 +1394,12 @@ ul{
 }
 @media  screen and (max-width: 995px) {
 
+  .logo{
+    width: 70rem;
+    height: 9rem;
+    justify-self: flex-end;
+}
+
     .grid-col-2-1-2{
         grid-template-columns: 1fr;
     
@@ -1443,6 +1449,7 @@ ul{
     .hero-flex-col{
         flex-direction: column;
     }
+    
 
     ul li{
         display: none;
