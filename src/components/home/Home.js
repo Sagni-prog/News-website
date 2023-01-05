@@ -10,13 +10,10 @@ import NewsByCatagory from '../../components/news-by-catagory/NewsByCatagory';
 import Photogallery from '../../components/PhotoGallery/Photogallery';
 import Videos from '../../components/Videos/Videos';
 import Footer from '../../components/Footer/Footer'
-import Menu from '../menu/Menu';
-
 
 function Home() {
   return ( 
     <div className='h-100vh'>
-          <Menu />
           <Hero />
           <Featured />
           <NewsByCatagory />

@@ -8,6 +8,7 @@ import SinglePost from './components/SinglePost/SinglePost';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavReducer from './reducers/NavReducer';
 import NavContext from './contexts/NavContext';
+import Menu from './components/menu/Menu';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Top />
           <Adds />
           <Nav />
+          <Menu />
           <Routes>
              <Route element = {  <Home/> } path = '/' />
           </Routes>
