@@ -1,7 +1,7 @@
 @media  screen and (max-width: 1133px) {
 
     html{
-        font-size: 9px;
+        /* font-size: 9px; */
     }
      .flex-container{
         flex-direction: column;
@@ -103,7 +103,7 @@
 @media  screen and (max-width: 891px) {
 
     html{
-        font-size: 8px;
+        font-size: 9px;
     }
    .related-videos:last-child{
        display: none;
@@ -152,7 +152,7 @@
         padding: 1rem;
     } */
     html{
-        font-size: 8px;
+        /* font-size: 8px; */
     }
 
     .footer-photos{
@@ -288,9 +288,9 @@
         background-color: #fff;
         margin-bottom: 2rem;
     }
-   html{
-    font-size: 7px;
-   }
+    html{
+    font-size: 8px;
+   } 
    .related-card:nth-child(3){
     display: none;
 }
