@@ -162,15 +162,13 @@ const RelatedPost = () => {
             <div className='right flex justfy-center align-center'>
                  <FaAngleRight onClick={slideRight} className='color-yellow font-32' />
            </div>
-     {/* </div> */}
 
-           
 
      </div>
        </div>
 
        {/* for responsive */}
-       <div className='related-resp container'>
+       <div className='related-resp mb-3 container'>
                 <div className=' gallery-top-img-container'>
                   <img src = {finalcup} alt = ''/>
                     <div className='dark-overlay'></div>

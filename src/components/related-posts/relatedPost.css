@@ -11,7 +11,7 @@
 
 @keyframes slide-left {
     0%{
-        transform: translateX(-50%);
+        transform: translateX(-20%);
     }
     100%{
         transform: translateX(0);
@@ -20,7 +20,7 @@
 
 @keyframes slide-right {
     0%{
-        transform: translateX(50%);
+        transform: translateX(20%);
     }
     100%{
         transform: translateX(0);
