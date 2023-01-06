@@ -14,13 +14,11 @@
     height: 4.5rem;
     text-align: center;
     width: 50%;
-    /* border-right: none; */
 }
 .popular-box{
     position: relative;
   height: 4.5rem;
   width: 50%;
-  /* border-left: non e; */
 }
 .popular{
     z-index: 10;

@@ -10,6 +10,7 @@ import { IoIosCamera } from 'react-icons/io'
 import { FaAngleLeft } from 'react-icons/fa'
 import { FaAngleRight } from 'react-icons/fa'
 import RelatedData from '../../constants/RelatedData'
+import './relatedPost.css'
 
 const RelatedPost = () => {
 
@@ -66,13 +67,15 @@ const RelatedPost = () => {
                   Related posts
               </h1>
           </div>
-      <div className='flex gap-2'>
+
+      <div className='overlay-hidden position-relative'>
+        <div className='bg-yellow flex gap-2'>
          {
             RelatedData.map((data,index) => (
 
          index===current &&
          
-            <div key={index} className={`related-card flex flex-col bg-white card-related position-relative ${left ? 'slide' : ''}`}>
+            <div key={index} className={`${left ? 'related-post-slide-left' : ''} related-card flex flex-col bg-white card-related position-relative ${left ? 'slide' : ''}`}>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -90,9 +93,9 @@ const RelatedPost = () => {
                               </div>
                           </div>
                      </div>
-                 <div className='left flex justfy-center align-center'>
+                 {/* <div className='left flex justfy-center align-center'>
                     <FaAngleLeft onClick={ slideLeft } className='color-yellow font-32' />
-                </div>
+                </div> */}
              </div>
 
                
@@ -105,7 +108,7 @@ const RelatedPost = () => {
             RelatedData.map((data,index) => (
 
          index===current2 &&
-            <div key={index} className='related-card flex flex-col bg-white card-related slide'>
+            <div key={index} className={`${left ? 'related-post-slide-left' : ''} related-card flex flex-col bg-white card-related slide`}>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -131,7 +134,7 @@ const RelatedPost = () => {
             RelatedData.map((data,index) => (
 
          index===current3 &&
-            <div key={index} className='related-card flex flex-col bg-white card-related position-relative slide'>
+            <div key={index} className={`${left ? 'related-post-slide-left' : ''} related-card flex flex-col bg-white card-related  slide`}>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -149,16 +152,25 @@ const RelatedPost = () => {
                               </div>
                           </div>
                       </div>
-                  <div className='right flex justfy-center align-center'>
+                  {/* <div className='right flex justfy-center align-center'>
                      <FaAngleRight onClick={slideRight} className='color-yellow font-32' />
-                  </div>
+                  </div> */}
              </div>
               )
             )
         }
+           <div className='left flex justfy-center align-center'>
+              <FaAngleLeft onClick={ slideLeft } className='color-yellow font-32' />
             </div>
 
-    
+            <div className='right flex justfy-center align-center'>
+                 <FaAngleRight onClick={slideRight} className='color-yellow font-32' />
+           </div>
+     </div>
+
+           
+
+     </div>
        </div>
 
        {/* for responsive */}

@@ -1,0 +1,16 @@
+.related-post-slide-left{
+     animation: slide-left;
+     animation-duration: .7s;
+}
+.related-post-slide-right{
+  
+}
+
+@keyframes slide-left {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
