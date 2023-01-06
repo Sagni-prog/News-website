@@ -1,14 +1,26 @@
 .related-post-slide-left{
      animation: slide-left;
      animation-duration: .7s;
+     transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .related-post-slide-right{
-  
+   animation: slide-right;
+   animation-duration: .7s;
+   transition: all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @keyframes slide-left {
     0%{
         transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-right {
+    0%{
+        transform: translateX(50%);
     }
     100%{
         transform: translateX(0);
