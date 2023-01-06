@@ -25,6 +25,7 @@ const RelatedPost = () => {
 
    const slideLeft = () => {
       
+       setRight(false)
        setLeft(true)
 
           if(current === 0){
@@ -44,6 +45,7 @@ const RelatedPost = () => {
      }
 
    const slideRight = () => {
+       setLeft(false)
        setRight(true)
         if(current === end){
             setCurrent(0)
@@ -68,14 +70,14 @@ const RelatedPost = () => {
               </h1>
           </div>
 
-      <div className='overlay-hidden position-relative'>
-        <div className={`${left ? 'related-post-slide-left' : ''} ${right ? 'related-post-slide-right' : ''} flex gap-2`}>
+      <div className='flex gap-2 overlay-hidden position-relative'>
+        {/* <div className={`${left ? 'related-post-slide-left' : ''} flex gap-2`}> */}
          {
             RelatedData.map((data,index) => (
 
          index===current &&
          
-            <div key={index} className={`related-card flex flex-col bg-white card-related position-relative`}>
+            <div key={index} className={`${left ? 'related-post-slide-left' : ''} ${right ? 'related-post-slide-right' : ''}  related-card flex flex-col bg-white card-related position-relative ${left ? 'slide' : ''}`}>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -93,9 +95,6 @@ const RelatedPost = () => {
                               </div>
                           </div>
                      </div>
-                 {/* <div className='left flex justfy-center align-center'>
-                    <FaAngleLeft onClick={ slideLeft } className='color-yellow font-32' />
-                </div> */}
              </div>
 
                
@@ -108,7 +107,7 @@ const RelatedPost = () => {
             RelatedData.map((data,index) => (
 
          index===current2 &&
-            <div key={index} className={` related-card flex flex-col bg-white card-related slide`}>
+            <div key={index} className={`${left ? 'related-post-slide-left' : ''} ${right ? 'related-post-slide-right' : ''}  related-card flex flex-col bg-white card-related slide`}>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -134,7 +133,7 @@ const RelatedPost = () => {
             RelatedData.map((data,index) => (
 
          index===current3 &&
-            <div key={index} className={`related-card flex flex-col bg-white card-related`}>
+            <div key={index} className={`${left ? 'related-post-slide-left' : ''} ${right ? 'related-post-slide-right' : ''}  related-card flex flex-col bg-white card-related  slide`}>
                <div className='gallery-bottom-img-container  position-relative'>
                     <img src = {data.path} alt = ''/>
                 </div> 
@@ -152,7 +151,7 @@ const RelatedPost = () => {
                               </div>
                           </div>
                       </div>
-                 </div>
+             </div>
               )
             )
         }
@@ -163,7 +162,7 @@ const RelatedPost = () => {
             <div className='right flex justfy-center align-center'>
                  <FaAngleRight onClick={slideRight} className='color-yellow font-32' />
            </div>
-     </div>
+     {/* </div> */}
 
            
 

@@ -1279,7 +1279,7 @@ ul{
     left: -20px;
     width: 6rem;
     height: 7rem;
-    background-color: #31404B;
+    /* background-color: #31404B; */
     cursor: pointer;
 }
 .right{
@@ -1288,7 +1288,7 @@ ul{
     right: -20px;
     width: 6rem;
     height: 7rem;
-    background-color: #31404B;
+    /* background-color: #31404B; */
     cursor: pointer;
 }
 
