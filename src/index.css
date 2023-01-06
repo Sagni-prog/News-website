@@ -807,7 +807,8 @@ html{
 
 .sidebar-img{
     height: 10rem;
-    width: 10rem;
+    min-width: 10rem;
+    max-width: 10rem;
 }
 .sidebar-img img{
     height: 100%;
