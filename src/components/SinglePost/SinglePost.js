@@ -43,7 +43,7 @@ const SinglePost = () => {
    }
     },[])
   return (
-   <div className = 'bg-white mb-l'> 
+   <div className = 'bg-white mb-l index'> 
     <div className='container bg-white '>
         <div className='single-post gap-4 flex mt-3'>
              <div className='w-100 flex flex-col gap-2 mb-l'>
@@ -212,7 +212,7 @@ const SinglePost = () => {
                   </div>
 
                  
-                 <div className='w-60 h-100 mr-3 mt-3'>
+                 <div className='responsive-width h-100 mr-3 mt-3'>
                      <div className='flex align-center gap-1 mb-1'>
                          <div className='dash-catagory'></div>
                             <h1 className=' font-18 font-montserrat h-5 flex align-center color-dark font-weight-700 '>

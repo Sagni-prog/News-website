@@ -4,4 +4,6 @@
     margin-top: 2rem;
 }
 
-
+.index{
+    z-index: 10;
+}

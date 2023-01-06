@@ -1357,3 +1357,7 @@ ul{
 .footer-item4{
     display: none;
 }
+
+.responsive-width{
+    width: 60%;
+}
