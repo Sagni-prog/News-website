@@ -11,7 +11,7 @@ import './footer.css'
 const Footer = () => {
   return (
     <div className='bg-gray'>
-       <div className='container border-bottom mb-2'>
+       <div className='container footer-border'>
           <div className='flex gap-2 w-100 py-5'>
 
             <div className='footer-item'>
@@ -36,31 +36,56 @@ const Footer = () => {
                </div>
               </div>
 
-              <div className='follow'>
+              <div className='follow social-medias'>
                 <div className='mb-sm'>
                 <h3 className='font-montserrat font-18 color-white'>Follow us</h3>
               </div>
 
-              <div className='social-medias flex gap-1'>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
+              <div className=' flex gap-1'>
+                  <div className=' box flex align-center justfy-center'>
                       <FaFacebookF className='font-24 color-light-gray' />
                   </div>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
+                  <div className=' box flex align-center justfy-center'>
                      <FaInstagram className='font-24 color-light-gray' />
                   </div>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
+                  <div className=' box flex align-center justfy-center'>
                       <MdEmail className='font-24 color-light-gray' />
                   </div>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
+                  <div className=' box flex align-center justfy-center'>
                       <FaPinterestP  className='font-24 color-light-gray'/>
                   </div>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
+                  <div className=' box flex align-center justfy-center'>
                       <FaTwitter className='font-24 color-light-gray'/>
                   </div>
                 </div>
 
               </div>
             </div>
+
+            {/* <div className='footer-social-medias'>
+                <div className='mb-sm'>
+                <h3 className='font-montserrat font-18 color-white'>Follow us</h3>
+              </div>
+
+              <div className='social-medias flex flex-col'>
+                  <div className='bg-light-dark box flex align-center justfy-center'>
+                      <FaFacebookF className='font-16 color-light-gray' />
+                  </div>
+                  <div className='bg-light-dark box flex align-center justfy-center'>
+                     <FaInstagram className='font-16 color-light-gray' />
+                  </div>
+                  <div className='bg-light-dark box flex align-center justfy-center'>
+                      <MdEmail className='font-16 color-light-gray' />
+                  </div>
+                  <div className='bg-light-dark box flex align-center justfy-center'>
+                      <FaPinterestP  className='font-16 color-light-gray'/>
+                  </div>
+                  <div className='bg-light-dark box flex align-center justfy-center'>
+                      <FaTwitter className='font-16 color-light-gray'/>
+                  </div>
+                </div>
+
+              </div> */}
               
             <div className='footer-item2'>
               <div className='flex mb-sm '>
@@ -190,7 +215,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
+     
       <div className='footer-item4 footer-container' >
               <div className='flex flex-col mb-sm '>
                    <h2 className='font-montserrat font-24 font-weight-700 color-white'>Catagorieis</h2>
@@ -234,6 +259,31 @@ const Footer = () => {
               </div>
           </div>
        </div>
+
+       <div className='container footer-border-top footer-social-medias w-100'>
+                <div className='mb-sm'>
+                <h3 className='font-montserrat font-18 color-white'>Follow us</h3>
+              </div>
+
+              <div className=' flex gap-2'>
+                  <div className=' box flex align-center justfy-center'>
+                      <FaFacebookF className='font-24 color-light-gray' />
+                  </div>
+                  <div className='flex align-center justfy-center'>
+                     <FaInstagram className='font-24 color-light-gray' />
+                  </div>
+                  <div className='flex align-center justfy-center'>
+                      <MdEmail className='font-24 color-light-gray' />
+                  </div>
+                  <div className='flex align-center justfy-center'>
+                      <FaPinterestP  className='font-24 color-light-gray'/>
+                  </div>
+                  <div className='flex align-center justfy-center'>
+                      <FaTwitter className='font-24 color-light-gray'/>
+                  </div>
+                </div>
+
+              </div>
     </div>
   )
 }

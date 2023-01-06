@@ -1353,3 +1353,7 @@ ul{
 .overlay-hidden{
     overflow: hidden;
 }
+
+.footer-item4{
+    display: none;
+}
