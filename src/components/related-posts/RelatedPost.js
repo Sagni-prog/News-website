@@ -21,7 +21,9 @@ const RelatedPost = () => {
    const [current3,setCurrent3] = useState(2);
    const [left,setLeft] = useState(false)
    const [right,setRight] = useState(false)
+   const [disable,setDisable] = useState(false)
    const end = RelatedData.length - 1;
+
 
    const slideLeft = () => {
       
@@ -44,6 +46,7 @@ const RelatedPost = () => {
             }
      }
 
+
    const slideRight = () => {
        setLeft(false)
        setRight(true)
@@ -58,6 +61,7 @@ const RelatedPost = () => {
                if(current3 === end) {setCurrent3(0) } else{ setCurrent3(current3 + 1)} 
         }
     }
+
    
 
   return (
@@ -71,7 +75,6 @@ const RelatedPost = () => {
           </div>
 
       <div className='flex gap-2 overlay-hidden position-relative'>
-        {/* <div className={`${left ? 'related-post-slide-left' : ''} flex gap-2`}> */}
          {
             RelatedData.map((data,index) => (
 
@@ -156,7 +159,7 @@ const RelatedPost = () => {
             )
         }
            <div className='left flex justfy-center align-center'>
-              <FaAngleLeft onClick={ slideLeft } className='color-yellow font-32' />
+              <FaAngleLeft onClick={ slideLeft } className={`${disable ? 'disable' : ''} color-yellow font-32`} />
             </div>
 
             <div className='right flex justfy-center align-center'>
@@ -165,6 +168,8 @@ const RelatedPost = () => {
 
 
      </div>
+
+
        </div>
 
        {/* for responsive */}

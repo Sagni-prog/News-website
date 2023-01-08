@@ -12,49 +12,71 @@ const RelatedData = [
     {
         path: finalcup,
         alt : "finalcup",
-        title : "Teenegers sunset har shot wins top RSCA prize",
+        title : "1",
         subCatagory: "Football"
 
     },
     {
         path: mars,
         alt : "mars",
-        title : "Teenegers sunset har shot wins top RSCA prize",
+        title : "2",
         subCatagory: "Astronomy"
 
     },
     {
         path: africa,
         alt : "mars",
-        title : "Teenegers sunset har shot wins top RSCA prize",
+        title : "3",
         subCatagory: "Africa"
 
     },
     {
         path: africa,
         alt : "mars",
-        title : "Teenegers sunset har shot wins top RSCA prize",
+        title : "4",
         subCatagory: "Africa"
 
     },
     {
         path: africa,
         alt : "mars",
-        title : "Teenegers sunset har shot wins top RSCA prize",
+        title : "5",
         subCatagory: "Africa"
 
     },
     {
         path: africa,
         alt : "mars",
-        title : "Teenegers sunset har shot wins top RSCA prize",
+        title : "6",
         subCatagory: "Africa"
 
     },
     {
         path: festival,
         alt : "mars",
-        title : "Teenegers sunset har shot wins top RSCA prize",
+        title : "7",
+        subCatagory: "Africa"
+
+    },
+    
+    {
+        path: festival,
+        alt : "mars",
+        title : "8",
+        subCatagory: "Africa"
+
+    },
+    {
+        path: festival,
+        alt : "mars",
+        title : "9",
+        subCatagory: "Africa"
+
+    },
+    {
+        path: festival,
+        alt : "mars",
+        title : "10",
         subCatagory: "Africa"
 
     },

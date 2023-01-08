@@ -26,3 +26,11 @@
         transform: translateX(0);
     }
 }
+
+.disable{
+    display: none;
+}
+
+.card-width{
+    width: 50rem;
+}
