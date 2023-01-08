@@ -37,7 +37,7 @@
    height: 4.5rem;
    width: 100%;
    animation: slide-popular ;
-   animation-duration: .5s;
+   animation-duration: .3s;
 }
 .recent-box::before{
     content: '';
@@ -48,7 +48,7 @@
    height: 4.5rem;
    width: 100%;
    animation: slide-recent ;
-   animation-duration: .5s;
+   animation-duration: .3s;
 }
 
 @keyframes slide-popular {
