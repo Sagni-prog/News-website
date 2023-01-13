@@ -9,6 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavReducer from './reducers/NavReducer';
 import NavContext from './contexts/NavContext';
 import Menu from './components/menu/Menu';
+import SideBar from './components/Dashboard/SideBar';
 
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
   const [state,dispatch] = useReducer(NavReducer,{show: false})
   return ( 
     <div className='h-100vh'>
- <NavContext.Provider 
+      <SideBar />
+           {/* <NavContext.Provider 
    value={{state,dispatch}}
  >
       <BrowserRouter>
@@ -32,7 +34,7 @@ function App() {
              <Route element = {  <SinglePost /> } path = 'post' />
          </Routes>
       </BrowserRouter>
-   </NavContext.Provider> 
+          </NavContext.Provider>  */}
     </div>
   );
 }
