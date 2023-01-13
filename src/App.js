@@ -17,7 +17,10 @@ function App() {
   const [state,dispatch] = useReducer(NavReducer,{show: false})
   return ( 
     <div className='h-100vh'>
-            <Dashboard />
+            <BrowserRouter>
+               <Dashboard />
+                 
+            </BrowserRouter>
            {/* <NavContext.Provider 
    value={{state,dispatch}}
  >
