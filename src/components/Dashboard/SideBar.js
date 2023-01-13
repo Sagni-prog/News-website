@@ -32,47 +32,48 @@ const SideBar = () => {
              </div>
            </div>
  
-           <ul>
+           <ul className='mt-3 flex flex-col gap-2'>
                 <li>
-                    <Link>
-                         <span>
-                           <AiFillDashboard className='font-24 color-light-gray'/>
+                    <Link className='link flex align-center gap-1 font-montserrat font-18 color-white pl-3'>
+                         <span className='icon-bg'>
+                           <AiFillDashboard className='font-24 color-light-gray '/>
                          </span>
                          Dashboard
                     </Link>
                 </li>
                 <li>
-                    <Link>
-                         <span>
-                           <IoNewspaperOutline className='font-24 color-light-gray'/>
+                    <Link className='link flex align-center gap-1 font-montserrat font-18 color-light-gray pl-3'>
+                         <span className='icon-bg'>
+                           <IoNewspaperOutline className='font-24 color-light-gray '/>
                          </span>
-                         Posts
+                         Post
                     </Link>
                 </li>
                 <li>
-                    <Link>
-                         <span>
-                           <FaTasks className='font-24 color-light-gray'/>
+                    <Link className='link flex align-center gap-1 font-montserrat font-18 color-light-gray pl-3'>
+                         <span className='icon-bg'>
+                           <FaTasks className='font-24 color-light-gray '/>
                          </span>
-                        Catagories
+                         Catagory
                     </Link>
                 </li>
                 <li>
-                   <Link>
-                         <span>
-                           <FaTasks className='font-24 color-light-gray'/>
+                    <Link className='link flex align-center gap-1 font-montserrat font-18 color-light-gray pl-3'>
+                         <span className='icon-bg'>
+                           <FaTasks className='font-24 color-light-gray '/>
                          </span>
-                        Subcatagories
+                         Subcatagory
                     </Link>
                 </li>
                 <li>
-                   <Link>
-                         <span>
-                           <AiFillSetting className='font-24 color-light-gray'/>
+                    <Link className='link flex align-center gap-1 font-montserrat font-18 color-light-gray pl-3'>
+                         <span className='icon-bg'>
+                           <AiFillSetting className='font-24 color-light-gray '/>
                          </span>
-                        Settings
+                         Settings
                     </Link>
                 </li>
+               
            </ul>
 
         </div>

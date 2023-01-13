@@ -10,6 +10,7 @@ const TopBar = () => {
           <h1 className='font-montserrat font-24 color-white pl-3 pt-3'>Admin</h1>
        </div>
        <div className='leftBar w-100'>
+          <div></div>
             <MdOutlineMenu className='color-light-gray font-16 mt-2 ml-2' />
        </div>
        </div>
