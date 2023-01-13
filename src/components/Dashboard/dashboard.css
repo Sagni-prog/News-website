@@ -1,5 +1,8 @@
 .dashboard-bg-dark{
     background-color: #191c24;
 }
-
+.dashboard-container{
+   width: 95%;
+   margin: 0 auto;  
+}
 

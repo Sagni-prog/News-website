@@ -1,7 +1,5 @@
 .dashboard-topbar {
-    /* position: fixed; */
     height: 6rem;
-    /* margin-bottom: 12rem; */
 }
 
 .inside{
@@ -14,4 +12,51 @@
 
 .leftBar{
     width: 100%;
+}
+
+.search-field{
+    height: 3.6rem;
+    width: 35rem;
+    background-color: #191c24;
+    border: #585b61 solid 1px;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 2rem;
+    font-family: Montserrat sans-serif;
+    color: #525870;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.search-field::placeholder{
+    font-family: Montserrat sans-serif;
+    /* padding-left: 3rem; */
+    color: #747579;
+    font-size: 18;
+}
+
+.topbar-author-img{
+    position: relative;
+    width: 3.5rem;
+    max-width: 3.5rem;
+    height: 3.5rem;
+}
+
+/* .topbar-author-img::after{
+    content: '';
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    width: 6px;
+    height: 6px;
+    border: #191c24 solid 3px;
+    border-radius: 50%;
+    background-color: rgb(22, 170, 22);
+} */
+
+.topbar-author-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
