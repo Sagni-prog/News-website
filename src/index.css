@@ -1362,3 +1362,7 @@ ul{
 .responsive-width{
     width: 60%;
 }
+
+.footer-social-medias{
+    display: none;
+}
