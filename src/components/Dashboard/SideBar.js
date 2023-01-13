@@ -32,8 +32,8 @@ const SideBar = () => {
              </div>
            </div>
  
-           <ul className='mt-3 flex flex-col gap-2'>
-                <li>
+           <ul className='mt-3 flex flex-col'>
+                <li className='active-link'>
                     <Link className='link flex align-center gap-1 font-montserrat font-18 color-white pl-3'>
                          <span className='icon-bg'>
                            <AiFillDashboard className='font-24 color-light-gray '/>
