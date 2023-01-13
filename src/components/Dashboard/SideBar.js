@@ -41,7 +41,7 @@ const SideBar = () => {
                          Dashboard
                     </Link>
                 </li>
-                <li>
+                <li className='dash-link'>
                     <Link className='link flex align-center gap-1 font-montserrat font-18 color-light-gray pl-3'>
                          <span className='icon-bg'>
                            <IoNewspaperOutline className='font-24 color-light-gray '/>
@@ -49,7 +49,7 @@ const SideBar = () => {
                          Post
                     </Link>
                 </li>
-                <li>
+                <li className='dash-link'>
                     <Link className='link flex align-center gap-1 font-montserrat font-18 color-light-gray pl-3'>
                          <span className='icon-bg'>
                            <FaTasks className='font-24 color-light-gray '/>
@@ -57,7 +57,7 @@ const SideBar = () => {
                          Catagory
                     </Link>
                 </li>
-                <li>
+                <li className='dash-link'>
                     <Link className='link flex align-center gap-1 font-montserrat font-18 color-light-gray pl-3'>
                          <span className='icon-bg'>
                            <FaTasks className='font-24 color-light-gray '/>
@@ -65,7 +65,7 @@ const SideBar = () => {
                          Subcatagory
                     </Link>
                 </li>
-                <li>
+                <li className='dash-link'>
                     <Link className='link flex align-center gap-1 font-montserrat font-18 color-light-gray pl-3'>
                          <span className='icon-bg'>
                            <AiFillSetting className='font-24 color-light-gray '/>

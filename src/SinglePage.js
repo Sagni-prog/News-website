@@ -6,7 +6,7 @@ const SinglePage = () => {
   return (
     <div>
         <TopPage />
-        <SinglePage />
+        <SinglePost />
     </div>
   )
 }

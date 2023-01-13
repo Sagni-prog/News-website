@@ -36,20 +36,17 @@
 .author{
     gap: 6rem;
 }
-li{
+.dash-link{
     padding: 1rem 0;
 }
 
 .active-link{
     background-color: #121213c2;
     padding: 1rem 0;
-    /* width: 95%; */
-    /* border-top-right-radius: 100px; */
-    /* border-bottom-right-radius: 100px; */
     border-left: rgb(17, 71, 187) solid 4px;
 }
 
-li:hover{
+.dash-link:hover{
     background-color: #121213c2;
     height: 100%;
 }
