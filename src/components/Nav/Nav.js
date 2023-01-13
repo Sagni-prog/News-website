@@ -21,62 +21,53 @@ const Nav = () => {
 
     const handleClick = (e) => {
         e.preventDefault()
-
-        console.log("hello")
         dispatch({type: 'toggle',state});
     }
 
   return (
     <div>
         <div className='bg-gray w-100 h-7 flex mt-4'>
+          <div className='container h-100 flex justify-between align-center'>
+             <ul className='h-100 flex align-center justify-between gap-2'>
+              <li className='logo-disp'>
+                <div className=' h-100 flex align-center '>
+                   <Link  to = '/' className='link font-32 font-montserrat'>
+                     <span className='color-yellow'>
+                            Zena
+                     </span>
+                     <span className='color-dark'>
+                            Log
+                    </span>
+                    </Link>
+                </div>
+                </li>
+                <li className='home'>
+                    <Link className=' h-100 color-white link font-18 font-montserrat pb-8' to = '/'>Home</Link>
+                </li>
 
-          
-     
-     <div className='container h-100 flex justify-between align-center'>
-     
-    
+                    <li className='nav-link'> 
+                        <Link className='link font-16 font-montserrat color-white pb-8' to = '/post'>Single</Link>
+                    </li>
+                
+                    <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)} className='nav-link position-relative' > 
+                        <Link className='link font-16 font-montserrat color-white pb-8 h-100' to = ''>News</Link>
+                        <IoIosArrowDown className='pt-1 font-18 color-white' />
 
-         <ul className='h-100 flex align-center justify-between gap-2'>
-           <li className='logo-disp'>
-           <div className=' h-100 flex align-center '>
-             <h1 className='font-32 font-montserrat'>
-                <span className='color-yellow'>
-                    Zena
-                </span>
-                <span className='color-dark'>
-                    Log
-                </span>
-             </h1>
-        </div>
-           </li>
-           <li className='home'>
-             <Link className=' h-100 color-white link font-18 font-montserrat pb-8' to = '/'>Home</Link>
-             </li>
-
-           
-            <li className='nav-link'> 
-                <Link className='link font-16 font-montserrat color-white pb-8' to = '/post'>Single</Link>
-           </li>
-         
-            <li onMouseEnter={() => setDropdown(true)} onMouseLeave={() => setDropdown(false)} className='nav-link position-relative' > 
-                <Link className='link font-16 font-montserrat color-white pb-8 h-100' to = '/this'>News</Link>
-                <IoIosArrowDown className='pt-1 font-18 color-white' />
-
-                {   dropdown &&
-           <ul className='dropdown'>
-             <li className='nav-link'> 
-                 <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
-             </li>
-             <li className='nav-link'> 
-                 <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
-             </li>
-             <li className='nav-link'> 
-                 <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
-             </li>
-             <li className='nav-link'> 
-                 <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
-             </li>
-           </ul>
+                        {   dropdown &&
+                <ul className='dropdown'>
+                    <li className='nav-link'> 
+                        <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
+                    </li>
+                    <li className='nav-link'> 
+                        <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
+                    </li>
+                    <li className='nav-link'> 
+                        <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
+                    </li>
+                    <li className='nav-link'> 
+                        <Link className='link font-18 font-montserrat color-white pb-8' to = ''>News</Link>
+                    </li>
+                </ul>
  }
            </li>
 

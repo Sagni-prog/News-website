@@ -60,7 +60,7 @@ const Sidebar = () => {
        recent &&
         <div className='recent-news flex flex-col gap-2  mb-l'>
 
-        <div className='flex gap-1 sidebar-card bg-light-gray2'>
+        <div className='flex gap-1 sidebar-card bg-white'>
                   <div className='sidebar-img'>
                       <img src = { im3 } alt = 'im' />
                   </div>
@@ -90,7 +90,7 @@ const Sidebar = () => {
                </div>
               </div>
 
-              <div className='flex gap-1 sidebar-card bg-light-gray2'>
+              <div className='flex gap-1 sidebar-card bg-white'>
                   <div className='sidebar-img'>
                       <img className='' src = { im3 } alt = 'im' />
                   </div>
@@ -121,7 +121,7 @@ const Sidebar = () => {
               </div>
 
 
-              <div className='flex gap-1 sidebar-card bg-light-gray2'>
+              <div className='flex gap-1 sidebar-card bg-white'>
                   <div className='sidebar-img'>
                       <img src = { im3 } alt = 'im' />
                   </div>
@@ -150,7 +150,7 @@ const Sidebar = () => {
                </div>
             </div>
 
-              <div className='flex gap-1 sidebar-card bg-light-gray2'>
+              <div className='flex gap-1 sidebar-card bg-white'>
                   <div className='sidebar-img'>
                       <img src = { im3 } alt = 'im' />
                   </div>
@@ -186,7 +186,7 @@ const Sidebar = () => {
       popular &&
         <div className='popular-news flex flex-col gap-2  mb-l'>
 
-        <div className='flex gap-1 sidebar-card bg-light-gray2'>
+        <div className='flex gap-1 sidebar-card bg-white'>
                   <div className='sidebar-img'>
                       <img src = { im3 } alt = 'im' />
                   </div>
@@ -216,7 +216,7 @@ const Sidebar = () => {
                </div>
               </div>
 
-              <div className='flex gap-1 sidebar-card bg-light-gray2'>
+              <div className='flex gap-1 sidebar-card bg-white'>
                   <div className='sidebar-img'>
                       <img className='' src = { im3 } alt = 'im' />
                   </div>
@@ -247,7 +247,7 @@ const Sidebar = () => {
               </div>
 
 
-              <div className='flex gap-1 sidebar-card bg-light-gray2'>
+              <div className='flex gap-1 sidebar-card bg-white'>
                   <div className='sidebar-img'>
                       <img src = { im3 } alt = 'im' />
                   </div>
@@ -276,7 +276,7 @@ const Sidebar = () => {
                </div>
             </div>
 
-              <div className='flex gap-1 sidebar-card bg-light-gray2'>
+              <div className='flex gap-1 sidebar-card bg-white'>
                   <div className='sidebar-img'>
                       <img src = { im3 } alt = 'im' />
                   </div>

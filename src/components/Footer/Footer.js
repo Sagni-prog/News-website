@@ -12,13 +12,13 @@ const Footer = () => {
   return (
     <div className='bg-gray'>
        <div className='container footer-border'>
-          <div className='flex gap-2 w-100 py-5'>
+          <div className='flex gap-2 w-100 py-5 footer-responsive-space'>
 
             <div className='footer-item'>
               <div className='flex mb-sm '>
                    <h2 className='font-montserrat font-24 font-weight-700 color-white'>Explore</h2>
               </div>
-              <div className='flex flex-col gap-1 pl-2 mb-l'>
+              <div className='flex flex-col gap-1 pl-2 mb-l footer-explore'>
                 <div className='read-more'>
                   <Link className='link font-montserrat font-18 color-white' to = '/'>
                       Home
@@ -62,31 +62,6 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* <div className='footer-social-medias'>
-                <div className='mb-sm'>
-                <h3 className='font-montserrat font-18 color-white'>Follow us</h3>
-              </div>
-
-              <div className='social-medias flex flex-col'>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
-                      <FaFacebookF className='font-16 color-light-gray' />
-                  </div>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
-                     <FaInstagram className='font-16 color-light-gray' />
-                  </div>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
-                      <MdEmail className='font-16 color-light-gray' />
-                  </div>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
-                      <FaPinterestP  className='font-16 color-light-gray'/>
-                  </div>
-                  <div className='bg-light-dark box flex align-center justfy-center'>
-                      <FaTwitter className='font-16 color-light-gray'/>
-                  </div>
-                </div>
-
-              </div> */}
-              
             <div className='footer-item2'>
               <div className='flex mb-sm '>
                    <h2 className='font-montserrat font-24 font-weight-700 color-white'>Popular News</h2>
@@ -186,6 +161,7 @@ const Footer = () => {
               </div>
           </div>
        </div>
+       
           <div className='footer-photos footer-item'>
               <div className='flex mb-sm'>
                    <h2 className='font-montserrat font-24 font-weight-700 color-white'>Photos</h2>
@@ -216,9 +192,9 @@ const Footer = () => {
         </div>
       </div>
      
-      <div className='footer-item4 footer-container' >
+      <div className='footer-item4 container' >
               <div className='flex flex-col mb-sm '>
-                   <h2 className='font-montserrat font-24 font-weight-700 color-white'>Catagorieis</h2>
+                   <h2 className='font-montserrat font-24 font-weight-700 color-white pt-3'>Catagorieis</h2>
               </div>
 
               <div>

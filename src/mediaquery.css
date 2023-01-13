@@ -400,4 +400,12 @@
     .footer-item3{
         width: 55%;
     }
+
+    .footer-explore{
+        margin: 0;
+        padding: 0;
+    }
+    .footer-responsive-space{
+        padding-bottom: 3rem;
+    }
 }
