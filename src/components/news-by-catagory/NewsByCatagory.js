@@ -58,7 +58,7 @@ const NewsByCatagory = () => {
                             
                             </div>
                             <div className='mb-2'>
-                            <h4 className='font-montserrat color-dark font-18 text-uppercase font-weight-700'>
+                            <h4 className='font-montserrat color-dark font-18 text-uppercase font-weight-700 '>
                                 Lorem ipsum dolor sit amet elit...
                                 </h4>
                             </div>
@@ -87,6 +87,7 @@ const NewsByCatagory = () => {
                      </div>
                 </div>
 
+         {/* Responsive view */}
             <div className='news-resp2'>
                 <div className=' gallery-top-img-container'>
                   <img src = {finalcup} alt = ''/>
@@ -111,8 +112,7 @@ const NewsByCatagory = () => {
                     
                  </div>
             </div>
-
-
+            
             <div className='recent-resp mt-2 flex flex-col gap-2 bg-white'>
                 <div className='flex flex-col bg-white border-bottom pb-1'>
                     <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
@@ -188,6 +188,9 @@ const NewsByCatagory = () => {
              </div>
           </div>
        </div> 
+
+       {/* Responsive view */}
+
                 <div className='news-caragory2 w-half h-100'>
                     <div className='flex flex-col gap-3'>
 
@@ -344,7 +347,8 @@ const NewsByCatagory = () => {
           </div>            
           </div>
        </div>
-    </div>     
+    </div> 
+
         <div className='mb-md'>
             <div className='flex flex-col gap-2'>
 
@@ -440,7 +444,7 @@ const NewsByCatagory = () => {
             </div>
 
 
-            <div className='recent-resp mt-2 flex flex-col gap-2 bg-white'>
+             <div className='recent-resp mt-2 flex flex-col gap-2 bg-white'>
                 <div className='flex flex-col bg-white border-bottom pb-1'>
                     <h4 className= 'color-black font-weight-700 font-montserrat font-14 text-uppercase'>
                         Lorem ipsum dolor sit amet elit  sit amet elit...

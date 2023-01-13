@@ -20,7 +20,7 @@ const Videos = () => {
               <div className='dark-overlay'></div>
               <div className='gallery-overlay flex align-end'>
                 <div className='flex flex-col p-2 w-80'>
-                   <h4 className='font-montserrat color-white font-24'>
+                   <h4 className='font-montserrat color-white font-24 video-font-responsive'>
                          Argentina win 2022 World Cup final-in pictur Argentina win 2022 world cup final-in pictureses
                      </h4>
                           <div className='flex gap-1 mt-1'>
@@ -33,8 +33,8 @@ const Videos = () => {
                            </div>
                       </div>
                   </div>
-                  <div className='flex justfy-center align-center play-icon'>
-                     <MdPlayArrow className='color-white font-52'/>
+                  <div className='flex justfy-center align-center play-icon '>
+                     <MdPlayArrow className='color-white font-52 viddeo-play-icon-responsive'/>
                   </div>
           </div> 
 

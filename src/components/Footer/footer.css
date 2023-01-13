@@ -4,6 +4,10 @@
     margin-top: 2rem;
 }
 
+.footer-social-medias{
+    display: none;
+}
+
 .index{
     z-index: 10;
 }

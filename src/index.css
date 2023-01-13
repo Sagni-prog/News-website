@@ -802,7 +802,8 @@ html{
 
 .img-container{
     height: 9.6rem;
-    width: 9.6rem;
+    min-width: 9.6rem;
+    max-width: 9.6rem;
 }
 
 .sidebar-img{
