@@ -9,7 +9,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavReducer from './reducers/NavReducer';
 import NavContext from './contexts/NavContext';
 import Menu from './components/menu/Menu';
-import SideBar from './components/Dashboard/SideBar';
+import Dashboard from './components/Dashboard/Dashboard';
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
   const [state,dispatch] = useReducer(NavReducer,{show: false})
   return ( 
     <div className='h-100vh'>
-      <SideBar />
+            <Dashboard />
            {/* <NavContext.Provider 
    value={{state,dispatch}}
  >
