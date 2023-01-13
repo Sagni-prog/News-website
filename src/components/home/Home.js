@@ -10,10 +10,12 @@ import NewsByCatagory from '../../components/news-by-catagory/NewsByCatagory';
 import Photogallery from '../../components/PhotoGallery/Photogallery';
 import Videos from '../../components/Videos/Videos';
 import Footer from '../../components/Footer/Footer'
+import TopPage from '../../TopPage';
 
 function Home() {
   return ( 
     <div className='h-100vh'>
+          <TopPage />
           <Hero />
           <Featured />
           <NewsByCatagory />

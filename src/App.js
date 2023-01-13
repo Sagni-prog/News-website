@@ -5,6 +5,7 @@ import Adds from './components/ads/Adds';
 import Nav from './components/Nav/Nav';
 import Home from './components/home/Home';
 import SinglePost from './components/SinglePost/SinglePost';
+import SinglePage from './SinglePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavReducer from './reducers/NavReducer';
 import NavContext from './contexts/NavContext';
@@ -18,22 +19,21 @@ function App() {
   return ( 
     <div className='h-100vh'>
            
-           <NavContext.Provider 
+       <NavContext.Provider 
    value={{state,dispatch}}
  >
       <BrowserRouter>
-          <Top />
+          {/* <Top />
           <Adds />
           <Nav />
-          <Menu />
+          <Menu /> */}
           <Routes>
              <Route element = {  <Home/> } path = '/' />
           </Routes>
         
           <Routes>
-             <Route element = {  <SinglePost /> } path = 'post' />
+             <Route element = {  <SinglePage /> } path = 'post' />
          </Routes>
-
          <Routes>
               <Route element = {<Dashboard />} path = 'admin/dashboard' />
          </Routes>

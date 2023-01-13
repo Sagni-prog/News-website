@@ -42,17 +42,6 @@
     height: 3.5rem;
 }
 
-/* .topbar-author-img::after{
-    content: '';
-    position: absolute;
-    top: 70%;
-    left: 70%;
-    width: 6px;
-    height: 6px;
-    border: #191c24 solid 3px;
-    border-radius: 50%;
-    background-color: rgb(22, 170, 22);
-} */
 
 .topbar-author-img img{
     width: 100%;
