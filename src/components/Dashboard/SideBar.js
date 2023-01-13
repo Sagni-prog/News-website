@@ -73,7 +73,6 @@ const SideBar = () => {
                          Settings
                     </Link>
                 </li>
-               
            </ul>
 
         </div>

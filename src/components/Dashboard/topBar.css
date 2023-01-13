@@ -5,15 +5,14 @@
 .inside{
     position: fixed;
     height: 6rem;
-}
-.title-bar{
-    width: 22.4%;
+    width: 82%;
+
 }
 
-.leftBar{
-    width: 100%;
+.dashboard-container{
+    width: 95%;
+    margin: 0 auto;
 }
-
 .search-field{
     height: 3.6rem;
     width: 35rem;
