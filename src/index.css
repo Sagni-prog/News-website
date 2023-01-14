@@ -108,6 +108,17 @@ html{
 }
 
 
+.word-break{
+    overflow-wrap: break-word;
+    color: #000;
+}
+
+.try{
+    margin: 1rem 0;
+    max-width: 36.25rem;
+
+}
+
 .border-right{
     border-right: 1px solid #9A9DA2;
 }
