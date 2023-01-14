@@ -8,7 +8,7 @@ const TopBar = () => {
   const { mars } = Images;
   return (
     <div className='dashboard-topbar'>
-      <div className='inside inside flex dashboard-bg-dark '>
+      <div className='inside inside flex dashboard-bg-dark mb-sm'>
 
            <div className='dashboard-container flex justify-between h-100'>
               <div className='left-content flex align-center gap-3 h-100'>

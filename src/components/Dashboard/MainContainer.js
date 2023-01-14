@@ -10,9 +10,12 @@ import {
 } from 'react-router-dom'
 const MainContainer = () => {
   return (
-    <div className='main-container h-100 flex flex-col'>
+    <div className='main-container h-100 flex flex-col '>
         <TopBar />
+        <div className='cont'>
+
         <AddPost />
+        </div>
     </div>
   )
 }

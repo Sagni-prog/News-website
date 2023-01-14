@@ -1,4 +1,11 @@
 .add-post{
-     /* overflow-y: auto; */
+    
+     margin-top: 3rem;
+     margin-bottom: 3rem;
+     padding-bottom: 3rem;
    
+}
+
+.add-post form{
+     margin-top: 3rem;
 }
