@@ -112,6 +112,11 @@ html{
     overflow-wrap: break-word;
     color: #000;
 }
+.pre-wrap{
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    width: 80%;
+}
 
 .try{
     margin: 1rem 0;
