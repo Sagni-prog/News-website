@@ -11,7 +11,7 @@ const AddPost = () => {
             </div>
 
             <div className='add-post-fields flex flex-col gap-1'>
-                <label>Post Title</label>
+                <label>Subcatagory</label>
                 <select>
                    <option>
                     helo
@@ -22,7 +22,7 @@ const AddPost = () => {
                 </select>
             </div>
             <div className='add-post-fields flex flex-col gap-1'>
-                <label>Post Title</label>
+                <label>Commentable</label>
                 <select>
                    <option>
                     Yes
@@ -33,11 +33,11 @@ const AddPost = () => {
                 </select>
             </div>
             <div className='add-post-fields flex flex-col gap-1'>
-                <label>Post Title</label>
+                <label>Post Detail</label>
                 <textarea />
             </div>
             <div className='add-post-fields flex flex-col gap-1'>
-                <label>Post Title</label>
+                <label>Tags</label>
                 <input className='' />
             </div>
             
