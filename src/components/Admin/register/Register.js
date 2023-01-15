@@ -4,7 +4,7 @@ import {MdLock} from 'react-icons/md';
 import {MdPerson} from 'react-icons/md';
 import {MdFileUpload} from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import http from '../../Url';
+import http from '../../../Url';
 
 export const Register = () => {
 

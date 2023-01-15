@@ -3,7 +3,7 @@ import {MdEmail} from 'react-icons/md';
 import {MdLock} from 'react-icons/md';
 import { Link,useNavigate } from 'react-router-dom';
 import './login.css'
-import http from '../../Url';
+import http from '../../../Url';
 
 export const Login = () => {
 
