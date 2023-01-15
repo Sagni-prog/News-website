@@ -36,7 +36,7 @@ export const Register = () => {
     }
 
      async function sendData(formData){
-        const res = await http.post("/admin/register",formData);
+        const res = await http.post("admin/register",formData);
         localStorage.setItem('token',JSON.stringify(res.data.token));
         localStorage.setItem('user',JSON.stringify(res.data.user));
         
@@ -75,7 +75,7 @@ export const Register = () => {
      }
 
   return (
-    <div className='container'>
+    <div className='login-container'>
      <div className='title'>
         {/* <img src = { Data.image } alt = {Data.alt}/> */}
         <h1>Sign Up</h1>
@@ -119,7 +119,7 @@ export const Register = () => {
                     </div>
                 </div>
                 <div className='action'>
-                    <Link to = '/login'>Login</Link>
+                    <Link to = '/admin/login'>Login</Link>
                     <button className='button'>Sign Up</button>
                 </div>
             </form>

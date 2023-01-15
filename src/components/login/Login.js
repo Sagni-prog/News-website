@@ -40,7 +40,7 @@ export const Login = () => {
     }
 
   return (
-    <div className='container'>
+    <div className='login-container'>
       <div className='title'>
             <h1>Sign In</h1>
         </div>
@@ -67,7 +67,7 @@ export const Login = () => {
                     </div>
                     <div className='action'>
 
-                        <Link to='/register'>Register</Link>
+                        <Link to='/admin/register'>Register</Link>
                         <button className='button'>Sign In</button>
                     </div>
                 </form>
