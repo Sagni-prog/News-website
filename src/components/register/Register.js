@@ -5,7 +5,7 @@ import {MdPerson} from 'react-icons/md';
 import {MdFileUpload} from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import './register.css';
-
+import http from '../../Url';
 
 export const Register = () => {
 
