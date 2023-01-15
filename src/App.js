@@ -24,10 +24,7 @@ function App() {
    value={{state,dispatch}}
  >
       <BrowserRouter>
-          {/* <Top />
-          <Adds />
-          <Nav />
-          <Menu /> */}
+        
           <Routes>
              <Route element = {  <Home/> } path = '/' />
           </Routes>

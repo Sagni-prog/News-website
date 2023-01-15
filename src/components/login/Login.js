@@ -1,21 +1,16 @@
 import React,{useState,useContext} from 'react';
-import axios from 'axios';
 import {MdEmail} from 'react-icons/md';
 import {MdLock} from 'react-icons/md';
 import { Link,useNavigate } from 'react-router-dom';
-// import http from '../../Api/Url';
-// import Data from '../../Constants/Data';
-// import CatagoryContext from '../../Contexts/CatagoryContext';
-
+import './login.css'
+import http from '../../Url';
 
 export const Login = () => {
 
-    // const { authenticate,dispatchauth,auth } = useContext(CatagoryContext)
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
     const navigate = useNavigate();
    
-
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
     }
@@ -24,15 +19,16 @@ export const Login = () => {
         setPassword(e.target.value);
     }
 
-    // const sendData = async(data) => {
-    //     const res = await http.post("/user/login",data);
-    //     dispatchauth({type: 'LOG'})
-    //      navigate("/");
-    //     const token = res.data.token;
-    //     localStorage.setItem('token',token);
-    //     localStorage.setItem('user',JSON.stringify(res.data.user));
+    const sendData = async(data) => {
+        const res = await http.post("/admin/login",data);
+         navigate("/admin/dashboard");
+
+         console.log(res)
+        const token = res.data.token;
+        localStorage.setItem('token',token);
+        localStorage.setItem('user',JSON.stringify(res.data.user));
         
-    // }
+    }
 
     const handleSubmit = (e) => {
 
@@ -40,13 +36,12 @@ export const Login = () => {
 
         let data = {email: email,password: password}
          
-        // sendData(data)
+        sendData(data)
     }
 
   return (
     <div className='container'>
       <div className='title'>
-        {/* <img src = { Data[0].image } alt = {Data[0].alt}/> */}
             <h1>Sign In</h1>
         </div>
 
