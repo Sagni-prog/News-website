@@ -11,6 +11,7 @@ import NavReducer from './reducers/NavReducer';
 import NavContext from './contexts/NavContext';
 import Menu from './components/menu/Menu';
 import Dashboard from './components/Dashboard/Dashboard';
+import { Login } from './components/login/Login';
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
          </Routes>
          <Routes>
               <Route element = {<Dashboard />} path = 'admin/dashboard' />
+         </Routes>
+         <Routes>
+              <Route element = {<Login />} path = 'admin/login' />
          </Routes>
       </BrowserRouter>
           </NavContext.Provider> 

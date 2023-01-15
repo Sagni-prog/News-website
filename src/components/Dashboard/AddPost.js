@@ -42,11 +42,10 @@ const AddPost = () => {
       console.log(code)
   }
 
-
   return (
     <div className='container add-post w-100 bg-white mb-sm'>
       <div className='pre-wrap'>
-        <p className='font-montserrat font-24'>
+        <p className='font-montserrat font-16'>
            {JSON.parse(localStorage.getItem("text"))}
            </p>
       </div>
@@ -81,7 +80,10 @@ const AddPost = () => {
             </div>
             <div className='add-post-fields flex flex-col gap-1'>
                 <label>Post Detail</label>
-                <textarea  onChange={ e => setText(e.target.value) } onKeyPress = {e => handleEnter(e)} />
+                <textarea 
+                   onChange={ e => setText(e.target.value) }
+                   onKeyPress = {e => handleEnter(e)} 
+                 />
             </div>
             <div className='add-post-fields flex flex-col gap-1'>
                 <label>Tags</label>
