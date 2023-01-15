@@ -1,6 +1,6 @@
 import {React,useContext} from 'react'
 import './menu.css'
-import NavContext from '../../contexts/NavContext'
+import NavContext from '../../../contexts/NavContext'
 import { Link } from 'react-router-dom'
 
 const Menu = () => {

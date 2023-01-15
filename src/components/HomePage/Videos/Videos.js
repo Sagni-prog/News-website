@@ -1,6 +1,6 @@
 import React from 'react'
-import forest from '../../assets/images/africa.jpg'
-import rally from '../../assets/images/rally.jpg'
+import forest from '../../../assets/images/africa.jpg'
+import rally from '../../../assets/images/rally.jpg'
 import { Link } from 'react-router-dom'
 import { IoIosCamera } from 'react-icons/io'
 import { MdPlayArrow } from 'react-icons/md'

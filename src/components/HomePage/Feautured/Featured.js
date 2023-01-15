@@ -1,10 +1,10 @@
 import React from 'react'
-import im1 from '../../assets/images/news-800x500-1.jpg'
-import im3 from '../../assets/images/news-700x435-1.jpg'
+import im1 from '../../../assets/images/news-800x500-1.jpg'
+import im3 from '../../../assets/images/news-700x435-1.jpg'
 import { Link } from 'react-router-dom'
 import {IoIosArrowBack} from 'react-icons/io'
 import {IoIosArrowForward} from 'react-icons/io'
-import festival from '../../assets/images/festival.jpg'
+import festival from '../../../assets/images/festival.jpg'
 
 const Featured = () => {
 

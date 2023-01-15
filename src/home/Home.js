@@ -1,6 +1,5 @@
 import React from 'react';
 import Top from '../components/HomePage/Top/Top';
-import '../../../App.css';
 import Adds from '../components/HomePage/ads/Adds';
 import Nav from '../components/HomePage/Nav/Nav';
 import Hero from '../components/HomePage/hero/Hero';

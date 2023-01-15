@@ -1,8 +1,8 @@
   /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import im1 from '../../assets/images/news-800x500-1.jpg'
-import im3 from '../../assets/images/news-700x435-1.jpg'
+import im1 from '../../../assets/images/news-800x500-1.jpg'
+import im3 from '../../../assets/images/news-700x435-1.jpg'
 import { Link } from 'react-router-dom'
 
 const Hero = () => {

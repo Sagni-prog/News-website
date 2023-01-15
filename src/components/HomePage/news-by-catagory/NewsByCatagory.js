@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
-import im1 from '../../assets/images/news-800x500-1.jpg'
-import im3 from '../../assets/images/news-700x435-1.jpg'
+import im1 from '../../../assets/images/news-800x500-1.jpg'
+import im3 from '../../../assets/images/news-700x435-1.jpg'
 import Sidebar from '../Sidebar/Sidebar'
-import user from '../../assets/images/user.jpg'
+import user from '../../../assets/images/user.jpg'
 import { IoIosEye } from 'react-icons/io'
 import { MdComment } from 'react-icons/md'
 import { MdSchedule } from 'react-icons/md'
 import { MdCalendarViewMonth } from 'react-icons/md'
 import { MdPerson } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-import finalcup from '../../assets/images/final_cup.jpg'
+import finalcup from '../../../assets/images/final_cup.jpg'
 
 const NewsByCatagory = () => {
   return (
