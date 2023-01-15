@@ -2,7 +2,7 @@
 import React from 'react'
 import './dashboard.css'
 import './sidebar.css'
-import Images from '../../constants/Images'
+import Images from '../../../constants/Images'
 import { BiDotsVerticalRounded } from 'react-icons/bi'
 import { AiFillDashboard } from 'react-icons/ai'
 import { IoNewspaperOutline } from 'react-icons/io5'

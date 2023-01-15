@@ -10,7 +10,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavReducer from './reducers/NavReducer';
 import NavContext from './contexts/NavContext';
 import Menu from './components/menu/Menu';
-import Dashboard from './components/Dashboard/Dashboard';
+import Dashboard from './components/Admin/Dashboard/Dashboard';
 import { Login } from './components/Admin/login/Login';
 import { Register } from './components/Admin/register/Register';
 

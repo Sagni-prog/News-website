@@ -1,7 +1,7 @@
 import React from 'react'
 import './topBar.css'
 import { MdOutlineMenu } from 'react-icons/md'
-import Images from '../../constants/Images'
+import Images from '../../../constants/Images'
 
 const TopBar = () => {
 
