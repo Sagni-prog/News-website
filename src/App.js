@@ -1,15 +1,15 @@
 import { React,useReducer } from 'react'
-import Top from './components/Top/Top';
+import Top from './components/HomePage/Top/Top';
 import './App.css';
-import Adds from './components/ads/Adds';
-import Nav from './components/Nav/Nav';
-import Home from './components/home/Home';
-import SinglePost from './components/SinglePost/SinglePost';
+import Adds from './components/HomePage/ads/Adds';
+import Nav from './components/HomePage/Nav/Nav';
+import Home from './components/HomePage/home/Home';
+import SinglePost from './components/HomePage/SinglePost/SinglePost';
 import SinglePage from './SinglePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavReducer from './reducers/NavReducer';
 import NavContext from './contexts/NavContext';
-import Menu from './components/menu/Menu';
+import Menu from './components/HomePage/menu/Menu';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import { Login } from './components/Admin/login/Login';
 import { Register } from './components/Admin/register/Register';

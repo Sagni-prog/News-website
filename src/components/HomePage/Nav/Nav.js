@@ -4,7 +4,7 @@ import { IoIosArrowDown } from 'react-icons/io'
 import { IoIosArrowUp } from 'react-icons/io'
 import { IoIosSearch } from 'react-icons/io'
 import { MdOutlineMenu } from 'react-icons/md'
-import NavContext from '../../contexts/NavContext'
+import NavContext from '../../../contexts/NavContext'
 
 
 
