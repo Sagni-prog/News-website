@@ -49,7 +49,7 @@ export const Login = () => {
             <div className='inner_field'>
                 
                 <form onSubmit={handleSubmit} className = 'login_form'>
-                    <div className='input_field'>
+                    <div className='login_input_field'>
 
                         <div className='wrapper'>
                             <input type='text' value = {email} onChange = {handleEmailChange} placeholder = "Email" />

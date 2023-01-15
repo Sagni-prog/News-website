@@ -83,7 +83,7 @@ export const Register = () => {
     <div className='field_container'>
         <div className='inner_field'>
             <form onSubmit={handleSubmit} className = "register_form">
-                <div className='input_field'>
+                <div className='login_input_field'>
                     <div className='wrapper'>
                         <input type='text' value={name} onChange = { handleNameChange } placeholder='Name'/>
                         <div className='icon bg_green'>
