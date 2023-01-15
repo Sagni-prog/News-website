@@ -4,7 +4,6 @@ import {MdLock} from 'react-icons/md';
 import {MdPerson} from 'react-icons/md';
 import {MdFileUpload} from 'react-icons/md';
 import { Link } from 'react-router-dom';
-import './register.css';
 import http from '../../Url';
 
 export const Register = () => {
@@ -37,7 +36,7 @@ export const Register = () => {
     }
 
      async function sendData(formData){
-        const res = await http.post("/user/register",formData);
+        const res = await http.post("/admin/register",formData);
         localStorage.setItem('token',JSON.stringify(res.data.token));
         localStorage.setItem('user',JSON.stringify(res.data.user));
         
