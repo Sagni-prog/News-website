@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import im3 from '../../assets/images/news-700x435-1.jpg'
+import im3 from '../../../assets/images/news-700x435-1.jpg'
 import { MdSchedule } from 'react-icons/md'
 import SideAd from '../ads/SideAd'
 import Subscribe from '../subscribe/Subscribe'

@@ -5,7 +5,7 @@ import { FaInstagram } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import { FaPinterestP } from 'react-icons/fa'
 import { FaTwitter } from 'react-icons/fa'
-import img from '../../assets/images/news-110x110-1.jpg'
+import img from '../../../assets/images/news-110x110-1.jpg'
 import './footer.css'
 
 const Footer = () => {

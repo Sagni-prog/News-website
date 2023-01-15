@@ -1,5 +1,5 @@
 import React from 'react'
-import ad1 from '../../assets/images/news-800x500-1.jpg'
+import ad1 from '../../../assets/images/news-800x500-1.jpg'
 
 const SideAd = () => {
   return (

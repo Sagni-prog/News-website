@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/images/ads-728x90.png'
+import logo from '../../../assets/images/ads-728x90.png'
 import { Link } from 'react-router-dom'
 
 const Adds = () => {

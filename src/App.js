@@ -3,7 +3,7 @@ import Top from './components/HomePage/Top/Top';
 import './App.css';
 import Adds from './components/HomePage/ads/Adds';
 import Nav from './components/HomePage/Nav/Nav';
-import Home from './components/HomePage/home/Home';
+import Home from './home/Home';
 import SinglePost from './components/HomePage/SinglePost/SinglePost';
 import SinglePage from './SinglePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
