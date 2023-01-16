@@ -13,6 +13,7 @@ import Menu from './components/HomePage/menu/Menu';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import { Login } from './components/Admin/login/Login';
 import { Register } from './components/Admin/register/Register';
+import { Slide } from './Slide';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
   const [state,dispatch] = useReducer(NavReducer,{show: false})
   return ( 
     <div className='h-100vh'>
+
+    
            
        <NavContext.Provider 
    value={{state,dispatch}}

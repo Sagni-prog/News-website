@@ -1,14 +1,19 @@
 import {React,useEffect,useState} from 'react'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import finalcup from '../../../assets/images/final_cup.jpg'
 import brazil from '../../../assets/images/brazil.jpg'
 import africa from '../../../assets/images/africa.jpg'
 import mars from '../../../assets/images/mars.jpg'
 import nature from '../../../assets/images/nature.jpg'
 import festival from '../../../assets/images/festival.jpg'
+// import  arrow1 from '../../../assets/images/img/arrow1.svg'
+// import  arrow2 from '../../../assets/images/img/arrow.svg'
 import { Link } from 'react-router-dom'
 import { IoIosCamera } from 'react-icons/io'
 import { FaAngleLeft } from 'react-icons/fa'
 import { FaAngleRight } from 'react-icons/fa'
+import meter1 from '../../../assets/images/img/meter1.svg'
 import RelatedData from '../../../constants/RelatedData'
 import './relatedPost.css'
 
@@ -62,6 +67,50 @@ const RelatedPost = () => {
         }
     }
 
+    const data = [
+        {
+          'title': "Web development",
+          'photo': meter1
+        },
+        {
+          'title': "Web development",
+          'photo': meter1
+        },
+        {
+          'title': "Web development",
+          'photo': meter1
+        },
+        {
+          'title': "Web development",
+          'photo': meter1
+        },
+        {
+          'title': "Web development",
+          'photo': meter1
+        },
+];
+
+
+    const responsive = {
+        superLargeDesktop: {
+          // the naming can be any, depends on you.
+          breakpoint: { max: 4000, min: 3000 },
+          items: 5
+        },
+        desktop: {
+          breakpoint: { max: 3000, min: 1024 },
+          items: 3
+        },
+        tablet: {
+          breakpoint: { max: 1024, min: 464 },
+          items: 2
+        },
+        mobile: {
+          breakpoint: { max: 464, min: 0 },
+          items: 1
+        }
+      };
+
    
 
   return (
@@ -74,102 +123,35 @@ const RelatedPost = () => {
               </h1>
           </div>
 
-      <div className='flex gap-2 overlay-hidden position-relative'>
-         {
-            RelatedData.map((data,index) => (
+      {/* <div className='flex gap-2  position-relative'> */}
 
-         index===current &&
-         
-            <div key={index} className={`${left ? 'related-post-slide-left' : ''} ${right ? 'related-post-slide-right' : ''}  related-card flex flex-col bg-white card-related position-relative ${left ? 'slide' : ''}`}>
-               <div className='gallery-bottom-img-container  position-relative'>
-                    <img src = {data.path} alt = ''/>
-                </div> 
-
-                <div className='flex flex-col  align-center'>
-                     <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
-                         {data.title}
-                     </h3>
-                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='side-bar'>
-                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
-                                      {data.subCatagory}
-                                 </Link>
-                              </div>
-                          </div>
-                     </div>
-             </div>
-
-               
-              )
-            )
-        }
-    
-
-         {
-            RelatedData.map((data,index) => (
-
-         index===current2 &&
-            <div key={index} className={`${left ? 'related-post-slide-left' : ''} ${right ? 'related-post-slide-right' : ''}  related-card flex flex-col bg-white card-related slide`}>
-               <div className='gallery-bottom-img-container  position-relative'>
-                    <img src = {data.path} alt = ''/>
-                </div> 
-
-                <div className='flex flex-col  align-center'>
-                     <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
-                         {data.title}
-                     </h3>
-                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='side-bar'>
-                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
-                                      {data.subCatagory}
-                                 </Link>
-                              </div>
-                          </div>
-                     </div>
-                </div>
-              )
-            )
-        }
-         {
-            RelatedData.map((data,index) => (
-
-         index===current3 &&
-            <div key={index} className={`${left ? 'related-post-slide-left' : ''} ${right ? 'related-post-slide-right' : ''}  related-card flex flex-col bg-white card-related  slide`}>
-               <div className='gallery-bottom-img-container  position-relative'>
-                    <img src = {data.path} alt = ''/>
-                </div> 
-
-                <div className='flex flex-col  align-center'>
-                     <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
-                        {data.title}
-                     </h3>
-                     <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
-                          <div className='dash-subcatagory'></div>
-                             <div className='side-bar'>
-                                 <Link className='link font-16 font-montserrat flex align-center color-dark'>
-                                     Science
-                                 </Link>
-                              </div>
-                          </div>
-                      </div>
-             </div>
-              )
-            )
-        }
-           <div className='left flex justfy-center align-center'>
-              <FaAngleLeft onClick={ slideLeft } className={`${disable ? 'disable' : ''} color-yellow font-32`} />
-            </div>
-
-            <div className='right flex justfy-center align-center'>
-                 <FaAngleRight onClick={slideRight} className='color-yellow font-32' />
-           </div>
-
-
-     </div>
-
-
+      <Carousel responsive={responsive} infinite={true} className="flex gap-2">
+     
+          {
+                RelatedData.map((data,index) => (
+                    <div key={index} className={`related-card flex flex-col bg-white card-related position-relative mr-lt`}>
+                          <div className='gallery-bottom-img-container  position-relative'>
+                                <img src = {data.path} alt = ''/>
+                            </div> 
+            
+                            <div className='flex flex-col  align-center'>
+                                <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
+                                    {data.title}
+                                </h3>
+                                <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>
+                                    <div className='dash-subcatagory'></div>
+                                        <div className='side-bar'>
+                                            <Link className='link font-16 font-montserrat flex align-center color-dark'>
+                                                {data.subCatagory}
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    ))
+         }
+   
+             </Carousel>
        </div>
 
        {/* for responsive */}
@@ -196,7 +178,7 @@ const RelatedPost = () => {
                        </div>
                     
                  </div>
-            </div>
+            </div> 
 
 
             <div className='recent-resp container mt-2 flex flex-col gap-2 bg-white'>
@@ -273,7 +255,7 @@ const RelatedPost = () => {
                </div>
              </div>
           </div>
-       </div> 
+       </div>  
        {/* for responsive */}
     </div>
   )
