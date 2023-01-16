@@ -123,7 +123,6 @@ const RelatedPost = () => {
               </h1>
           </div>
 
-      {/* <div className='flex gap-2  position-relative'> */}
 
       <Carousel responsive={responsive} infinite={true} className="flex gap-2">
      
@@ -134,8 +133,8 @@ const RelatedPost = () => {
                                 <img src = {data.path} alt = ''/>
                             </div> 
             
-                            <div className='flex flex-col  align-center'>
-                                <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1'>
+                            <div className='flex flex-col align-center'>
+                                <h3 className='font-montserrat color-black font-18 font-weigh-700 p-1 align-start w-100 flex'>
                                     {data.title}
                                 </h3>
                                 <div className='flex justify-start gap-1 mt-1 w-100 pl-1'>

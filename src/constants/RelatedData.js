@@ -12,49 +12,49 @@ const RelatedData = [
     {
         path: finalcup,
         alt : "finalcup",
-        title : "1",
+        title : "The Versails most people dont see",
         subCatagory: "Football"
 
     },
     {
         path: mars,
         alt : "mars",
-        title : "2",
+        title : "The Versails most people dont see",
         subCatagory: "Astronomy"
 
     },
     {
         path: africa,
         alt : "mars",
-        title : "3",
+        title : "The Versails most people dont see",
         subCatagory: "Africa"
 
     },
     {
         path: africa,
         alt : "mars",
-        title : "4",
+        title : "The Versails most people dont see",
         subCatagory: "Africa"
 
     },
     {
         path: africa,
         alt : "mars",
-        title : "5",
+        title : "The Versails most people dont see",
         subCatagory: "Africa"
 
     },
     {
         path: africa,
         alt : "mars",
-        title : "6",
+        title : "The Versails most people dont see",
         subCatagory: "Africa"
 
     },
     {
         path: festival,
         alt : "mars",
-        title : "7",
+        title : "The Versails most people dont see",
         subCatagory: "Africa"
 
     },
@@ -62,14 +62,14 @@ const RelatedData = [
     {
         path: festival,
         alt : "mars",
-        title : "8",
+        title : "The Versails most people dont see",
         subCatagory: "Africa"
 
     },
     {
         path: festival,
         alt : "mars",
-        title : "9",
+        title : "The Versails most people dont see",
         subCatagory: "Africa"
 
     },
