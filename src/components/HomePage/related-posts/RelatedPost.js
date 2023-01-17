@@ -1,19 +1,8 @@
-import {React,useEffect,useState} from 'react'
+import {React} from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import finalcup from '../../../assets/images/final_cup.jpg'
-import brazil from '../../../assets/images/brazil.jpg'
-import africa from '../../../assets/images/africa.jpg'
-import mars from '../../../assets/images/mars.jpg'
-import nature from '../../../assets/images/nature.jpg'
-import festival from '../../../assets/images/festival.jpg'
-// import  arrow1 from '../../../assets/images/img/arrow1.svg'
-// import  arrow2 from '../../../assets/images/img/arrow.svg'
 import { Link } from 'react-router-dom'
-import { IoIosCamera } from 'react-icons/io'
-import { FaAngleLeft } from 'react-icons/fa'
-import { FaAngleRight } from 'react-icons/fa'
-import meter1 from '../../../assets/images/img/meter1.svg'
 import RelatedData from '../../../constants/RelatedData'
 import './relatedPost.css'
 
@@ -21,51 +10,51 @@ const RelatedPost = () => {
 
   
 
-   const [current,setCurrent] = useState(0);
-   const [current2,setCurrent2] = useState(1);
-   const [current3,setCurrent3] = useState(2);
-   const [left,setLeft] = useState(false)
-   const [right,setRight] = useState(false)
-   const [disable,setDisable] = useState(false)
-   const end = RelatedData.length - 1;
+//    const [current,setCurrent] = useState(0);
+//    const [current2,setCurrent2] = useState(1);
+//    const [current3,setCurrent3] = useState(2);
+//    const [left,setLeft] = useState(false)
+//    const [right,setRight] = useState(false)
+//    const [disable,setDisable] = useState(false)
+//    const end = RelatedData.length - 1;
 
 
-   const slideLeft = () => {
+//    const slideLeft = () => {
       
-       setRight(false)
-       setLeft(true)
+//        setRight(false)
+//        setLeft(true)
 
-          if(current === 0){
-              setCurrent(end)
-                  if(current -1 > 0){ setCurrent2(current - 1) }else{ setCurrent2(end-1) }
+//           if(current === 0){
+//               setCurrent(end)
+//                   if(current -1 > 0){ setCurrent2(current - 1) }else{ setCurrent2(end-1) }
 
-                  if(current - 2 > 0){ setCurrent3(current - 2)  }else{ setCurrent3(end-2) }
+//                   if(current - 2 > 0){ setCurrent3(current - 2)  }else{ setCurrent3(end-2) }
 
-                  // if(current2 === 0) { setCurrent2(end) } else{ setCurrent2(curr)}
-          } 
-          else{
-            setCurrent(current - 1)
-                  if(current -1 > 0){ setCurrent2(current - 2) }else{ setCurrent2(end)}
+//                   // if(current2 === 0) { setCurrent2(end) } else{ setCurrent2(curr)}
+//           } 
+//           else{
+//             setCurrent(current - 1)
+//                   if(current -1 > 0){ setCurrent2(current - 2) }else{ setCurrent2(end)}
 
-                  if(current - 2 > 0 ){ setCurrent3(current - 3) } else { setCurrent3(end) }
-            }
-     }
+//                   if(current - 2 > 0 ){ setCurrent3(current - 3) } else { setCurrent3(end) }
+//             }
+//      }
 
 
-   const slideRight = () => {
-       setLeft(false)
-       setRight(true)
-        if(current === end){
-            setCurrent(0)
-                if(current2 === 0){ setCurrent2(end) } else if(current2 === 1){ setCurrent2(current2 + 1)} else{ setCurrent2(current2 + 1) }
-                if(current3 === 0){ setCurrent3(end) } else{ setCurrent3(current3 + 1) }
-        }
-        else{
-           setCurrent(current + 1)
-               if(current2 === end) {setCurrent2(0) } else{ setCurrent2(current2 + 1)}
-               if(current3 === end) {setCurrent3(0) } else{ setCurrent3(current3 + 1)} 
-        }
-    }
+//    const slideRight = () => {
+//        setLeft(false)
+//        setRight(true)
+//         if(current === end){
+//             setCurrent(0)
+//                 if(current2 === 0){ setCurrent2(end) } else if(current2 === 1){ setCurrent2(current2 + 1)} else{ setCurrent2(current2 + 1) }
+//                 if(current3 === 0){ setCurrent3(end) } else{ setCurrent3(current3 + 1) }
+//         }
+//         else{
+//            setCurrent(current + 1)
+//                if(current2 === end) {setCurrent2(0) } else{ setCurrent2(current2 + 1)}
+//                if(current3 === end) {setCurrent3(0) } else{ setCurrent3(current3 + 1)} 
+//         }
+//     }
 
     
 
