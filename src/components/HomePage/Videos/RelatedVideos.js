@@ -1,8 +1,5 @@
-import React from 'react'
+import { React,useState } from 'react'
 import {Link } from 'react-router-dom'
-import forest from '../../../assets/images/africa.jpg'
-import rally from '../../../assets/images/rally.jpg'
-import { IoIosCamera } from 'react-icons/io'
 import { MdPlayArrow } from 'react-icons/md'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -10,6 +7,19 @@ import RelatedData from '../../../constants/RelatedData'
 
 
 const RelatedVideos = () => {
+
+    const [recommanded,setRecommanded] = useState(true)
+    const [latest,setLatest] = useState(false)
+
+    const handleRecommanded = () => {
+        setLatest(false)
+        setRecommanded(true)
+    }
+    const handleLatest = () => {
+        setRecommanded(false)
+        setLatest(true)
+
+    }
 
     const responsive = {
         superLargeDesktop: {
@@ -36,10 +46,12 @@ const RelatedVideos = () => {
     <div className='related-videos'>
          <div className='related-videos'>
             <div className='flex gap-2  pl-3'>
-              <Link className='link font-montserrat font-18 font-weight-700 color-white p-2 border-bottom3'>
+            <div className='position-relative'>
+              <Link onClick={ handleRecommanded} className={`${recommanded ? 'border-bottom3' : ''} link font-montserrat font-18 font-weight-700 color-white p-2 `}>
                   Recommanded
              </Link>
-              <Link className='link font-montserrat font-18 font-weight-700 color-white p-2'>
+             </div>
+              <Link onClick={ handleLatest } className={`${latest ? 'border-bottom3' : ''} link font-montserrat font-18 font-weight-700 color-white p-2`}>
                   Latest
               </Link>
             </div>
@@ -53,12 +65,12 @@ const RelatedVideos = () => {
               <div className='flex gap-2 w-100'>
               
                 <div className='thumb-container'>
-                    <img src = {rally} alt = '' />
+                    <img src = { data.path } alt = '' />
                 </div>
                 
                 <div className='flex flex-col video-title '>
                      <h4 className='font-montserrat font-18 color-white'>
-                        Venezeweulans ignore the 
+                        { data.title }
                      </h4>
                 
                   <div className=''>
@@ -66,7 +78,7 @@ const RelatedVideos = () => {
                        <div className='dash-subcatagory'></div>
                          <div className='text-underline-white'>
                            <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
-                              Latin America
+                              { data.subCatagory }
                            </Link>
                         </div>
                      </div>
@@ -79,87 +91,7 @@ const RelatedVideos = () => {
       }
 
         </Carousel>
-                
-                {/* <div className='related-videos w-40'>
-                    <div className='flex gap-2 w-100'>
-                      
-                        <div className='thumb-container'>
-                            <img src = {rally} alt = '' />
-                        </div>
-                        
-                        <div className='flex flex-col video-title '>
-                             <h4 className='font-montserrat font-18 color-white'>
-                                Venezeweulans ignore the 
-                             </h4>
-                        
-                          <div className=''>
-                             <div className='flex gap-1 mt-1'>
-                               <div className='dash-subcatagory'></div>
-                                 <div className='text-underline-white'>
-                                   <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
-                                      Latin America
-                                   </Link>
-                                </div>
-                             </div>
-                           </div>
-                        
-                        </div>
-                    </div>
-                </div>
-
-                <div className='related-videos w-40'>
-                    <div className='flex gap-2 w-100'>
-                      
-                        <div className='thumb-container'>
-                            <img src = {rally} alt = '' />
-                        </div>
-                        
-                        <div className='flex flex-col video-title '>
-                             <h4 className='font-montserrat font-18 color-white'>
-                                Venezeweulans ignore the 
-                             </h4>
-                        
-                          <div className=''>
-                             <div className='flex gap-1 mt-1'>
-                               <div className='dash-subcatagory'></div>
-                                 <div className='text-underline-white'>
-                                   <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
-                                      Latin America
-                                   </Link>
-                                </div>
-                             </div>
-                           </div>
-                        
-                        </div>
-                    </div>
-                </div>
-
-                <div className='related-videos w-40'>
-                    <div className='flex gap-2 w-100'>
-                      
-                        <div className='thumb-container'>
-                            <img src = {rally} alt = '' />
-                        </div>
-                        
-                        <div className='flex flex-col video-title '>
-                             <h4 className='font-montserrat font-18 color-white'>
-                                Venezeweulans ignore the 
-                             </h4>
-                        
-                          <div className=''>
-                             <div className='flex gap-1 mt-1'>
-                               <div className='dash-subcatagory'></div>
-                                 <div className='text-underline-white'>
-                                   <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
-                                      Latin America
-                                   </Link>
-                                  </div>
-                               </div>
-                            </div>
-                        </div>
-                    </div>
-                 </div> */}
-              {/* </div> */}
+              
           </div>
 
           {/* related photos for minimum screen views starts */}

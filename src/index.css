@@ -419,7 +419,7 @@ html{
 .mt-2{
     margin-top: 2rem;
 }
-.mr-lt{
+.lt{
     margin-right: 1.6rem;
 }
 .mr-sm{
@@ -783,6 +783,18 @@ html{
 }
 .border-bottom3{
     border-bottom: #ffcc00 solid 3px;
+    animation: border;
+    animation-duration: 0.3s;
+    transition: all 1s;
+   }
+
+@keyframes border {
+    0%{
+        transform: translateX(10px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .border{

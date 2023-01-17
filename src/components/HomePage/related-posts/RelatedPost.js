@@ -10,53 +10,6 @@ const RelatedPost = () => {
 
   
 
-//    const [current,setCurrent] = useState(0);
-//    const [current2,setCurrent2] = useState(1);
-//    const [current3,setCurrent3] = useState(2);
-//    const [left,setLeft] = useState(false)
-//    const [right,setRight] = useState(false)
-//    const [disable,setDisable] = useState(false)
-//    const end = RelatedData.length - 1;
-
-
-//    const slideLeft = () => {
-      
-//        setRight(false)
-//        setLeft(true)
-
-//           if(current === 0){
-//               setCurrent(end)
-//                   if(current -1 > 0){ setCurrent2(current - 1) }else{ setCurrent2(end-1) }
-
-//                   if(current - 2 > 0){ setCurrent3(current - 2)  }else{ setCurrent3(end-2) }
-
-//                   // if(current2 === 0) { setCurrent2(end) } else{ setCurrent2(curr)}
-//           } 
-//           else{
-//             setCurrent(current - 1)
-//                   if(current -1 > 0){ setCurrent2(current - 2) }else{ setCurrent2(end)}
-
-//                   if(current - 2 > 0 ){ setCurrent3(current - 3) } else { setCurrent3(end) }
-//             }
-//      }
-
-
-//    const slideRight = () => {
-//        setLeft(false)
-//        setRight(true)
-//         if(current === end){
-//             setCurrent(0)
-//                 if(current2 === 0){ setCurrent2(end) } else if(current2 === 1){ setCurrent2(current2 + 1)} else{ setCurrent2(current2 + 1) }
-//                 if(current3 === 0){ setCurrent3(end) } else{ setCurrent3(current3 + 1) }
-//         }
-//         else{
-//            setCurrent(current + 1)
-//                if(current2 === end) {setCurrent2(0) } else{ setCurrent2(current2 + 1)}
-//                if(current3 === end) {setCurrent3(0) } else{ setCurrent3(current3 + 1)} 
-//         }
-//     }
-
-    
 
     const responsive = {
         superLargeDesktop: {
