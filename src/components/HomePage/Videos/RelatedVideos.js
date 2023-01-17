@@ -61,6 +61,8 @@ const RelatedVideos = () => {
              </div>
             </div>
         
+        {
+            recommanded &&
 
                <Carousel responsive={responsive} infinite={true} className="flex align-center pl-3 pb-2 pr-1 pt-2">
      
@@ -96,6 +98,45 @@ const RelatedVideos = () => {
       }
 
         </Carousel>
+      }
+        {
+            latest &&
+
+               <Carousel responsive={responsive} infinite={true} className="flex align-center pl-3 pb-2 pr-1 pt-2">
+     
+     {
+           RelatedData.map((data,index) => (
+            <div className='related-videos w-40 '>
+              <div className='flex gap-2 w-100'>
+              
+                <div className='thumb-container'>
+                    <img src = { data.path } alt = '' />
+                </div>
+                
+                <div className='flex flex-col video-title '>
+                     <h4 className='font-montserrat font-18 color-white'>
+                        { data.title }
+                     </h4>
+                
+                  <div className=''>
+                     <div className='flex gap-1 mt-1'>
+                       <div className='dash-subcatagory'></div>
+                         <div className='text-underline-white'>
+                           <Link className='link font-14 font-montserrat flex align-center color-light-gray'>
+                              { data.subCatagory }
+                           </Link>
+                        </div>
+                     </div>
+                   </div>
+                
+                </div>
+            </div>
+        </div>
+               ))
+      }
+
+        </Carousel>
+      }
               
           </div>
 
