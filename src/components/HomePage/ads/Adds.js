@@ -6,14 +6,14 @@ const Adds = () => {
   return (
     <div className='resp-add container h-8 flex justify-between gap-2  mb-sm'>
         <div className='logo h-100 flex align-center '>
-             <h1 className='font-32 font-montserrat'>
+              <Link to='/' className='link font-32 font-montserrat font-weight-700'>
                 <span className='color-yellow'>
                     Zena
                 </span>
                 <span className='color-dark'>
                     Log
                 </span>
-             </h1>
+                </Link>
         </div>
    
         <div className='ad'>

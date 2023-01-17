@@ -67,29 +67,7 @@ const RelatedPost = () => {
         }
     }
 
-    const data = [
-        {
-          'title': "Web development",
-          'photo': meter1
-        },
-        {
-          'title': "Web development",
-          'photo': meter1
-        },
-        {
-          'title': "Web development",
-          'photo': meter1
-        },
-        {
-          'title': "Web development",
-          'photo': meter1
-        },
-        {
-          'title': "Web development",
-          'photo': meter1
-        },
-];
-
+    
 
     const responsive = {
         superLargeDesktop: {
@@ -128,7 +106,7 @@ const RelatedPost = () => {
      
           {
                 RelatedData.map((data,index) => (
-                    <div key={index} className={`related-card flex flex-col bg-white card-related position-relative mr-lt`}>
+                    <div key={index} className={`related-card flex flex-col bg-white card-related position-relative mr-sm`}>
                           <div className='gallery-bottom-img-container  position-relative'>
                                 <img src = {data.path} alt = ''/>
                             </div> 

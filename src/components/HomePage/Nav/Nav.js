@@ -31,7 +31,8 @@ const Nav = () => {
              <ul className='h-100 flex align-center justify-between gap-2'>
               <li className='logo-disp'>
                 <div className=' h-100 flex align-center '>
-                   <Link  to = '/' className='link font-32 font-montserrat'>
+
+                   <Link to = '/' className='link font-32 font-montserrat cursor-pointer'>
                      <span className='color-yellow'>
                             Zena
                      </span>

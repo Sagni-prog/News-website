@@ -80,7 +80,7 @@ const SinglePost = () => {
                       <h4 className='font-montserrat font-weight-700 color-black font-16'>Taiwan will extend mandatory military service from four months to one year, President Tsai Ing-wen has said.</h4> 
                   </div>
 
-                  <div className='title w-80 border-bottom'>
+                  <div className='title w-80 border-bottom flex flex-col'>
                       <p className='font-montserrat color-dark font-weight font-16 line-height-1-5 '>
                         The decision comes amid growing tensions with China, which claims the self-ruled island as its territory.<br/><br/>
                         Speaking at a press conference on Tuesday, President Tsai announced new plans to bolster Taiwan's defence in the event of an attack from Beijing.<br/><br/>
@@ -97,7 +97,7 @@ const SinglePost = () => {
                         But tensions again ratcheted up on Monday when Taiwan reported one of the biggest Chinese incursions around the island, with 71 Chinese air force planes, including fighter jets and drones, entering Taiwan's so-called air defence identification zone.<br/><br/>
                      </p> 
 
-                     <div className='flex gap-4 mb-md'>
+                     <div className='flex w-100 gap-4 mb-md'>
                         <div className='flex align-center gap-1'>
                             <FaThumbsUp className='font-24 color-light-gray' />
                             <p className='font-montserrat font-16 color-light-gray'>10</p>
