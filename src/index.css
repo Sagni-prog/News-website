@@ -781,21 +781,72 @@ html{
 .border-bottom2{
     border-bottom: #ffcc00af solid 2px;
 }
-.border-bottom3{
-    border-bottom: #ffcc00 solid 3px;
-    animation: border;
-    animation-duration: 0.3s;
-    transition: all 1s;
-   }
 
-@keyframes border {
+
+
+.border-dash{
+    width: 100%;
+    height: 4px;
+    background-color: #1e2024
+}
+.border-dash-recommanded{
+    position: relative;
+    width: 100%;
+    height: 4px;
+}
+
+.border-dash-recommanded::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ffcc00;
+
+    animation: slide-recommanded ;
+    animation-duration: .3s;
+}
+
+
+
+@keyframes slide-recommanded {
     0%{
-        transform: translateX(10px);
+        transform: translateX(50%);
     }
     100%{
         transform: translateX(0);
     }
 }
+
+.border-dash-latest{
+    position: relative;
+    width: 100%;
+    height: 4px;
+}
+.border-dash-latest::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ffcc00;
+
+    animation: slide-latest;
+    animation-duration: .3s;
+}
+
+@keyframes slide-latest {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
 
 .border{
     border: #9A9DA2 solid 1px;

@@ -45,15 +45,20 @@ const RelatedVideos = () => {
   return (
     <div className='related-videos'>
          <div className='related-videos'>
-            <div className='flex gap-2  pl-3'>
-            <div className='position-relative'>
-              <Link onClick={ handleRecommanded} className={`${recommanded ? 'border-bottom3' : ''} link font-montserrat font-18 font-weight-700 color-white p-2 `}>
+            <div className='flex gap-2  pl-3 pt-2'>
+            <div className='position-relative flex flex-col'>
+              <Link onClick={ handleRecommanded} className={` link font-montserrat font-18 font-weight-700 color-white `}>
                   Recommanded
              </Link>
+             <div className={`${recommanded ? 'border-dash-recommanded' : ''} `}></div>
              </div>
-              <Link onClick={ handleLatest } className={`${latest ? 'border-bottom3' : ''} link font-montserrat font-18 font-weight-700 color-white p-2`}>
+             
+             <div className='position-relative flex flex-col'>
+              <Link onClick={ handleLatest } className={`link font-montserrat font-18 font-weight-700 color-white`}>
                   Latest
               </Link>
+              <div className= {`${latest ? 'border-dash-latest' : ''} `}></div>
+             </div>
             </div>
         
 
