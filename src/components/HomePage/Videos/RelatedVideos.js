@@ -203,7 +203,6 @@ const RelatedVideos = () => {
           </div>
           </div>
        </div> 
-       
      </div>
             {/* related photos for minimum screen views ends*/}
 

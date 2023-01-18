@@ -13,7 +13,7 @@ import Menu from './components/HomePage/menu/Menu';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import { Login } from './components/Admin/login/Login';
 import { Register } from './components/Admin/register/Register';
-import { Slide } from './Slide';
+import ProtectedRoute from './ProtectedRoute';
 
 
 function App() {
@@ -36,9 +36,17 @@ function App() {
           <Routes>
              <Route element = {  <SinglePage /> } path = 'post' />
          </Routes>
-         <Routes>
-              <Route element = {<Dashboard />} path = 'admin/dashboard' />
-         </Routes>
+
+          
+               <Routes>
+                    <Route element = {
+                         <ProtectedRoute>
+                              <Dashboard />
+                         </ProtectedRoute>
+                        } path = 'admin/dashboard' />
+               </Routes>
+         
+
          <Routes>
               <Route element = {<Login />} path = 'admin/login' />
          </Routes>
