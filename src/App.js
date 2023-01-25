@@ -1,22 +1,38 @@
-import { React,useReducer } from 'react'
-import Top from './components/HomePage/Top/Top';
+import { React,useReducer,useEffect } from 'react'
 import './App.css';
-import Adds from './components/HomePage/ads/Adds';
-import Nav from './components/HomePage/Nav/Nav';
 import Home from './home/Home';
-import SinglePost from './components/HomePage/SinglePost/SinglePost';
 import SinglePage from './SinglePage';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavReducer from './reducers/NavReducer';
 import NavContext from './contexts/NavContext';
-import Menu from './components/HomePage/menu/Menu';
 import Dashboard from './components/Admin/Dashboard/Dashboard';
 import { Login } from './components/Admin/login/Login';
 import { Register } from './components/Admin/register/Register';
 import ProtectedRoute from './ProtectedRoute';
+import { useSelector, useDispatch } from 'react-redux'
+import { getAllPosts,getError,fetchPosts,postStatus } from './Redux/postSlice';
+
+
 
 
 function App() {
+
+     const dispatchPost = useDispatch()
+     const post = useSelector(getAllPosts)
+     const error = useSelector(getError)
+     const status = useSelector(postStatus)
+
+     useEffect(() => {
+
+           dispatchPost(fetchPosts)
+           
+           console.log(post)
+          //  console.log("error => ",error)
+          
+     },[] )
+                                             
+     
+
 
   const [state,dispatch] = useReducer(NavReducer,{show: false})
   return ( 
